@@ -1,0 +1,146 @@
+/** @format */
+
+.digital {
+  background-image: url(/assets/img/background-leptop.png);
+  background-size: cover;
+  background-position: center;
+  .container {
+    padding-top: 100px;
+    padding-bottom: 96px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    color: white;
+    max-width: 550px;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  &__card {
+    text-align: center;
+    max-width: 150px;
+    div {
+      width: 150px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    p {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
+
+    &__mt,
+    &__ebp,
+    &__wms {
+      background-color: $violet;
+    }
+    &__oracle,
+    &__emarket {
+      background-color: $lightViolet;
+    }
+    &__tms {
+      background-color: $ultralightViolet;
+    }
+    p {
+      color: white;
+    }
+    p:first-of-type {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+    p:last-of-type {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  &__description {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 30px;
+    margin-top: 36px;
+    p {
+      position: relative;
+      padding-left: 48px;
+      line-height: 32px;
+      span {
+        left: 0;
+        top: 0;
+        position: absolute;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+    :nth-child(1) {
+      span {
+        background-color: $violet;
+      }
+    }
+    :nth-child(2) {
+      span {
+        background-color: $lightViolet;
+      }
+    }
+    :nth-child(3) {
+      span {
+        background-color: $ultralightViolet;
+      }
+    }
+  }
+}
+@media (max-width: $ipadWidth) {
+  .digital .container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .digital__cards {
+    margin-top: 30px;
+    order: 1;
+  }
+
+  .digital__description {
+    margin-top: 20px;
+  }
+  .digital__card {
+    max-width: 157px;
+    div {
+      width: 157px;
+      height: 105px;
+      margin-bottom: 16px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .digital__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .digital__description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .digital__card p:first-of-type {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .digital__card p:last-of-type {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

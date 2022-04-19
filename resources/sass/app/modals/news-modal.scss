@@ -1,0 +1,84 @@
+.news-modal{
+    overflow: scroll;
+    &__wrapper{
+        margin: 60px auto;
+        max-width: 1290px;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+    &__wrap{
+        padding: 60px  220px  30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        color: $violet;
+
+    } 
+    &__description{
+        line-height: 24px;
+        margin: 20px 0;
+    }
+    &__date{
+        line-height: 24px;
+        color: $darkGray;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    &__title-l {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+    &__text{
+        line-height: 24px;
+    }
+    .button-type-one{
+        margin-top: 44px;  
+        align-self: center; 
+    }   
+}
+@media (max-width: 1200px) {
+    .news-modal__wrap{
+        padding: 60px  110px  30px;
+    }
+}
+@media (max-width: $ipadWidth) {
+    .news-modal__wrap{
+        padding: 20px  16px !important;
+    }
+}
+@media (max-width: 600px) {
+    .news-modal__title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .news-modal__description{
+        font-size: 14px;
+        line-height: 20px;
+        margin: 8px 0;
+    }
+    .news-modal__date{
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 16px;
+    }
+    .news-modal__title-l{
+        margin: 20px 0 12px;
+    }
+    .news-modal__text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .news-modal{
+        .button-type-one{
+            margin-top: 16px;
+        }
+    }
+}

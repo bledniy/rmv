@@ -1,0 +1,286 @@
+/** @format */
+
+.coverage-map {
+  scroll-behavior: smooth;
+  background-color: $gray;
+  .container {
+    padding-top: 80px;
+    position: relative;
+    &:after, &:before{
+      display: none;
+
+    }
+  }
+  &__map {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    svg {
+      width: 100%;
+    }
+  }
+  &__info {
+    &__title {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 56px;
+      color: $violet;
+    }
+    &__title-now {
+      margin-top: 20px;
+    }
+    &__text {
+      margin-top: 30px;
+      display: flex;
+      p {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 79px;
+      }
+      .wrap {
+        display: flex;
+        :first-child{
+          width: 70px;
+        }
+      }
+    }
+    &__description {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      margin: auto 0 18px 25px;
+      color: black;
+    }
+    &__region {
+      color: white;
+      p {
+        -webkit-text-stroke: 1px $violet;
+      }
+    }
+    &__purpose {
+      color: $lightViolet;
+    }
+    &__region-now {
+      color: $violet;
+    }
+    &__cities {
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+
+    &__city {
+      display: flex;
+      margin-bottom: 20px;
+      p {
+        margin-right: 40px;
+        &.odessa {
+          grid-area: o;
+        }
+      }
+      span {
+        font-weight: bold;
+        color: $violet;
+      }
+      p.nikolaev {
+        grid-area: n;
+      }
+      p.herson {
+        grid-area: h;
+      }
+      p.dnepr {
+        grid-area: d;
+      }
+      p.zaporiz {
+        grid-area: z;
+      }
+      p.kropyv {
+        grid-area: k;
+      }
+    }
+  }
+}
+@media (max-width: 1470px) {
+  .coverage-map {
+    &__map {
+      width: 700px;
+    }
+  }
+}
+
+@media (max-width: 1340px) {
+  .coverage-map {
+    &__info {
+      &__text {
+        flex-direction: column;
+      }
+      &__description {
+        width: 360px;
+        margin: 0;
+      }
+    }
+    &__map {
+      top: 90px;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .coverage-map {
+    &__info {
+      &__description {
+        width: 260px;
+      }
+    }
+    &__map {
+      top: 100px;
+      right: 20px;
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .coverage-map {
+    &__info {
+      &__cities {
+        margin-top: 600px;
+        margin-bottom: 30px;
+      }
+      &__description {
+        width: 100%;
+      }
+      &__city {
+        p {
+          width: 33%;
+        }
+      }
+    }
+    &__map {
+      width: 100%;
+      top: 45%;
+      right: 0;
+      svg {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .coverage-map {
+    .container {
+      padding-top: 40px;
+    }
+    &__info {
+      &__cities {
+        margin-top: 520px;
+      }
+    }
+    &__map {
+      top: 40%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .coverage-map {
+    &__info {
+
+      .wrap {
+        :first-child{
+          width: 48px;
+        }
+      }
+      &__title {
+        font-size: 42px;
+        line-height: 51px;
+      }
+      &__description {
+        font-size: 18px;
+        line-height: 23px;
+      }
+      .coverage-map__info__cities {
+        margin-top: 360px;
+      }
+
+      &__city {
+        display: grid;
+        &__first {
+          grid-template-areas:
+            "o o"
+            "n h";
+        }
+        &__second {
+          grid-template-areas:
+            "d d"
+            "z k";
+        }
+        .nikolaev {
+          margin-right: -120px;
+        }
+        margin-bottom: 0;
+
+        p,
+        span {
+          width: 100% !important;
+          font-size: 12px;
+          line-height: 15px;
+          margin-bottom: 12px;
+          margin-right: 0;
+        }
+      }
+
+      &__text {
+        p {
+          font-size: 42px;
+          line-height: 51px;
+        }
+      }
+    }
+
+    .coverage-map__map {
+      top: 36.5%;
+    }
+  }
+}
+@media (max-width: 377px) {
+  .coverage-map {
+    &__info {
+      &__title {
+        font-size: 36px;
+        line-height: 40px;
+      }
+      &__title-now {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      &__cities {
+        margin-top: 300px;
+      }
+
+      &__city {
+        p,
+        span {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+
+      &__text {
+        p {
+          font-size: 36px;
+          line-height: 45px;
+        }
+      }
+
+      &__description {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &__map {
+      top: 32%;
+      svg {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+data-url-update="{{ route($routeKey . '.update', $translate->getKey()) }}"

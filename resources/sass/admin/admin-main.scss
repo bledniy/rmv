@@ -1,0 +1,16 @@
+/*@import "admin/stylesheet";*/
+@import 'constants';
+@import "self";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html, body {
+  min-height: 100%;
+}

@@ -1,0 +1,57 @@
+/*!
+
+ =========================================================
+ * Material Dashboard - v2.1.0
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-dashboard
+ * Copyright 2018 Creative Tim (http://www.creative-tim.com)
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+ @import "variables";
+ @import "mixins";
+ @import "core-bootstrap";
+
+ // Core Components
+ @import "buttons";
+ @import "checkboxes";
+ @import "radios";
+ @import "forms";
+ @import "input-group";
+ @import "images";
+ @import "navbar";
+ @import "alerts";
+ @import "headers";
+ @import "type";
+ @import "tabs";
+ @import "tooltip";
+ @import "popover";
+ @import "dropdown";
+ @import "togglebutton";
+ @import "ripples";
+ @import "footers";
+ @import "sidebar-and-main-panel";
+ @import "fixed-plugin";
+ @import "tables";
+ @import "misc";
+ @import "social-buttons";
+
+@import "cards";
+@import "cards/card-stats";
+@import "cards/card-profile";
+@import "cards/card-plain";
+
+ //plugin scss
+ @import "plugins/animate";
+ @import "plugins/chartist";
+ @import "plugins/perfect-scrollbar";
+
+ @import "responsive";
+
+ @import "responsive";
+

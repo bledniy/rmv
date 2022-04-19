@@ -1,0 +1,29 @@
+<?php declare(strict_types=1);
+
+namespace Database\Seeders;
+use Illuminate\Foundation\Testing\WithFaker;
+
+class {{ class }} extends AbstractSeeder
+{
+	use WithFaker;
+
+    /**
+     * @var \Faker\Generator
+     */
+
+    public function __construct()
+    {
+        $this->setUpFaker();
+    }
+
+
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //
+    }
+}

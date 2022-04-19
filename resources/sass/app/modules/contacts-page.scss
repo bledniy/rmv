@@ -1,0 +1,137 @@
+/** @format */
+
+.contacts-page {
+  margin-top: 68px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  .container {
+    padding: 0 195px;
+
+    &::before {
+      display: none;
+    }
+    &::after {
+      left: 50%;
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    grid-gap: 120px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: $violet;
+    margin-bottom: 30px;
+  }
+  &__wrapper {
+    max-width: 584px;
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__wrap {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__description {
+    line-height: 24px;
+    color: $darkGray;
+  }
+  &__value {
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+  a:first-of-type {
+    margin-top: 12px;
+  }
+  a {
+    margin-top: 16px;
+  }
+}
+iframe {
+  width: 100%;
+  height: 235px;
+  border-radius: 16px;
+  margin-top: 40px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  .textarea {
+    height: 160px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contacts-page {
+    .container {
+      padding: 0 115px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .contacts-page {
+    .container {
+      padding: 0 30px;
+    }
+  }
+  .contacts-page__container {
+    grid-gap: 60px;
+  }
+}
+
+@media (max-width: $ipadWidth) {
+  .contacts-page {
+    margin-top: 52px;
+    padding: 40px 0 30px;
+
+    .container {
+      padding: 0 20px !important;
+    }
+    .contact__form {
+      .textarea {
+        height: 140px;
+      }
+    }
+  }
+
+  .contacts-page__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px !important;
+  }
+  .contacts-page__wrapper {
+    max-width: 100%;
+  }
+  .contacts-page__title {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .contacts-page__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .contacts-page__description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contacts-page__value {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact__form {
+    gap: 12px;
+  }
+}

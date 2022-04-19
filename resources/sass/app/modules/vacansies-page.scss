@@ -1,0 +1,131 @@
+.vacancies-page{
+    margin-top: 68px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .container{
+    }
+    &__contacts-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+        color: $violet;
+        margin-bottom: 60px;
+    }
+    &__contacts{
+            max-width: 338px;
+            font-size: 20px;
+            line-height: 23px;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            a{
+                line-height: 23px;
+                &:hover{
+                    background: transparent;
+                    color: black;
+                }
+            }
+    }
+    &__wrap{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px 120px;
+        justify-content: space-between;
+    }
+}
+.vacancies-card{
+    background-color: $gray;
+    border-radius: 12px;
+    .wrap{
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+    &__text{
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .button-type-one{
+        margin: auto auto 0 0;
+    }
+}
+@media (max-width: 1300px) {
+    .vacancies-page__wrap{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .vacancies-page__contacts-wrap{
+        flex-direction: column;
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+    .vacancies-page__contacts{
+    }
+    .vacancies-page__contacts{
+        max-width: 100%;
+        margin: 0 auto 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: $ipadWidth) {
+    .vacancies-page{
+        margin-top: 52px;
+        padding: 40px 0;
+        .vacancies-page__wrap{
+            gap: 20px;
+        }
+    }
+    .vacancies-page__wrap{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    .vacancies-page__title{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .vacancies-page__contacts{
+        font-size: 16px;
+        line-height: 19px;
+        a{
+                line-height: 19px;
+            }
+        
+    }
+    .vacancies-page__wrap{
+        grid-gap: 60px;
+    }
+    .vacancies-card {
+        .wrap{
+        padding: 16px;
+        }
+        &__title{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__text, .button-type-one{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
