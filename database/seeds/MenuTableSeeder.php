@@ -22,11 +22,12 @@ class MenuTableSeeder extends AbstractSeeder
     {
         $menuGroups = [
             MenuGroupEnum::MAIN_MENU => [
-                ['name' => 'Покрытие', 'url' => '/#coverage-map'],
-                ['name' => 'Торговые марки', 'url' => '/#brands'],
+                ['name' => 'Головна', 'url' => '/'],
+                ['name' => 'Склад ради'],
+                ['name' => 'Виддили'],
+                ['name' => 'Документи'],
                 ['name' => 'Новости', 'url' => 'news'],
-                ['name' => 'Вакансии', 'url' => 'vacancy'],
-                ['name' => 'Контакты', 'url' => 'contacts'],
+                ['name' => 'Контакти', 'url' => 'contacts'],
             ],
         ];
         foreach ($menuGroups as $group => $menus) {

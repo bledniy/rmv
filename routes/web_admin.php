@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\AjaxController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\Content\BrandsController;
 use App\Http\Controllers\Admin\Content\VacancyController;
+use App\Http\Controllers\Admin\Department\DepartmentController;
 use App\Http\Controllers\Admin\Feedback\FeedbackController;
 use App\Http\Controllers\Admin\IndexController;
 use App\Http\Controllers\Admin\MenuController;
@@ -24,6 +25,7 @@ use App\Http\Controllers\Admin\Slider\SliderController;
 use App\Http\Controllers\Admin\Staff\LogViewController;
 use App\Http\Controllers\Admin\TranslateController;
 use App\Http\Controllers\Admin\User\UserController;
+use App\Http\Controllers\FacultieController;
 
 Route::group(['prefix' => 'admin'], static function () {
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('admin.login');
@@ -61,6 +63,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
                 'pages' => PageController::class,
             ], ['as' => 'admin', 'except' => ['show']]
             );
+            
+            Route::resource('departments', DepartmentController::class);
+            Route::resource('faculties', FacultieController::class);
 
             Route::post('/menu/nesting', [MenuController::class, 'nesting'])->name('admin.menu.nesting');
             Route::post('/admin-menus/nesting', [AdminMenuController::class, 'nesting'])->name('admin.admin-menus.nesting');
