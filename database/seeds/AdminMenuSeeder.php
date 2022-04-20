@@ -30,7 +30,7 @@ class AdminMenuSeeder extends AbstractSeeder
 	public function run()
 	{
 		$menus = [
-            $this->getBuilder()->setName('Слайдер')->setUrl('/sliders')->setGateRule('view_sliders')->build(),
+//            $this->getBuilder()->setName('Слайдер')->setUrl('/sliders')->setGateRule('view_sliders')->build(),
             $this->getBuilder()->setName(__('modules.settings.title'))->setIconFont('<i class="material-icons">settings</i>')->setUrl('/settings')->setGateRule('view_settings')->build(),
             $this->getBuilder()->setName('Локализация')->setIconFont('<i class="fa fa-language" aria-hidden="true"></i>')->setUrl('/translate')->setGateRule('view_translate')->build(),
             $this->getBuilder()->setName('SEO')->setIconFont('<i class="fa fa-google-plus" aria-hidden="true"></i>')->setUrl('/meta')->setGateRule('view_meta')->setChildrens([
@@ -46,8 +46,12 @@ class AdminMenuSeeder extends AbstractSeeder
             $this->getBuilder()->setName(__('modules.feedback.title_plural'))->setIconFont('<i class="fa fa-commenting" aria-hidden="true"></i>')->setUrl('/feedback')->setGateRule('view_feedback')->build(),
             $this->getBuilder()->setName('Страницы')->setUrl('/pages')->setGateRule('view_pages')->setIconFont('<i class="fa fa-columns" aria-hidden="true"></i>')->build(),
             $this->getBuilder()->setName(__('modules.news.title_plural'))->setUrl('/news')->setGateRule('view_news')->build(),
-            $this->getBuilder()->setName('Бренды')->setUrl('/' . ContentTypeEnum::BRAND)->setGateRule('view_' . ContentTypeEnum::BRAND)->build(),
-            $this->getBuilder()->setName('Вакансии')->setUrl('/' . ContentTypeEnum::VACANCY)->setGateRule('view_' . ContentTypeEnum::VACANCY)->build(),
+            $this->getBuilder()->setName('Факультеты')->setUrl('/faculties')->setGateRule('view_faculties')->build(),
+            $this->getBuilder()->setName('Отделы')->setUrl('/departments')->setGateRule('view_departments')->build(),
+
+
+//            $this->getBuilder()->setName('Бренды')->setUrl('/' . ContentTypeEnum::BRAND)->setGateRule('view_' . ContentTypeEnum::BRAND)->build(),
+//            $this->getBuilder()->setName('Вакансии')->setUrl('/' . ContentTypeEnum::VACANCY)->setGateRule('view_' . ContentTypeEnum::VACANCY)->build(),
 		];
 		$this->loop($menus);
 

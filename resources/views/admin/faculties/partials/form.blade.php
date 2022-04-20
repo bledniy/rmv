@@ -1,4 +1,3 @@
-<?php /** @var $container \App\Services\Admin\Page\PageShowFieldsContainer */ ?>
 @include('admin.partials.crud.elements.name')
 
 <div class="row">
@@ -13,6 +12,7 @@
 </div>
 
     @include('admin.partials.crud.elements.image-upload-group')
+
 <div class="row">
     <div class="col-3">
         @include('admin.partials.crud.elements.active')

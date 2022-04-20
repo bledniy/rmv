@@ -29,7 +29,7 @@ class DepartmentController extends AdminController
 
     protected $key = '$department';
 
-    protected $routeKey = 'admin.department';
+    protected $routeKey = 'admin.departments';
 
     protected $permissionKey = '$department';
     /**
@@ -40,7 +40,7 @@ class DepartmentController extends AdminController
     public function __construct(DepartmentRepository $repository)
     {
         parent::__construct();
-        $this->name = __('modules.department.title');
+        $this->name = __('modules.departments.title');
         $this->addBreadCrumb($this->name, $this->resourceRoute('index'));
         $this->shareViewModuleData();
         $this->repository = $repository;
@@ -55,7 +55,7 @@ class DepartmentController extends AdminController
     {
         $this->setTitle($this->name);
         $vars['list'] = $departmentRepository->getListForAdmin();
-        $data['content'] = view('admin.department.index', $vars);
+        $data['content'] = view('admin.departments.index', $vars);
 
         return $this->main($data);
     }
@@ -67,7 +67,7 @@ class DepartmentController extends AdminController
      */
     public function create()
     {
-        $data['content'] = view('admin.department.create');
+        $data['content'] = view('admin.departments.create');
 
         return $this->main($data);
     }
@@ -106,7 +106,7 @@ class DepartmentController extends AdminController
         $this->addBreadCrumb($this->titleEdit($edit))->setTitle($this->titleEdit($edit));
 
         $with = compact(array_keys(get_defined_vars()));
-        $data['content'] = view('admin.department.edit')->with($with);
+        $data['content'] = view('admin.departments.edit')->with($with);
 
         return $this->main($data);
     }

@@ -41,6 +41,7 @@ class CreateDepartmentsTable extends Migration
 
         Schema::create($this->tableLang, function (Blueprint $table) {
             $this->builder->setTable($table);
+            $table->unsignedBigInteger($this->foreignKey);
 
             $this->builder
                 ->createName()

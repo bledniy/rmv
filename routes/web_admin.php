@@ -64,8 +64,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
             ], ['as' => 'admin', 'except' => ['show']]
             );
             
-            Route::resource('departments', DepartmentController::class);
-            Route::resource('faculties', FacultieController::class);
+            Route::resource('departments', DepartmentController::class, ['except' => ['show'], 'as' => 'admin']);
+            Route::resource('faculties', FacultieController::class, ['except' => ['show'], 'as' => 'admin']);
 
             Route::post('/menu/nesting', [MenuController::class, 'nesting'])->name('admin.menu.nesting');
             Route::post('/admin-menus/nesting', [AdminMenuController::class, 'nesting'])->name('admin.admin-menus.nesting');

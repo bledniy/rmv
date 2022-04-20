@@ -40,7 +40,7 @@ class FacultieController extends AdminController
     public function __construct(FacultieRepository $repository)
     {
         parent::__construct();
-        $this->name = __('modules.facultie.title');
+        $this->name = __('modules.faculties.title');
         $this->addBreadCrumb($this->name, $this->resourceRoute('index'));
         $this->shareViewModuleData();
         $this->repository = $repository;
@@ -54,7 +54,7 @@ class FacultieController extends AdminController
     {
         $this->setTitle($this->name);
         $vars['list'] = $facultieRepository->getListForAdmin();
-        $data['content'] = view('admin.facultie.index', $vars);
+        $data['content'] = view('admin.faculties.index', $vars);
 
         return $this->main($data);
     }
@@ -66,7 +66,7 @@ class FacultieController extends AdminController
      */
     public function create()
     {
-        $data['content'] = view('admin.facultie.create');
+        $data['content'] = view('admin.faculties.create');
 
         return $this->main($data);
     }
@@ -105,7 +105,7 @@ class FacultieController extends AdminController
         $this->addBreadCrumb($this->titleEdit($edit))->setTitle($this->titleEdit($edit));
 
         $with = compact(array_keys(get_defined_vars()));
-        $data['content'] = view('admin.facultie.edit')->with($with);
+        $data['content'] = view('admin.faculties.edit')->with($with);
 
         return $this->main($data);
     }
