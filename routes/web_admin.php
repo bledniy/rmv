@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\Content\BrandsController;
 use App\Http\Controllers\Admin\Content\VacancyController;
 use App\Http\Controllers\Admin\Department\DepartmentController;
+use App\Http\Controllers\Admin\Facultie\FacultieController;
 use App\Http\Controllers\Admin\Feedback\FeedbackController;
 use App\Http\Controllers\Admin\IndexController;
 use App\Http\Controllers\Admin\MenuController;
@@ -25,7 +26,6 @@ use App\Http\Controllers\Admin\Slider\SliderController;
 use App\Http\Controllers\Admin\Staff\LogViewController;
 use App\Http\Controllers\Admin\TranslateController;
 use App\Http\Controllers\Admin\User\UserController;
-use App\Http\Controllers\FacultieController;
 
 Route::group(['prefix' => 'admin'], static function () {
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('admin.login');

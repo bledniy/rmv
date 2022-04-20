@@ -29,9 +29,9 @@ class FacultieController extends AdminController
 
     protected $key = 'facultie';
 
-    protected $routeKey = 'admin.facultie';
+    protected $routeKey = 'admin.faculties';
 
-    protected $permissionKey = 'facultie';
+    protected $permissionKey = 'faculties';
     /**
      * @var FacultieRepository
      */
@@ -40,7 +40,7 @@ class FacultieController extends AdminController
     public function __construct(FacultieRepository $repository)
     {
         parent::__construct();
-        $this->name = __('modules.faculties.title');
+        $this->name = __('modules.facultie.title');
         $this->addBreadCrumb($this->name, $this->resourceRoute('index'));
         $this->shareViewModuleData();
         $this->repository = $repository;
