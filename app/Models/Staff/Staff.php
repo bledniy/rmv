@@ -15,6 +15,8 @@ class Staff extends Model implements HasLocalized, HasImagesContract
     use RedirectLangColumn;
     use ImageAttributeTrait;
 
+    protected $table = 'staffs';
+
     protected $langColumns = [
         'name', 'description', 'language_id',
     ];

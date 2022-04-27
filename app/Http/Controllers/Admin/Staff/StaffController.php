@@ -6,7 +6,7 @@ use App\Helpers\Media\ImageRemover;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Requests\Admin\StaffRequest;
 use App\Models\Staff\Staff;
-use App\Repositories\FacultieRepository;
+use App\Repositories\StaffRepository;
 use App\Traits\Authorizable;
 use App\Traits\Controllers\SaveImageTrait;
 use Illuminate\Contracts\Foundation\Application;
@@ -32,14 +32,14 @@ class StaffController extends AdminController
 
     protected $permissionKey = 'staff';
     /**
-     * @var FacultieRepository
+     * @var StaffRepository
      */
     private $repository;
 
-    public function __construct(FacultieRepository $repository)
+    public function __construct(StaffRepository $repository)
     {
         parent::__construct();
-        $this->name = __('modules.staff.title');
+        $this->name = __('modules.staffs.title');
         $this->addBreadCrumb($this->name, $this->resourceRoute('index'));
         $this->shareViewModuleData();
         $this->repository = $repository;
@@ -49,7 +49,7 @@ class StaffController extends AdminController
      *
      * @return Application|Factory|View
      */
-    public function index(FacultieRepository $staffRepository)
+    public function index(StaffRepository $staffRepository)
     {
         $this->setTitle($this->name);
         $vars['list'] = $staffRepository->getListForAdmin();

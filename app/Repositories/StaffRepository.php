@@ -2,31 +2,30 @@
 
 namespace App\Repositories;
 
-use App\Models\Faculty\Faculty;
-use App\Models\Faculty\FacultyLang;
+use App\Models\Staff\Staff;
+use App\Models\Staff\StaffLang;
 use App\Models\Language;
 use App\Models\Model;
 use App\Models\ModelLang;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**
- * Class FacultieRepository.
+ * Class StaffRepository.
  */
-class FacultieRepository extends AbstractRepository
+class StaffRepository extends AbstractRepository
 {
-
 	/**
 	 * @return string
 	 *  Return the model
 	 */
 	public function model()
 	{
-		return Faculty::class;
+		return Staff::class;
 	}
 
 	public function modelLang()
 	{
-		return FacultyLang::class;
+		return StaffLang::class;
 	}
 
 	public function create(array $attributes)
@@ -40,8 +39,8 @@ class FacultieRepository extends AbstractRepository
 		return $entity;
 	}
 
-	private function fillForCreate(Faculty $facultie, Language $language, array $attributes)
-	{
+	private function fillForCreate(Staff $facultie, Language $language, array $attributes): void
+    {
 		$attributes[$facultie->getForeignKey()] = $facultie->getKey();
 		$attributes[$language->getForeignKey()] = $language->getKey();
 		$entityLang = $this->makeModelLang();
@@ -66,16 +65,16 @@ class FacultieRepository extends AbstractRepository
 	public function getListForAdmin(): LengthAwarePaginator
 	{
 		/** @var  $list */
-		$list = Faculty::with('lang')->paginate();
+		$list = Staff::with('lang')->paginate();
 
 		return $list;
 	}
 
     /**
      * @param $id
-     * @return Faculty
+     * @return Staff
      */
-	public function findForEdit($id): Faculty
+	public function findForEdit($id): Staff
 	{
 		return $this->with('lang')->findOrFail($id);
 	}
