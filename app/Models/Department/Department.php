@@ -3,12 +3,13 @@
 namespace App\Models\Department;
 
 use App\Contracts\HasImagesContract;
+use App\Contracts\HasLocalized;
 use App\Models\Model;
 use App\Traits\Models\HasImages;
 use App\Traits\Models\ImageAttributeTrait;
 use App\Traits\Models\Localization\RedirectLangColumn;
 
-class Department extends Model implements HasImagesContract
+class Department extends Model implements HasLocalized, HasImagesContract
 {
     use HasImages;
     use RedirectLangColumn;
@@ -18,7 +19,7 @@ class Department extends Model implements HasImagesContract
         'name', 'title', 'description', 'excerpt', 'language_id',
     ];
 
-    protected $hasOneLangArguments = [DepartmentLang::class, 'departments'];
+    protected $hasOneLangArguments = [DepartmentLang::class];
 
     protected $casts = [
         'active' => 'bool',
@@ -41,7 +42,7 @@ class Department extends Model implements HasImagesContract
         return (string)$this->getAttribute('description');
     }
 
-    public function getName(): string
+    public function getTitle(): string
     {
         return (string)$this->getAttribute('name');
     }

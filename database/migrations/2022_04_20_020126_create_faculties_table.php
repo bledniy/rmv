@@ -15,9 +15,9 @@ class CreateFacultiesTable extends Migration
 
     private $table = 'faculties';
 
-    private $foreignKey = 'faculties_id';
+    private $foreignKey = 'faculty_id';
 
-    private $tableLang = 'faculties_langs';
+    private $tableLang = 'faculty_langs';
 
     public function __construct()
     {
@@ -47,7 +47,8 @@ class CreateFacultiesTable extends Migration
                 ->createName()
                 ->createTitle()
                 ->createLongDescription()
-                ->createExcerpt();
+                ->createExcerpt()
+                ->createLanguageKey();
 
             $table->foreign($this->foreignKey)
                 ->references('id')->on($this->table)

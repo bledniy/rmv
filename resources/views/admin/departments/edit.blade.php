@@ -1,4 +1,4 @@
-<?php /** @var $edit \App\Models\Department\Department */ ?>
+<?php /** @var $edit \App\Models\Faculty\Faculty */ ?>
 
 <form action="{{ route($routeKey . '.update', $edit->id) }}" method="post" class="form-horizontal"
       enctype="multipart/form-data">
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    @include('admin.pages.partials.form')
+    @include('admin.departments.partials.form')
 
     @include('admin.partials.submit_update_buttons')
 </form>

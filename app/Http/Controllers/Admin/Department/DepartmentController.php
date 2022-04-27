@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\Department;
 
 use App\Helpers\Media\ImageRemover;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Requests\Admin\DepartmentRequest;
 use App\Models\Department\Department;
 use App\Repositories\DepartmentRepository;
 use App\Traits\Authorizable;
@@ -12,8 +13,6 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Illuminate\Routing\Redirector;
 use Prettus\Validator\Exceptions\ValidatorException;
 
@@ -27,11 +26,11 @@ class DepartmentController extends AdminController
 
     private $name;
 
-    protected $key = '$department';
+    protected $key = 'department';
 
     protected $routeKey = 'admin.departments';
 
-    protected $permissionKey = '$department';
+    protected $permissionKey = 'department';
     /**
      * @var DepartmentRepository
      */
@@ -75,11 +74,11 @@ class DepartmentController extends AdminController
     /**
      * Store a newly created resource in storage.
      *
-     * @param Request $request
+     * @param DepartmentRequest $request
      * @return Application|RedirectResponse|Redirector
      * @throws ValidatorException
      */
-    public function store(Request $request)
+    public function store(DepartmentRequest $request)
     {
         $input = $request->only($request->getFillableFields('image'));
         if ($department = $this->repository->create($input)) {
@@ -98,7 +97,7 @@ class DepartmentController extends AdminController
      * Show the form for editing the specified resource.
      *
      * @param Department $department
-     * @return Application|Factory|View|Response
+     * @return Application|Factory|View
      */
     public function edit(Department $department)
     {
@@ -114,11 +113,12 @@ class DepartmentController extends AdminController
     /**
      * Update the specified resource in storage.
      *
-     * @param Request $request
+     * @param DepartmentRequest $request
      * @param Department $department
      * @return RedirectResponse
+     * @throws ValidatorException
      */
-    public function update(Request $request, Department $department): RedirectResponse
+    public function update(DepartmentRequest $request, Department $department): RedirectResponse
     {
         $input = $request->only($request->getFillableFields('image'));
         //
@@ -158,5 +158,9 @@ class DepartmentController extends AdminController
         }
 
         return redirect($this->resourceRoute('index'))->with($this->getResponseMessage());
+    }
+
+    private function fireEvents()
+    {
     }
 }

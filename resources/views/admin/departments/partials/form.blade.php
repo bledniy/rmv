@@ -1,9 +1,6 @@
 @include('admin.partials.crud.elements.name')
 
 <div class="row">
-    <div class="col-md-8">
-            @include('admin.partials.crud.elements.url')
-    </div>
     @if(isSuperAdmin())
         <div class="col-md-4">
             {{--            @include('admin.partials.crud.checkbox', ['name' => 'manual', 'title' => 'Manual url'])--}}

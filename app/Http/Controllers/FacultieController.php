@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Admin\AdminController;
-use App\Models\Facultie\Facultie;
+use App\Models\Faculty\Faculty;
 use Illuminate\Http\Request;
 
 class FacultieController extends AdminController
@@ -42,10 +42,10 @@ class FacultieController extends AdminController
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Facultie\Facultie  $facultie
+     * @param  \App\Models\Faculty\Faculty  $facultie
      * @return \Illuminate\Http\Response
      */
-    public function show(Facultie $facultie)
+    public function show(Faculty $facultie)
     {
         //
     }
@@ -53,10 +53,10 @@ class FacultieController extends AdminController
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Facultie\Facultie  $facultie
+     * @param  \App\Models\Faculty\Faculty  $facultie
      * @return \Illuminate\Http\Response
      */
-    public function edit(Facultie $facultie)
+    public function edit(Faculty $facultie)
     {
         //
     }
@@ -65,10 +65,10 @@ class FacultieController extends AdminController
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Facultie\Facultie  $facultie
+     * @param  \App\Models\Faculty\Faculty  $facultie
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Facultie $facultie)
+    public function update(Request $request, Faculty $facultie)
     {
         //
     }
@@ -76,10 +76,10 @@ class FacultieController extends AdminController
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Facultie\Facultie  $facultie
+     * @param  \App\Models\Faculty\Faculty  $facultie
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Facultie $facultie)
+    public function destroy(Faculty $facultie)
     {
         //
     }

@@ -4,7 +4,7 @@
 
     @include('admin.partials.submit_create_buttons')
 
-    @include('admin.pages.partials.form')
+    @include('admin.departments.partials.form')
 
     @include('admin.partials.submit_create_buttons')
 </form>

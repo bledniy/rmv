@@ -9,7 +9,7 @@ use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\Content\BrandsController;
 use App\Http\Controllers\Admin\Content\VacancyController;
 use App\Http\Controllers\Admin\Department\DepartmentController;
-use App\Http\Controllers\Admin\Facultie\FacultieController;
+use App\Http\Controllers\Admin\Faculty\FacultyController;
 use App\Http\Controllers\Admin\Feedback\FeedbackController;
 use App\Http\Controllers\Admin\IndexController;
 use App\Http\Controllers\Admin\MenuController;
@@ -65,7 +65,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
             );
             
             Route::resource('departments', DepartmentController::class, ['except' => ['show'], 'as' => 'admin']);
-            Route::resource('faculties', FacultieController::class, ['except' => ['show'], 'as' => 'admin']);
+            Route::resource('faculties', FacultyController::class, ['except' => ['show'], 'as' => 'admin']);
 
             Route::post('/menu/nesting', [MenuController::class, 'nesting'])->name('admin.menu.nesting');
             Route::post('/admin-menus/nesting', [AdminMenuController::class, 'nesting'])->name('admin.admin-menus.nesting');

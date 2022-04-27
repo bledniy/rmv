@@ -15,7 +15,7 @@
 		</thead>
 		<tbody>
 		@foreach($list as $item)
-            <?php /** @var $item \App\Models\Department\Department */ ?>
+            <?php /** @var $item \App\Models\Faculty\Faculty */ ?>
 			<tr>
 {{--				<td>--}}
 {{--					<div class="img-container">--}}

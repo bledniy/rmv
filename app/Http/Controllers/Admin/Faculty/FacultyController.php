@@ -1,10 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace App\Http\Controllers\Admin\Facultie;
+namespace App\Http\Controllers\Admin\Faculty;
 
 use App\Helpers\Media\ImageRemover;
 use App\Http\Controllers\Admin\AdminController;
-use App\Models\Facultie\Facultie;
+use App\Http\Requests\Admin\FacultieRequest;
+use App\Models\Faculty\Faculty;
 use App\Repositories\FacultieRepository;
 use App\Traits\Authorizable;
 use App\Traits\Controllers\SaveImageTrait;
@@ -12,12 +13,10 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Illuminate\Routing\Redirector;
 use Prettus\Validator\Exceptions\ValidatorException;
 
-class FacultieController extends AdminController
+class FacultyController extends AdminController
 {
     use Authorizable;
     use SaveImageTrait;
@@ -27,11 +26,11 @@ class FacultieController extends AdminController
 
     private $name;
 
-    protected $key = 'facultie';
+    protected $key = 'faculty';
 
     protected $routeKey = 'admin.faculties';
 
-    protected $permissionKey = 'faculties';
+    protected $permissionKey = 'faculty';
     /**
      * @var FacultieRepository
      */
@@ -40,7 +39,7 @@ class FacultieController extends AdminController
     public function __construct(FacultieRepository $repository)
     {
         parent::__construct();
-        $this->name = __('modules.facultie.title');
+        $this->name = __('modules.faculty.title');
         $this->addBreadCrumb($this->name, $this->resourceRoute('index'));
         $this->shareViewModuleData();
         $this->repository = $repository;
@@ -50,10 +49,10 @@ class FacultieController extends AdminController
      *
      * @return Application|Factory|View
      */
-    public function index(FacultieRepository $facultieRepository)
+    public function index(FacultieRepository $facultyRepository)
     {
         $this->setTitle($this->name);
-        $vars['list'] = $facultieRepository->getListForAdmin();
+        $vars['list'] = $facultyRepository->getListForAdmin();
         $data['content'] = view('admin.faculties.index', $vars);
 
         return $this->main($data);
@@ -74,20 +73,20 @@ class FacultieController extends AdminController
     /**
      * Store a newly created resource in storage.
      *
-     * @param Request $request
+     * @param FacultieRequest $request
      * @return Application|RedirectResponse|Redirector
      * @throws ValidatorException
      */
-    public function store(Request $request)
+    public function store(FacultieRequest $request)
     {
         $input = $request->only($request->getFillableFields('image'));
-        if ($facultie = $this->repository->create($input)) {
+        if ($faculty = $this->repository->create($input)) {
             $this->setSuccessStore();
-            $this->saveImage($request, $facultie);
+            $this->saveImage($request, $faculty);
             $this->fireEvents();
         }
         if ($request->has('createOpen')) {
-            return redirect($this->resourceRoute('edit', $facultie->getKey()))->with($this->getResponseMessage());
+            return redirect($this->resourceRoute('edit', $faculty->getKey()))->with($this->getResponseMessage());
         }
 
         return redirect($this->resourceRoute('index'))->with($this->getResponseMessage());
@@ -96,12 +95,12 @@ class FacultieController extends AdminController
     /**
      * Show the form for editing the specified resource.
      *
-     * @param Facultie $facultie
-     * @return Application|Factory|View|Response
+     * @param Faculty $faculty
+     * @return Application|Factory|View
      */
-    public function edit(Facultie $facultie)
+    public function edit(Faculty $faculty)
     {
-        $edit = $this->repository->findForEdit($facultie->getKey());
+        $edit = $this->repository->findForEdit($faculty->getKey());
         $this->addBreadCrumb($this->titleEdit($edit))->setTitle($this->titleEdit($edit));
 
         $with = compact(array_keys(get_defined_vars()));
@@ -113,22 +112,23 @@ class FacultieController extends AdminController
     /**
      * Update the specified resource in storage.
      *
-     * @param Request $request
-     * @param Facultie $facultie
+     * @param FacultieRequest $request
+     * @param Faculty $faculty
      * @return RedirectResponse
+     * @throws ValidatorException
      */
-    public function update(Request $request, Facultie $facultie): RedirectResponse
+    public function update(FacultieRequest $request, Faculty $faculty): RedirectResponse
     {
         $input = $request->only($request->getFillableFields('image'));
         //
-        $this->saveImage($request, $facultie);
-        if ($this->repository->update($input, $facultie)) {
+        $this->saveImage($request, $faculty);
+        if ($this->repository->update($input, $faculty)) {
             $this->setSuccessUpdate();
             $this->fireEvents();
         }
 
         if ($request->hasFile('images')) {
-            $this->saveAdditionalImages($facultie, $request);
+            $this->saveAdditionalImages($faculty, $request);
         }
 
         if ($request->has('saveClose')) {
@@ -141,15 +141,15 @@ class FacultieController extends AdminController
     /**
      * Remove the specified resource from storage.
      *
-     * @param Facultie $facultie
+     * @param Faculty $faculty
      * @param ImageRemover $imageRemover
      * @return Application|Redirector|RedirectResponse
      */
-    public function destroy(Facultie $facultie, ImageRemover $imageRemover)
+    public function destroy(Faculty $faculty, ImageRemover $imageRemover)
     {
-        if ($this->repository->delete($facultie->getKey())) {
-            $imageRemover->removeImage($facultie->image);
-            foreach ($facultie->getImages() as $image) {
+        if ($this->repository->delete($faculty->getKey())) {
+            $imageRemover->removeImage($faculty->image);
+            foreach ($faculty->getImages() as $image) {
                 $imageRemover->removeImage($image->image);
             }
             $this->setSuccessDestroy();
@@ -157,5 +157,9 @@ class FacultieController extends AdminController
         }
 
         return redirect($this->resourceRoute('index'))->with($this->getResponseMessage());
+    }
+
+    private function fireEvents()
+    {
     }
 }

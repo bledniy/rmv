@@ -47,7 +47,8 @@ class CreateDepartmentsTable extends Migration
                 ->createName()
                 ->createTitle()
                 ->createLongDescription()
-                ->createExcerpt();
+                ->createExcerpt()
+                ->createLanguageKey();
 
             $table->foreign($this->foreignKey)
                 ->references('id')->on($this->table)

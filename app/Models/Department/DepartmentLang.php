@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class DepartmentLang extends ModelLang
 {
 
-    protected $primaryKey = ['news_id', 'language_id'];
+    protected $primaryKey = ['department_id', 'language_id'];
 
     protected $guarded = [];
 

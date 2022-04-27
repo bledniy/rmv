@@ -3,15 +3,12 @@
 namespace App\Repositories;
 
 use App\Criteria\ActiveCriteria;
-use App\Criteria\PublishedAtCriteria;
 use App\DataContainers\News\SearchDataContainer;
-use App\Models\Facultie\Facultie;
-use App\Models\Facultie\FacultieLang;
+use App\Models\Faculty\Faculty;
+use App\Models\Faculty\FacultyLang;
 use App\Models\Language;
 use App\Models\Model;
 use App\Models\ModelLang;
-use App\Models\News\News;
-use App\Models\News\NewsLang;
 use App\Traits\Repositories\RebuildNextAndPrev;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
@@ -30,12 +27,12 @@ class FacultieRepository extends AbstractRepository
 	 */
 	public function model()
 	{
-		return Facultie::class;
+		return Faculty::class;
 	}
 
 	public function modelLang()
 	{
-		return FacultieLang::class;
+		return FacultyLang::class;
 	}
 
 	public function create(array $attributes)
@@ -49,9 +46,9 @@ class FacultieRepository extends AbstractRepository
 		return $entity;
 	}
 
-	private function fillForCreate(News $news, Language $language, array $attributes)
+	private function fillForCreate(Faculty $facultie, Language $language, array $attributes)
 	{
-		$attributes[$news->getForeignKey()] = $news->getKey();
+		$attributes[$facultie->getForeignKey()] = $facultie->getKey();
 		$attributes[$language->getForeignKey()] = $language->getKey();
 		$entityLang = $this->makeModelLang();
 		$entityLang->fillExisting($attributes)->save();
@@ -72,38 +69,21 @@ class FacultieRepository extends AbstractRepository
 		return $model;
 	}
 
-	public function addPublicCriteriaToQuery(): self
-	{
-		$this->pushCriteria($this->app->make(ActiveCriteria::class)->setTable('news'));
-		$this->pushCriteria($this->app->make(PublishedAtCriteria::class)->setTable('news'));
-		$this->applyCriteria()->resetCriteria();
-
-		return $this;
-	}
-
 	public function getListForAdmin(): LengthAwarePaginator
 	{
 		/** @var  $list */
-		$list = Facultie::with('lang')->orderBy('published_at', 'desc')->paginate();
+		$list = Faculty::with('lang')->paginate();
 
 		return $list;
 	}
 
     /**
      * @param $id
-     * @return Facultie
+     * @return Faculty
      */
-	public function findForEdit($id): Facultie
+	public function findForEdit($id): Faculty
 	{
 		return $this->with('lang')->findOrFail($id);
-	}
-
-	public function findByUrl(string $url): Facultie
-	{
-		return $this->addPublicCriteriaToQuery()
-			->where('url', $url)->with(['lang', 'nextNew.lang', 'nextNew.nextNew.lang', 'category.lang'])
-			->firstOrFail()
-		;
 	}
 
 	public function getListPublic(SearchDataContainer $dataContainer): LengthAwarePaginator
@@ -135,7 +115,7 @@ class FacultieRepository extends AbstractRepository
 	}
 
 	/**
-	 * @return Collection|Facultie[]
+	 * @return Collection|Faculty[]
 	 */
 	public function getForNotification(): Collection
 	{
@@ -146,14 +126,14 @@ class FacultieRepository extends AbstractRepository
 	}
 
 	/**
-	 * @return Collection|Facultie[]
+	 * @return Collection|Faculty[]
 	 * @throws RepositoryException
 	 */
-	public function getOneNewsWithJoinedLanguages(int $newsId): Collection
+	public function getOneNewsWithJoinedLanguages(int $facultieId): Collection
 	{
 		$this->model = $this->initBuilder();
 		$this->model = $this->joinLangs($this->model, 'inner');
-		$this->whereKey($newsId);
+		$this->whereKey($facultieId);
 
 		return $this->get();
 	}

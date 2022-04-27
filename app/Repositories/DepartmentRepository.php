@@ -81,7 +81,7 @@ class DepartmentRepository extends AbstractRepository
 	public function getListForAdmin(): LengthAwarePaginator
 	{
 		/** @var  $list */
-		$list = Department::with('lang')->orderBy('published_at', 'desc')->paginate();
+		$list = Department::with('lang')->paginate();
 
 		return $list;
 	}

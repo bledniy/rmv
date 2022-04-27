@@ -1,14 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace App\Models\Facultie;
+namespace App\Models\Faculty;
 
+use App\Contracts\HasImagesContract;
 use App\Contracts\HasLocalized;
 use App\Models\Model;
 use App\Traits\Models\HasImages;
 use App\Traits\Models\ImageAttributeTrait;
 use App\Traits\Models\Localization\RedirectLangColumn;
 
-class Facultie extends Model implements HasLocalized
+class Faculty extends Model implements HasLocalized, HasImagesContract
 {
     use HasImages;
     use RedirectLangColumn;
@@ -18,7 +19,7 @@ class Facultie extends Model implements HasLocalized
         'name', 'title', 'description', 'excerpt', 'language_id',
     ];
 
-    protected $hasOneLangArguments = [FacultieLang::class, 'faculties'];
+    protected $hasOneLangArguments = [FacultyLang::class];
 
     protected $casts = [
         'active' => 'bool',
@@ -41,7 +42,7 @@ class Facultie extends Model implements HasLocalized
         return (string)$this->getAttribute('description');
     }
 
-    public function getName(): string
+    public function getTitle(): string
     {
         return (string)$this->getAttribute('name');
     }
