@@ -24,6 +24,7 @@ use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\Slider\SliderController;
 use App\Http\Controllers\Admin\Staff\LogViewController;
+use App\Http\Controllers\Admin\Staff\StaffController;
 use App\Http\Controllers\Admin\TranslateController;
 use App\Http\Controllers\Admin\User\UserController;
 
@@ -66,6 +67,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
             
             Route::resource('departments', DepartmentController::class, ['except' => ['show'], 'as' => 'admin']);
             Route::resource('faculties', FacultyController::class, ['except' => ['show'], 'as' => 'admin']);
+            Route::resource('staffs', StaffController::class, ['except' => ['show'], 'as' => 'admin']);
 
             Route::post('/menu/nesting', [MenuController::class, 'nesting'])->name('admin.menu.nesting');
             Route::post('/admin-menus/nesting', [AdminMenuController::class, 'nesting'])->name('admin.admin-menus.nesting');

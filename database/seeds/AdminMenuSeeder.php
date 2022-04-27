@@ -48,6 +48,7 @@ class AdminMenuSeeder extends AbstractSeeder
             $this->getBuilder()->setName(__('modules.news.title_plural'))->setUrl('/news')->setGateRule('view_news')->build(),
             $this->getBuilder()->setName('Факультеты')->setUrl('/faculties')->setGateRule('view_faculties')->build(),
             $this->getBuilder()->setName('Отделы')->setUrl('/departments')->setGateRule('view_departments')->build(),
+            $this->getBuilder()->setName('Состав совета')->setUrl('/staffs')->setGateRule('view_staffs')->build(),
 
 
 //            $this->getBuilder()->setName('Бренды')->setUrl('/' . ContentTypeEnum::BRAND)->setGateRule('view_' . ContentTypeEnum::BRAND)->build(),
