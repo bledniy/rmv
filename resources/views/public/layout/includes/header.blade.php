@@ -1,20 +1,41 @@
+<?php /** @var $faculty \App\Models\Faculty\Faculty[] */ ?>
+<?php /** @var $department \App\Models\Department\Department[] */ ?>
 <header class="header">
     <div class="container">
-        <a class="logo" data-aos="fade" data-aos-duration="2000" href="{{ url('/') }}">
-            <img src="{{ asset('assets/img/Logo.svg') }}">
-        </a>
-        <nav class="links" data-aos="fade" data-aos-duration="2000">
-            @includeIf('public.layout.includes.menu-items')
-        </nav>
-        <button class="button-type-one buttons-support" data-aos="fade" data-aos-duration="2000">Связаться с нами</button>
-        <div class="header__mob">
-            <button class="button-type-none" id="nav-menu"><span></span></button>
-            <div class="header__mob__modal">
-                <nav class="nav">
-                    @includeIf('public.layout.includes.menu-items')
-                </nav>
-                <button class="button-type-one buttons-support">Связаться с нами</button>
-            </div>
-        </div>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="{{ url('/') }}">
+                    <img src="{{ asset('assets/img/Logo.jpg') }}" width="50" height="50">
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <p class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false">Склад ради</p>
+                <div class="dropdown-menu">
+                    @foreach($faculties as $faculty)
+                        <a href="{{route('faculty.show', $faculty->getKey())}}"
+                           class="dropdown-item">{{$faculty->getTitle()}}</a>
+                    @endforeach
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <p class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false">Відділи</p>
+                <div class="dropdown-menu">
+                    @foreach($departments as $department)
+                        <a href="{{route('department.show', $department->getKey())}}"
+                           class="dropdown-item">{{$department->getTitle()}}</a>
+                    @endforeach
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Контакти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Новини</a>
+            </li>
+        </ul>
     </div>
 </header>

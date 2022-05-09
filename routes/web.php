@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\FacultyController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
@@ -10,7 +12,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
     Route::get('/', [HomeController::class, 'home'])->name('home');
     Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
-    Route::get('/vacancy', [VacancyController::class, 'index'])->name('vacancy');
+    Route::get('/faculty/{id}', [FacultyController::class, 'index'])->name('faculty.show');
+    Route::get('/department/{id}', [DepartmentController::class, 'index'])->name('department.show');
 
     Route::get('/news', [NewsController::class, 'index'])->name('news.index');
     Route::get('/news/load-more', [NewsController::class, 'loadMore'])->name('news.load-more');

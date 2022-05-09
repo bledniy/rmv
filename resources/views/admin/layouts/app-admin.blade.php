@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ mix('_admin/css/material-dashboard.css') }}"/>
     <link rel="stylesheet" href="{{ mix('_admin/css/styles.css') }}"/>
     <script type="text/javascript" src="{{ asset('js/core/jquery.min.js') }}"></script>
-    <link rel="icon" href="{{ asset('logo.svg') }}" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="{{ asset('assets/img/Logo.jpg') }}" sizes="any" type="image/svg+xml">
 </head>
 <body>
 

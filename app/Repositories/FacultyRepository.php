@@ -10,9 +10,9 @@ use App\Models\ModelLang;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**
- * Class FacultieRepository.
+ * Class FacultyRepository.
  */
-class FacultieRepository extends AbstractRepository
+class FacultyRepository extends AbstractRepository
 {
 
 	/**

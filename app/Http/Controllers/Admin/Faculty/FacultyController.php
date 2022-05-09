@@ -6,7 +6,7 @@ use App\Helpers\Media\ImageRemover;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Requests\Admin\FacultieRequest;
 use App\Models\Faculty\Faculty;
-use App\Repositories\FacultieRepository;
+use App\Repositories\FacultyRepository;
 use App\Traits\Authorizable;
 use App\Traits\Controllers\SaveImageTrait;
 use Illuminate\Contracts\Foundation\Application;
@@ -32,11 +32,11 @@ class FacultyController extends AdminController
 
     protected $permissionKey = 'faculty';
     /**
-     * @var FacultieRepository
+     * @var FacultyRepository
      */
     private $repository;
 
-    public function __construct(FacultieRepository $repository)
+    public function __construct(FacultyRepository $repository)
     {
         parent::__construct();
         $this->name = __('modules.faculty.title');
@@ -49,7 +49,7 @@ class FacultyController extends AdminController
      *
      * @return Application|Factory|View
      */
-    public function index(FacultieRepository $facultyRepository)
+    public function index(FacultyRepository $facultyRepository)
     {
         $this->setTitle($this->name);
         $vars['list'] = $facultyRepository->getListForAdmin();

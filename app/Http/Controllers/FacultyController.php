@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Department\Department;
+use App\Http\Controllers\Admin\AdminController;
+use App\Models\Faculty\Faculty;
 use Illuminate\Http\Request;
 
-class DepartmentController extends Controller
+class FacultyController extends AdminController
 {
     /**
      * Display a listing of the resource.
