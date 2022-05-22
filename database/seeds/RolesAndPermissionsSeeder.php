@@ -88,8 +88,7 @@ class RolesAndPermissionsSeeder extends Seeder
             'sliders',
             'faculties',
             'departments',
-            ContentTypeEnum::BRAND,
-            ContentTypeEnum::VACANCY,
+            'staffs'
 		];
 
 		foreach ($create as $entity) {

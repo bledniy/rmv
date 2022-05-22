@@ -39,7 +39,7 @@ class Staff extends Model implements HasLocalized, HasImagesContract
         return (string)$this->getAttribute('description');
     }
 
-    public function getTitle(): string
+    public function getName(): string
     {
         return (string)$this->getAttribute('name');
     }

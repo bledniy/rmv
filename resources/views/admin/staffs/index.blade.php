@@ -25,7 +25,7 @@
 {{--					</div>--}}
 {{--				</td>--}}
 				<td>
-					<a href="{{ route($routeKey .'.edit', $item->getKey())  }}">{{ $item->getTitle() }}</a>
+					<a href="{{ route($routeKey .'.edit', $item->getKey())  }}">{{ $item->getName() }}</a>
 				</td>
 {{--				<td>--}}
 {{--					@include('admin.partials.preview-button', ['link' => $item->getRouteUrl()])--}}

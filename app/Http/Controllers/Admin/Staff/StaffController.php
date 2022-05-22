@@ -4,8 +4,11 @@ namespace App\Http\Controllers\Admin\Staff;
 
 use App\Helpers\Media\ImageRemover;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\Faculty\FacultyController;
 use App\Http\Requests\Admin\StaffRequest;
 use App\Models\Staff\Staff;
+use App\Repositories\DepartmentRepository;
+use App\Repositories\FacultyRepository;
 use App\Repositories\StaffRepository;
 use App\Traits\Authorizable;
 use App\Traits\Controllers\SaveImageTrait;
@@ -26,34 +29,49 @@ class StaffController extends AdminController
 
     private $name;
 
-    protected $key = 'staff';
+    protected $key = 'staffs';
 
     protected $routeKey = 'admin.staffs';
 
-    protected $permissionKey = 'staff';
+    protected $permissionKey = 'staffs';
     /**
      * @var StaffRepository
      */
-    private $repository;
+    private $staffRepository;
+    /**
+     * @var DepartmentRepository
+     */
+    private $departmentRepository;
+    /**
+     * @var FacultyRepository
+     */
+    private $facultyRepository;
 
-    public function __construct(StaffRepository $repository)
+    public function __construct(
+        StaffRepository $staffRepository,
+        DepartmentRepository $departmentRepository,
+        FacultyRepository $facultyRepository
+    )
     {
         parent::__construct();
         $this->name = __('modules.staffs.title');
         $this->addBreadCrumb($this->name, $this->resourceRoute('index'));
         $this->shareViewModuleData();
-        $this->repository = $repository;
+        $this->staffRepository = $staffRepository;
+        $this->departmentRepository = $departmentRepository;
+        $this->facultyRepository = $facultyRepository;
     }
     /**
      * Display a listing of the resource.
      *
      * @return Application|Factory|View
      */
-    public function index(StaffRepository $staffRepository)
+    public function index()
     {
         $this->setTitle($this->name);
-        $vars['list'] = $staffRepository->getListForAdmin();
-        $data['content'] = view('admin.staffs.index', $vars);
+        $list = $this->staffRepository->getListForAdmin();
+        $with = compact(array_keys(get_defined_vars()));
+        $data['content'] = view('admin.staffs.index', $with);
 
         return $this->main($data);
     }
@@ -65,7 +83,11 @@ class StaffController extends AdminController
      */
     public function create()
     {
-        $data['content'] = view('admin.staffs.create');
+        $departments = $this->departmentRepository->getListForAdmin();
+        $faculties = $this->facultyRepository->getListForAdmin();
+        $with = compact(array_keys(get_defined_vars()));
+
+        $data['content'] = view('admin.staffs.create', $with);
 
         return $this->main($data);
     }
@@ -80,7 +102,7 @@ class StaffController extends AdminController
     public function store(StaffRequest $request)
     {
         $input = $request->only($request->getFillableFields('image'));
-        if ($staff = $this->repository->create($input)) {
+        if ($staff = $this->staffRepository->create($input)) {
             $this->setSuccessStore();
             $this->saveImage($request, $staff);
             $this->fireEvents();
@@ -100,7 +122,7 @@ class StaffController extends AdminController
      */
     public function edit(Staff $staff)
     {
-        $edit = $this->repository->findForEdit($staff->getKey());
+        $edit = $this->staffRepository->findForEdit($staff->getKey());
         $this->addBreadCrumb($this->titleEdit($edit))->setTitle($this->titleEdit($edit));
 
         $with = compact(array_keys(get_defined_vars()));
@@ -122,7 +144,7 @@ class StaffController extends AdminController
         $input = $request->only($request->getFillableFields('image'));
         //
         $this->saveImage($request, $staff);
-        if ($this->repository->update($input, $staff)) {
+        if ($this->staffRepository->update($input, $staff)) {
             $this->setSuccessUpdate();
             $this->fireEvents();
         }
@@ -147,7 +169,7 @@ class StaffController extends AdminController
      */
     public function destroy(Staff $staff, ImageRemover $imageRemover)
     {
-        if ($this->repository->delete($staff->getKey())) {
+        if ($this->staffRepository->delete($staff->getKey())) {
             $imageRemover->removeImage($staff->image);
             foreach ($staff->getImages() as $image) {
                 $imageRemover->removeImage($image->image);

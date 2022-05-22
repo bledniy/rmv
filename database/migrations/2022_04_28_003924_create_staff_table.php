@@ -31,10 +31,10 @@ class CreateStaffTable extends Migration
             $this->builder->setTable($table);
 
             $table->id();
-            $table->unsignedBigInteger('department_id');
-            $table->unsignedBigInteger('faculty_id');
+            $table->unsignedBigInteger('department_id')->nullable();
+            $table->unsignedBigInteger('faculty_id')->nullable();
             $this->builder
-                ->createNullableChar('mail')
+                ->createNullableChar('email')
                 ->createNullableChar('phone')
                 ->createNullableChar('type')
                 ->createImage()

@@ -1,4 +1,4 @@
-@include('admin.partials.crud.elements.name')
+@include('admin.partials.crud.elements.name', ['title' => 'Имя'])
 
 <div class="row">
     @if(isSuperAdmin())
@@ -21,3 +21,14 @@
 @include('admin.partials.crud.js.init-description')
 
 {{--@include('admin.partials.crud.textarea.excerpt')--}}
+
+
+@include('admin.partials.crud.elements.email')
+
+@include('admin.partials.crud.elements.phone')
+
+@include('admin.partials.crud.select.select', ['list' => $departments,'name' => 'department_id', 'column' => 'name', 'title' => 'Department'])
+
+@include('admin.partials.crud.select.select', ['list' => $faculties,'name' => 'faculty_id', 'column' => 'name', 'title' => 'Faculty'])
+
+

@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    @include('admin.departments.partials.form')
+    @include('admin.staffs.partials.form')
 
     @include('admin.partials.submit_update_buttons')
 </form>
