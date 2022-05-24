@@ -523,50 +523,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var axio
 
 /***/ }),
 
-/***/ "./resources/less/app/brands.css":
-/*!***************************************!*\
-  !*** ./resources/less/app/brands.css ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("throw new Error(\"Module build failed (from ./node_modules/css-loader/index.js):\\nModuleBuildError: Module build failed (from ./node_modules/less-loader/dist/cjs.js):\\nTypeError: this.getOptions is not a function\\n    at Object.lessLoader (/home/sharkpiko/PhpstormProjects/rmv/node_modules/less-loader/dist/index.js:19:24)\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/webpack/lib/NormalModule.js:316:20\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/loader-runner/lib/LoaderRunner.js:233:18\\n    at runMicrotasks (<anonymous>)\\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3Jlc291cmNlcy9sZXNzL2FwcC9icmFuZHMuY3NzLmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/less/app/brands.css\n");
-
-/***/ }),
-
-/***/ "./resources/less/app/fontawesome.css":
-/*!********************************************!*\
-  !*** ./resources/less/app/fontawesome.css ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("throw new Error(\"Module build failed (from ./node_modules/css-loader/index.js):\\nModuleBuildError: Module build failed (from ./node_modules/less-loader/dist/cjs.js):\\nTypeError: this.getOptions is not a function\\n    at Object.lessLoader (/home/sharkpiko/PhpstormProjects/rmv/node_modules/less-loader/dist/index.js:19:24)\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/webpack/lib/NormalModule.js:316:20\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/loader-runner/lib/LoaderRunner.js:233:18\\n    at runMicrotasks (<anonymous>)\\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3Jlc291cmNlcy9sZXNzL2FwcC9mb250YXdlc29tZS5jc3MuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/less/app/fontawesome.css\n");
-
-/***/ }),
-
-/***/ "./resources/less/app/solid.css":
-/*!**************************************!*\
-  !*** ./resources/less/app/solid.css ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("throw new Error(\"Module build failed (from ./node_modules/css-loader/index.js):\\nModuleBuildError: Module build failed (from ./node_modules/less-loader/dist/cjs.js):\\nTypeError: this.getOptions is not a function\\n    at Object.lessLoader (/home/sharkpiko/PhpstormProjects/rmv/node_modules/less-loader/dist/index.js:19:24)\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/webpack/lib/NormalModule.js:316:20\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/loader-runner/lib/LoaderRunner.js:233:18\\n    at runMicrotasks (<anonymous>)\\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3Jlc291cmNlcy9sZXNzL2FwcC9zb2xpZC5jc3MuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/less/app/solid.css\n");
-
-/***/ }),
-
-/***/ "./resources/less/app/style.css":
-/*!**************************************!*\
-  !*** ./resources/less/app/style.css ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("throw new Error(\"Module build failed (from ./node_modules/css-loader/index.js):\\nModuleBuildError: Module build failed (from ./node_modules/less-loader/dist/cjs.js):\\nTypeError: this.getOptions is not a function\\n    at Object.lessLoader (/home/sharkpiko/PhpstormProjects/rmv/node_modules/less-loader/dist/index.js:19:24)\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/webpack/lib/NormalModule.js:316:20\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at /home/sharkpiko/PhpstormProjects/rmv/node_modules/loader-runner/lib/LoaderRunner.js:233:18\\n    at runMicrotasks (<anonymous>)\\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3Jlc291cmNlcy9sZXNzL2FwcC9zdHlsZS5jc3MuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/less/app/style.css\n");
-
-/***/ }),
-
 /***/ "./resources/sass/admin/admin-main.scss":
 /*!**********************************************!*\
   !*** ./resources/sass/admin/admin-main.scss ***!
@@ -574,7 +530,51 @@ eval("throw new Error(\"Module build failed (from ./node_modules/css-loader/inde
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hZG1pbi9hZG1pbi1tYWluLnNjc3M/NDFjYiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3Jlc291cmNlcy9zYXNzL2FkbWluL2FkbWluLW1haW4uc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/admin/admin-main.scss\n");
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hZG1pbi9hZG1pbi1tYWluLnNjc3M/ZjQxNiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3Jlc291cmNlcy9zYXNzL2FkbWluL2FkbWluLW1haW4uc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/admin/admin-main.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/app/brands.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/app/brands.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvYnJhbmRzLnNjc3M/NzI3OSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3Jlc291cmNlcy9zYXNzL2FwcC9icmFuZHMuc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app/brands.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/app/fontawesome.scss":
+/*!*********************************************!*\
+  !*** ./resources/sass/app/fontawesome.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvZm9udGF3ZXNvbWUuc2Nzcz9iMDZlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL3Nhc3MvYXBwL2ZvbnRhd2Vzb21lLnNjc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/app/fontawesome.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/app/solid.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/app/solid.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc29saWQuc2Nzcz8yZTgzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL3Nhc3MvYXBwL3NvbGlkLnNjc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/app/solid.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/app/style.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/app/style.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc3R5bGUuc2Nzcz9hMDc4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL3Nhc3MvYXBwL3N0eWxlLnNjc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/app/style.scss\n");
 
 /***/ }),
 
@@ -585,7 +585,7 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9tYXRlcmlhbC1kYXNoYm9hcmQvbWF0ZXJpYWwtZGFzaGJvYXJkLnNjc3M/MDE3OSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3Jlc291cmNlcy9zYXNzL21hdGVyaWFsLWRhc2hib2FyZC9tYXRlcmlhbC1kYXNoYm9hcmQuc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/material-dashboard/material-dashboard.scss\n");
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9tYXRlcmlhbC1kYXNoYm9hcmQvbWF0ZXJpYWwtZGFzaGJvYXJkLnNjc3M/NDdjZiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3Jlc291cmNlcy9zYXNzL21hdGVyaWFsLWRhc2hib2FyZC9tYXRlcmlhbC1kYXNoYm9hcmQuc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/material-dashboard/material-dashboard.scss\n");
 
 /***/ }),
 
@@ -596,25 +596,25 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9wcm9saXRlL3N0eWxlcy5zY3NzPzFkNDciXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9wcm9saXRlL3N0eWxlcy5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/prolite/styles.scss\n");
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9wcm9saXRlL3N0eWxlcy5zY3NzPzdmYjYiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9wcm9saXRlL3N0eWxlcy5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/prolite/styles.scss\n");
 
 /***/ }),
 
 /***/ 0:
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/admin/app.js ./resources/less/app/style.css ./resources/less/app/fontawesome.css ./resources/less/app/brands.css ./resources/less/app/solid.css ./resources/sass/material-dashboard/material-dashboard.scss ./resources/sass/admin/admin-main.scss ./resources/sass/prolite/styles.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/admin/app.js ./resources/sass/material-dashboard/material-dashboard.scss ./resources/sass/admin/admin-main.scss ./resources/sass/prolite/styles.scss ./resources/sass/app/style.scss ./resources/sass/app/fontawesome.scss ./resources/sass/app/brands.scss ./resources/sass/app/solid.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/js/admin/app.js */"./resources/js/admin/app.js");
-__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/less/app/style.css */"./resources/less/app/style.css");
-__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/less/app/fontawesome.css */"./resources/less/app/fontawesome.css");
-__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/less/app/brands.css */"./resources/less/app/brands.css");
-__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/less/app/solid.css */"./resources/less/app/solid.css");
 __webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/material-dashboard/material-dashboard.scss */"./resources/sass/material-dashboard/material-dashboard.scss");
 __webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/admin/admin-main.scss */"./resources/sass/admin/admin-main.scss");
-module.exports = __webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/prolite/styles.scss */"./resources/sass/prolite/styles.scss");
+__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/prolite/styles.scss */"./resources/sass/prolite/styles.scss");
+__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/app/style.scss */"./resources/sass/app/style.scss");
+__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/app/fontawesome.scss */"./resources/sass/app/fontawesome.scss");
+__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/app/brands.scss */"./resources/sass/app/brands.scss");
+module.exports = __webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/app/solid.scss */"./resources/sass/app/solid.scss");
 
 
 /***/ })

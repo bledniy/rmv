@@ -37,7 +37,7 @@
 <script type="text/javascript" src="{{ assetVersioned('js/admin/admin-init.js') }}" defer></script>
 <script type="text/javascript" src="{{ assetVersioned('js/init.js') }}" defer></script>
 <script type="text/javascript" src="{{ assetVersioned('libs/nestable2/jquery.nestable.min.js') }}" defer></script>
-<script type="text/javascript" src="{{ mix('_admin/static/js/script.js') }}"></script>
+<script type="text/javascript" src="{{ mix('_admin/static/js/app.js') }}"></script>
 
 <script type="text/javascript" defer>
     $(document).ready(function (e) {

@@ -45,20 +45,7 @@
             <!--  -->
             <nav class="menu">
                 <ul class="menu__list">
-                    <li><a href="#" class="menu__link">Головна</a></li>
-                    <li>
-                        <a href="" class="menu__link">Відділи</a>
-                        <i class="menu__arrow arrow fa-solid fa-angle-down"></i>
-                        <ul class="sub-menu__list">
-                            @foreach($departments as $department)
-                                <li>
-                                    <a href="{{route('department.show', $department->getKey())}}"
-                                       class="sub-menu__link">{{$department->getTitle()}}</a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </li>
-                    <li><a href="#" class="menu__link">Контакти</a></li>
+                    <li><a href="{{route('home')}}" class="menu__link">Головна</a></li>
                     <li>
                         <a href="" class="menu__link">Склад ради</a>
                         <i class="menu__arrow arrow fa-solid fa-angle-down"></i>
@@ -71,6 +58,20 @@
                             @endforeach
                         </ul>
                     </li>
+                    <li>
+                        <a href="" class="menu__link">Відділи</a href="">
+                        <i class="menu__arrow arrow fa-solid fa-angle-down"></i>
+                        <ul class="sub-menu__list">
+                            @foreach($departments as $department)
+                                <li>
+                                    <a href="{{route('department.show', $department->getKey())}}"
+                                       class="sub-menu__link">{{$department->getTitle()}}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu__link">Документи</a></li>
+                    <li><a href="{{route('news.index')}}" class="menu__link">Новини</a></li>
                 </ul>
             </nav>
             <!--  -->

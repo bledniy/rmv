@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -98,62 +98,14 @@ eval("\n\nvar isMobile = {\n  Android: function Android() {\n    return navigato
 
 /***/ }),
 
-/***/ "./resources/sass/app/brands.scss":
-/*!****************************************!*\
-  !*** ./resources/sass/app/brands.scss ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvYnJhbmRzLnNjc3M/ZjhiYiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3Jlc291cmNlcy9zYXNzL2FwcC9icmFuZHMuc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app/brands.scss\n");
-
-/***/ }),
-
-/***/ "./resources/sass/app/fontawesome.scss":
-/*!*********************************************!*\
-  !*** ./resources/sass/app/fontawesome.scss ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvZm9udGF3ZXNvbWUuc2Nzcz9hYjU2Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL3Nhc3MvYXBwL2ZvbnRhd2Vzb21lLnNjc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/app/fontawesome.scss\n");
-
-/***/ }),
-
-/***/ "./resources/sass/app/solid.scss":
-/*!***************************************!*\
-  !*** ./resources/sass/app/solid.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc29saWQuc2Nzcz85YWRhIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL3Nhc3MvYXBwL3NvbGlkLnNjc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/app/solid.scss\n");
-
-/***/ }),
-
-/***/ "./resources/sass/app/style.scss":
-/*!***************************************!*\
-  !*** ./resources/sass/app/style.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc3R5bGUuc2Nzcz9mOWIyIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL3Nhc3MvYXBwL3N0eWxlLnNjc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/app/style.scss\n");
-
-/***/ }),
-
-/***/ 0:
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/script.js ./resources/sass/app/style.scss ./resources/sass/app/fontawesome.scss ./resources/sass/app/brands.scss ./resources/sass/app/solid.scss ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ 1:
+/*!**************************************!*\
+  !*** multi ./resources/js/script.js ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/js/script.js */"./resources/js/script.js");
-__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/app/style.scss */"./resources/sass/app/style.scss");
-__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/app/fontawesome.scss */"./resources/sass/app/fontawesome.scss");
-__webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/app/brands.scss */"./resources/sass/app/brands.scss");
-module.exports = __webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/sass/app/solid.scss */"./resources/sass/app/solid.scss");
+module.exports = __webpack_require__(/*! /home/sharkpiko/PhpstormProjects/rmv/resources/js/script.js */"./resources/js/script.js");
 
 
 /***/ })
