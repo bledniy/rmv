@@ -43,6 +43,6 @@ mix
     .sass('resources/sass/app/fontawesome.scss', 'public/static/css')
     .sass('resources/sass/app/brands.scss', 'public/static/css')
     .sass('resources/sass/app/solid.scss', 'public/static/css')
-    .js('resources/js/script.js', 'public/static/js')
+    .js('resources/js/app.js', 'public/static/js')
     .sourceMaps()
     .version();

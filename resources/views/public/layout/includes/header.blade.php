@@ -2,7 +2,7 @@
 <?php /** @var $department \App\Models\Department\Department[] */ ?>
 
 <header class="header">
-    <article class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__content">
                 <a href="mailto:rmv.onu.edu@gmail.com"
@@ -24,31 +24,28 @@
                         <a href="#"><i class="fas fa-link"></i></a>
                     </li>
                 </ul>
-
             </div>
         </div>
-    </article>
-    <article class="logo-search">
+    </section>
+    <section class="logo">
         <div class="container">
-            <div class="logo-search__content">
-                <figure class="logo__figure">
-                    <img src="{{ asset('assets/img/Logo.jpg') }}" alt="Рада молодих вченних" class="logo__img"/>
-                    <figcaption class="logo__figcaption">
-                        <h1 class="logo__main-header">Рада молодих вчених</h1>
-                        <h2 class="logo__university">Одеського національного університету імені І.І. Мечникова</h2>
-                    </figcaption>
-                </figure>
-                <form class="search__form" method="get" action="">
-                    <input class="search__input" type="text" name="search" placeholder="Введіть для пошуку..." value="">
-                    <button class="search__btn"><i class="fas fa-search"></i></button>
-                </form>
-            </div>
+            <figure class="logo__figure">
+                <img src="{{asset('Logo.jpg')}}" alt="Рада молодих вченних" class="logo__img" />
+                <figcaption class="logo__figcaption">
+                    <h1 class="logo__main-header">Рада молодих вчених</h1>
+                    <h2 class="logo__university">Одеського Національного Університету імені&nbsp;І.І.&nbsp;Мечникова</h2>
+                </figcaption>
+            </figure>
         </div>
-    </article>
-    <article class="navigation-menu">
+    </section>
+    <section class="navigation-menu">
         <div class="container">
-            <!--  -->
             <nav class="menu">
+                <button class="menu-burger">
+                    <i class="menu-burger__icon fa-solid fa-bars fa-fw"></i>
+                    <i class="menu-burger__icon fa-solid fa-xmark fa-fw"></i>
+                    <span class="menu-burger__text">Menu</span>
+                </button>
                 <ul class="menu__list">
                     <li>
                         <a href="{{route('home')}}" class="menu__link">Головна</a>
@@ -85,7 +82,6 @@
                     </li>
                 </ul>
             </nav>
-            <!--  -->
         </div>
-    </article>
+    </section>
 </header>

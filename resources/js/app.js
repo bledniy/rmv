@@ -38,6 +38,88 @@ if (isMobile.any()) {
 }
 
 
+
+// Burger Menu
+
+let btnBurger = document.querySelector('.menu-burger');
+let menu = btnBurger.nextElementSibling;
+btnBurger.addEventListener('click', function() {
+   btnBurger.classList.toggle('burger-active')
+   menu.classList.toggle('menu-active')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // if (isMobile.any()) {
 //    body.classList.add('touch');
 
