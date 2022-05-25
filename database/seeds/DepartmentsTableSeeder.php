@@ -39,22 +39,22 @@ class DepartmentsTableSeeder extends AbstractSeeder
             [
                 'name' => 'НАУКОВИЙ ВІДДІЛ',
                 'description' => Lorem::text(150),
-//                'image' => $this->factory->image()
+                'image' => $this->image($this->factory->imageUrl()),
             ],
             [
                 'name' => 'МІЖНАРОДНИЙ ВІДДІЛ',
                 'description' => Lorem::text(150),
-//                'image' => $this->factory->image()
+                'image' => $this->image($this->factory->imageUrl()),
             ],
             [
                 'name' => 'ВІДДІЛ РОБОТИ З ГРОМАДСЬКІСТЮ',
                 'description' => Lorem::text(150),
-//                'image' => $this->factory->image()
+                'image' => $this->image($this->factory->imageUrl()),
             ],
             [
                 'name' => 'ПРЕС-ЦЕНТР',
                 'description' => Lorem::text(150),
-//                'image' => $this->factory->image()
+                'image' => $this->image($this->factory->imageUrl()),
             ],
         ];
     }
