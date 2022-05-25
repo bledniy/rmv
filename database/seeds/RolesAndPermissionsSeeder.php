@@ -56,7 +56,7 @@ class RolesAndPermissionsSeeder extends Seeder
 //		$permissions = array_merge($permissions, $this->_getPermissionCrud('translate'));
 		$permissions = array_merge($permissions, $this->_getPermissionCrud('menu'));
 		$permissions = array_merge($permissions, $this->_getPermissionCrud('meta'));
-\		$permissions = array_merge($permissions, $this->_getPermissionCrud('news'));
+		$permissions = array_merge($permissions, $this->_getPermissionCrud('news'));
         $permissions = array_merge($permissions, $this->_getPermissionCrud('departments'));
         $permissions = array_merge($permissions, $this->_getPermissionCrud('faculties'));
 //        $permissions = array_merge($permissions, $this->_getPermissionCrud(ContentTypeEnum::BRAND));
