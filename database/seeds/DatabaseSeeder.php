@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RedirectsTableSeeder::class);
         $this->call(PageSeeder::class);
         $this->call(NewsTableSeeder::class);
-        $this->call(BrandSeeder::class);
-        $this->call(VacancyContentSeeder::class);
+        $this->call(DepartmentsTableSeeder::class);
+        $this->call(FacultiesTableSeeder::class);
     }
 }

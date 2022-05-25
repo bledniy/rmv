@@ -18,13 +18,13 @@ class DepartmentRepository extends AbstractRepository
 	 * @return string
 	 *  Return the model
 	 */
-	public function model()
-	{
+	public function model(): string
+    {
 		return Department::class;
 	}
 
-	public function modelLang()
-	{
+	public function modelLang(): string
+    {
 		return DepartmentLang::class;
 	}
 

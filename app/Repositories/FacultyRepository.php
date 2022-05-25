@@ -19,13 +19,13 @@ class FacultyRepository extends AbstractRepository
 	 * @return string
 	 *  Return the model
 	 */
-	public function model()
-	{
+	public function model(): string
+    {
 		return Faculty::class;
 	}
 
-	public function modelLang()
-	{
+	public function modelLang(): string
+    {
 		return FacultyLang::class;
 	}
 
