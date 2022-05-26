@@ -8,6 +8,8 @@
    --color-primary-lighter: #546e8d;
    --color-secondary: #ffab1f; 
    --color-secondary-light: #ffbc4c; 
+   --color-text-primary: #212529;
+   --color-text-secondary: #495057;
 }
 
 * {
@@ -132,7 +134,7 @@ body {
 .logo__university {
    font-family: 'Merriweather', serif;
    font-weight: normal;
-   color: #666;
+   color: var(--color-text-secondary);
    font-size: 1.125rem;
 }
 
@@ -208,7 +210,9 @@ body {
    position: absolute;
    top: 40px;
    left: 0;
-   min-width: 180px;
+   min-width: 360px;
+   max-height: 240px;
+   overflow: scroll;
    padding-top: 5px;
 }
 
@@ -257,7 +261,7 @@ body {
 .arrow {
    position: absolute;
    right: 2px;
-   top: 3px; 
+   top: 6px; 
    padding: 8px;
    color: #fff;
    transition: all 0.3s ease-in-out;
@@ -363,6 +367,7 @@ body.touch .sub-sub-menu__list.open {
    }
 
    .sub-menu__list {
+      max-height: 100%;
       position: relative;
       left: 0;
       top: 0;
@@ -420,6 +425,92 @@ body.touch .sub-sub-menu__list.open {
       padding-left: 35px;
    }
 }
+
+
+
+/* Footer */
+.footer {
+   margin-top: 1000px;
+   border-top: 5px solid var(--color-secondary);
+   border-bottom: 5px solid var(--color-secondary);
+   padding: 10px 0;
+   background-color: var(--color-primary);
+}
+
+.footer__content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer__text {
+   color: #fff;
+   font-size: 1rem;
+}
+
+
+
+/* Faculty */
+
+.faculty {
+   padding: 15px 10px;
+}
+
+.faculty__header {
+   text-align: center;
+   font-family: 'Merriweather', serif;
+   margin-bottom: 30px;
+}
+
+.header__title--pre {
+   color: var(--color-text-secondary);
+   font-size: 1.125rem;   
+   margin-bottom: 10px;
+}
+
+.header__title--main {
+   color: var(--color-primary);
+   font-size: 1.50rem;
+}
+
+/* Members */
+
+.faculty__members {}
+
+.member {
+   border-bottom: 1px solid var(--color-text-primary);
+   margin-bottom: 25px;
+}
+
+.member__img {
+   width: 100px;
+   height: 100px;
+}
+
+.member__info {
+   font-size: 0.875rem;
+   color: var(--color-text-primary);
+}
+
+.member__name {
+   font-size: 1.125rem;
+   margin-bottom: 5px;
+}
+
+.member__activity {
+   margin-bottom: 20px;
+}
+
+.member__email {
+   margin-bottom: 5px;
+}
+
+.member__phone {
+   margin-bottom: 5px;
+}
+
+
+
 
 
 /* SECTION 2 - LOGO AND SEARCH */

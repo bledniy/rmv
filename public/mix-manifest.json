@@ -1,12 +1,12 @@
 {
-    "/_admin/static/js/app.js": "/_admin/static/js/app.js?id=1e8fdd923382e39493d1",
-    "/_admin/css/material-dashboard.css": "/_admin/css/material-dashboard.css?id=c6cd29049f7927672ff5",
-    "/_admin/css/admin-main.css": "/_admin/css/admin-main.css?id=bb3ce2f0d3d435337424",
-    "/_admin/css/styles.css": "/_admin/css/styles.css?id=2beaee11189593f03915",
-    "/static/css/style.css": "/static/css/style.css?id=72763e3166d633486338",
-    "/static/css/fontawesome.css": "/static/css/fontawesome.css?id=618569082f03ad93b272",
-    "/static/css/brands.css": "/static/css/brands.css?id=21dde3537ab5915945f7",
-    "/static/css/solid.css": "/static/css/solid.css?id=9fa10b1e9ec299d0af39",
-    "/static/js/app.js": "/static/js/app.js?id=3100f35be79c772a896d",
-    "/_admin/js/libraries.js": "/_admin/js/libraries.js?id=b2f3c1bfcc98670506ac"
+    "/_admin/static/js/app.js": "/_admin/static/js/app.js?id=b30fe22684ee2ac18c53ced49c132ae5",
+    "/static/js/app.js": "/static/js/app.js?id=3ba9e7aa200868ebb802f05204aee2a8",
+    "/static/css/style.css": "/static/css/style.css?id=e288d2e394db16b83dd0f3295f85be2e",
+    "/static/css/fontawesome.css": "/static/css/fontawesome.css?id=99f4c393950b38499fef0231282d9307",
+    "/_admin/css/styles.css": "/_admin/css/styles.css?id=cccc7500b14abc3b5c7674bf1afe9167",
+    "/_admin/css/admin-main.css": "/_admin/css/admin-main.css?id=eb7ce4ce83b84d86a6017e06525ea8ab",
+    "/_admin/css/material-dashboard.css": "/_admin/css/material-dashboard.css?id=1b51764d7aaa58f0735c3afbef562996",
+    "/static/css/solid.css": "/static/css/solid.css?id=70256f316e4d431986080bac73e14cf9",
+    "/static/css/brands.css": "/static/css/brands.css?id=46f14208319eab0691117a53dfe2f60e",
+    "/_admin/js/libraries.js": "/_admin/js/libraries.js?id=b2f3c1bfcc98670506ac7cb99e67e588"
 }

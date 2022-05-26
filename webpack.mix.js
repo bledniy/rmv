@@ -39,10 +39,10 @@ mix.sass('resources/sass/material-dashboard/material-dashboard.scss', 'public/_a
  */
 
 mix
-    .sass('resources/sass/app/style.scss', 'public/static/css')
-    .sass('resources/sass/app/fontawesome.scss', 'public/static/css')
-    .sass('resources/sass/app/brands.scss', 'public/static/css')
-    .sass('resources/sass/app/solid.scss', 'public/static/css')
+.sass('resources/sass/app/fontawesome.scss', 'public/static/css')
+.sass('resources/sass/app/brands.scss', 'public/static/css')
+.sass('resources/sass/app/solid.scss', 'public/static/css')
+.sass('resources/sass/app/style.scss', 'public/static/css')
     .js('resources/js/app.js', 'public/static/js')
     .sourceMaps()
     .version();

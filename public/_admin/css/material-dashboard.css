@@ -856,7 +856,7 @@ mark,
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "\2014\A0";
+  content: "— ";
 }
 
 .img-fluid {
@@ -11367,8 +11367,8 @@ fieldset[disabled] .is-focused .switch label:focus {
   background-image: linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 fieldset[disabled][disabled] .form-control, .form-control.disabled, .form-control:disabled, .form-control[disabled] {
-  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#d2d2d2), color-stop(30%, #d2d2d2), color-stop(30%, transparent), to(transparent));
+  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: linear-gradient(to right, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-repeat: repeat-x;
   background-size: 3px 1px;
@@ -11503,8 +11503,8 @@ fieldset[disabled][disabled] .form-control, .form-control.disabled, .form-contro
   background-image: linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 fieldset[disabled][disabled] .has-success .form-control, .has-success .form-control.disabled, .has-success .form-control:disabled, .has-success .form-control[disabled] {
-  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#d2d2d2), color-stop(30%, #d2d2d2), color-stop(30%, transparent), to(transparent));
+  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: linear-gradient(to right, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-repeat: repeat-x;
   background-size: 3px 1px;
@@ -11638,8 +11638,8 @@ fieldset[disabled][disabled] .has-success .form-control, .has-success .form-cont
   background-image: linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 fieldset[disabled][disabled] .has-info .form-control, .has-info .form-control.disabled, .has-info .form-control:disabled, .has-info .form-control[disabled] {
-  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#d2d2d2), color-stop(30%, #d2d2d2), color-stop(30%, transparent), to(transparent));
+  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: linear-gradient(to right, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-repeat: repeat-x;
   background-size: 3px 1px;
@@ -11773,8 +11773,8 @@ fieldset[disabled][disabled] .has-info .form-control, .has-info .form-control.di
   background-image: linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), linear-gradient(to top, #FFFFFF 1px, rgba(255, 255, 255, 0) 1px);
 }
 fieldset[disabled][disabled] .has-white .form-control, .has-white .form-control.disabled, .has-white .form-control:disabled, .has-white .form-control[disabled] {
-  background-image: -o-linear-gradient(left, #FFFFFF 0%, #FFFFFF 30%, transparent 30%, transparent 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(30%, #FFFFFF), color-stop(30%, transparent), to(transparent));
+  background-image: -o-linear-gradient(left, #FFFFFF 0%, #FFFFFF 30%, transparent 30%, transparent 100%);
   background-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 30%, transparent 30%, transparent 100%);
   background-repeat: repeat-x;
   background-size: 3px 1px;
@@ -11911,8 +11911,8 @@ fieldset[disabled][disabled] .has-white .form-control, .has-white .form-control.
   background-image: linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 fieldset[disabled][disabled] .has-warning .form-control, .has-warning .form-control.disabled, .has-warning .form-control:disabled, .has-warning .form-control[disabled] {
-  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#d2d2d2), color-stop(30%, #d2d2d2), color-stop(30%, transparent), to(transparent));
+  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: linear-gradient(to right, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-repeat: repeat-x;
   background-size: 3px 1px;
@@ -12046,8 +12046,8 @@ fieldset[disabled][disabled] .has-warning .form-control, .has-warning .form-cont
   background-image: linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 fieldset[disabled][disabled] .has-danger .form-control, .has-danger .form-control.disabled, .has-danger .form-control:disabled, .has-danger .form-control[disabled] {
-  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#d2d2d2), color-stop(30%, #d2d2d2), color-stop(30%, transparent), to(transparent));
+  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: linear-gradient(to right, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-repeat: repeat-x;
   background-size: 3px 1px;
@@ -12181,8 +12181,8 @@ fieldset[disabled][disabled] .has-danger .form-control, .has-danger .form-contro
   background-image: linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 fieldset[disabled][disabled] .has-rose .form-control, .has-rose .form-control.disabled, .has-rose .form-control:disabled, .has-rose .form-control[disabled] {
-  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#d2d2d2), color-stop(30%, #d2d2d2), color-stop(30%, transparent), to(transparent));
+  background-image: -o-linear-gradient(left, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-image: linear-gradient(to right, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
   background-repeat: repeat-x;
   background-size: 3px 1px;
@@ -14221,8 +14221,8 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   height: 100%;
   content: "";
   display: block;
-  background: -o-linear-gradient(top, #282828 0, #111);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #282828), to(#111));
+  background: -o-linear-gradient(top, #282828 0, #111);
   background: linear-gradient(180deg, #282828 0, #111);
   opacity: 0.77;
 }
