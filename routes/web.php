@@ -13,7 +13,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     Route::get('/', [HomeController::class, 'home'])->name('home');
     Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
     Route::get('/faculty/{id}', [FacultyController::class, 'index'])->name('faculty.show');
-    Route::get('/department/{id}', [DepartmentController::class, 'index'])->name('department.show');
+    Route::get('/department/{id}', [DepartmentController::class, 'show'])->name('department.show');
 
     Route::get('/news', [NewsController::class, 'index'])->name('news.index');
     Route::get('/news/load-more', [NewsController::class, 'loadMore'])->name('news.load-more');

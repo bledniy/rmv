@@ -3,17 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\Department\Department;
+use App\Repositories\DepartmentRepository;
 use Illuminate\Http\Request;
 
 class DepartmentController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @var DepartmentRepository
      */
-    public function index()
+    private $departmentRepository;
+
+    public function __construct(DepartmentRepository $departmentRepository)
     {
-        return view('public.department.index');
+
+        $this->departmentRepository = $departmentRepository;
+    }
+
+    public function show($departmentId)
+    {
+        $item = $this->departmentRepository->find($departmentId);
+
+        return view('public.department.index')->with(compact('item'));
     }
 }
