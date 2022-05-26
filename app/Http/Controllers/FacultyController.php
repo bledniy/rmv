@@ -6,15 +6,15 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Models\Faculty\Faculty;
 use Illuminate\Http\Request;
 
-class FacultyController extends AdminController
+class FacultyController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return view('public.faculty.index');
     }
 }
