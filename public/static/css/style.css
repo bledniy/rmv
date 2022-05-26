@@ -234,7 +234,7 @@ body {
   left: 0;
   min-width: 360px;
   max-height: 240px;
-  overflow: scroll;
+  overflow-y: scroll;
   padding-top: 5px;
 }
 
@@ -493,12 +493,12 @@ body.touch .sub-sub-menu__list.open {
   font-size: 1rem;
 }
 
-/* Faculty */
-.faculty {
-  padding: 15px 10px;
+/* Faculty & Department*/
+.faculty, .department {
+  padding: 25px 10px;
 }
 
-.faculty__header {
+.faculty__header, .department__header {
   text-align: center;
   font-family: "Merriweather", serif;
   margin-bottom: 30px;
@@ -511,7 +511,7 @@ body.touch .sub-sub-menu__list.open {
 }
 
 .header__title--main {
-  color: var(--color-primary);
+  color: var(--color-primary-light);
   font-size: 1.5rem;
 }
 
@@ -521,26 +521,31 @@ body.touch .sub-sub-menu__list.open {
   margin-bottom: 25px;
 }
 
-.member__img {
-  width: 100px;
-  height: 100px;
-}
-
 .member__info {
-  font-size: 0.875rem;
   color: var(--color-text-primary);
 }
 
+.member__position {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
 .member__name {
-  font-size: 1.125rem;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
   margin-bottom: 5px;
 }
 
 .member__activity {
+  font-size: 1.125rem;
   margin-bottom: 20px;
 }
 
 .member__email {
+  font-size: 1rem;
   margin-bottom: 5px;
 }
 
@@ -548,6 +553,13 @@ body.touch .sub-sub-menu__list.open {
   margin-bottom: 5px;
 }
 
+.member__img {
+  width: 237px;
+  height: 316px;
+  border-radius: 10px;
+}
+
+/* Departments */
 /* SECTION 2 - LOGO AND SEARCH */
 /*
 .logo-search {

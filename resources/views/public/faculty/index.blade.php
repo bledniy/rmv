@@ -10,11 +10,11 @@
                         <h2 class="header__title--pre">Склад Ради молодих вчених<br>Одеського національного університету імені І.І. Мечникова</h2>
                         <h2 class="header__title--main">
                             Біологічний факультет
-                        </h1>
+                        </h2>
                     </header>  
                     <section class="faculty__members">
                             <div class="member">
-                                <img src="#" alt="" class="member__img">
+                                <img src="http://rmv.onu.edu.ua/wp-content/uploads/2022/01/%D1%84%D0%BE%D1%82%D0%BE13-733x1024.jpg" alt="" class="member__img">
                                 <div class="member__info">
                                     <p class="member__name">Кіка Владислав Володимирович</p>
                                     <p class="member__activity">здобувач вищої освіти третього (освітньо-наукового) рівня</p>
@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                             <div class="member">
-                                <img src="#" alt="" class="member__img">
+                                <img src="http://rmv.onu.edu.ua/wp-content/uploads/2022/01/%D1%84%D0%BE%D1%82%D0%BE13-733x1024.jpg" alt="" class="member__img">
                                 <div class="member__info">
                                     <p class="member__name">Чепіженко Вадим Віталійович</p>
                                     <p class="member__activity">кандидат історичних наук, викладач кафедри всесвітньої історії, науковий співробітник Центру антикознавства та медієвістики, помічник проректора з науково-педагогічної роботи</p>
@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                             <div class="member">
-                                <img src="#" alt="" class="member__img">
+                                <img src="http://rmv.onu.edu.ua/wp-content/uploads/2022/01/%D1%84%D0%BE%D1%82%D0%BE13-733x1024.jpg" alt="" class="member__img">
                                 <div class="member__info">
                                     <p class="member__name">Дікол Олена Сергіївна</p>
                                     <p class="member__activity">здобувач вищої освіти третього (освітньо-наукового) рівня, молодший науковий співробітник кафедри загальної, морської геології та палеонтології</p>
@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                             <div class="member">
-                                <img src="#" alt="" class="member__img">
+                                <img src="http://rmv.onu.edu.ua/wp-content/uploads/2022/01/%D1%84%D0%BE%D1%82%D0%BE13-733x1024.jpg" alt="" class="member__img">
                                 <div class="member__info">
                                     <p class="member__name">Крістєва Елла Анатоліївна</p>
                                     <p class="member__activity">здобувач вищої освіти третього (освітньо-наукового) рівня</p>
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="member">
-                                <img src="#" alt="" class="member__img">
+                                <img src="http://rmv.onu.edu.ua/wp-content/uploads/2022/01/%D1%84%D0%BE%D1%82%D0%BE13-733x1024.jpg" alt="" class="member__img">
                                 <div class="member__info">
                                     <p class="member__name">Крістєва Елла Анатоліївна</p>
                                     <p class="member__activity">здобувач вищої освіти третього (освітньо-наукового) рівня</p>
