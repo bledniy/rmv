@@ -28,9 +28,7 @@
                         </div>
                     </section>
                     <section class="department__info">
-                        <div style="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-                            {!! $item->description  !!}
-                        </div>
+                        {!! $item->description  !!}
                     </section>
                 </div>
             </article>
