@@ -379,17 +379,6 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 
 /***/ }),
 
-/***/ "./resources/sass/app/brands.scss":
-/*!****************************************!*\
-  !*** ./resources/sass/app/brands.scss ***!
-  \****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAvYnJhbmRzLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvYXBwL2JyYW5kcy5zY3NzPzU2MjYiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/app/brands.scss\n");
-
-/***/ }),
-
 /***/ "./resources/sass/app/solid.scss":
 /*!***************************************!*\
   !*** ./resources/sass/app/solid.scss ***!
@@ -397,7 +386,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc29saWQuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc29saWQuc2Nzcz9jZmNlIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app/solid.scss\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc29saWQuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc29saWQuc2Nzcz9iN2ZkIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app/solid.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/app/style.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/app/style.scss ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc3R5bGUuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc3R5bGUuc2Nzcz8xNDk2Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app/style.scss\n");
 
 /***/ }),
 
@@ -434,17 +434,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./resources/sass/app/style.scss":
-/*!***************************************!*\
-  !*** ./resources/sass/app/style.scss ***!
-  \***************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc3R5bGUuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvc3R5bGUuc2Nzcz9lMTc2Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app/style.scss\n");
-
-/***/ }),
-
 /***/ "./resources/sass/app/fontawesome.scss":
 /*!*********************************************!*\
   !*** ./resources/sass/app/fontawesome.scss ***!
@@ -452,7 +441,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAvZm9udGF3ZXNvbWUuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvZm9udGF3ZXNvbWUuc2Nzcz9hNWY5Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app/fontawesome.scss\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAvZm9udGF3ZXNvbWUuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAvZm9udGF3ZXNvbWUuc2Nzcz9jMDIyIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/app/fontawesome.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/app/brands.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/app/brands.scss ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hcHAvYnJhbmRzLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvYXBwL2JyYW5kcy5zY3NzPzMwOWEiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/app/brands.scss\n");
 
 /***/ }),
 
@@ -604,12 +604,12 @@ eval("// shim for using process in browser\nvar process = module.exports = {};\n
 /******/ 		var installedChunks = {
 /******/ 			"/_admin/static/js/app": 0,
 /******/ 			"static/css/style": 0,
+/******/ 			"static/css/brands": 0,
 /******/ 			"static/css/fontawesome": 0,
 /******/ 			"_admin/css/styles": 0,
 /******/ 			"_admin/css/admin-main": 0,
 /******/ 			"_admin/css/material-dashboard": 0,
-/******/ 			"static/css/solid": 0,
-/******/ 			"static/css/brands": 0
+/******/ 			"static/css/solid": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -661,14 +661,14 @@ eval("// shim for using process in browser\nvar process = module.exports = {};\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid","static/css/brands"], function() { return __webpack_require__("./resources/js/admin/app.js"); })
-/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid","static/css/brands"], function() { return __webpack_require__("./resources/sass/material-dashboard/material-dashboard.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid","static/css/brands"], function() { return __webpack_require__("./resources/sass/admin/admin-main.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid","static/css/brands"], function() { return __webpack_require__("./resources/sass/prolite/styles.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid","static/css/brands"], function() { return __webpack_require__("./resources/sass/app/style.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid","static/css/brands"], function() { return __webpack_require__("./resources/sass/app/fontawesome.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid","static/css/brands"], function() { return __webpack_require__("./resources/sass/app/brands.scss"); })
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["static/css/style","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid","static/css/brands"], function() { return __webpack_require__("./resources/sass/app/solid.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/brands","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid"], function() { return __webpack_require__("./resources/js/admin/app.js"); })
+/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/brands","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid"], function() { return __webpack_require__("./resources/sass/material-dashboard/material-dashboard.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/brands","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid"], function() { return __webpack_require__("./resources/sass/admin/admin-main.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/brands","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid"], function() { return __webpack_require__("./resources/sass/prolite/styles.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/brands","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid"], function() { return __webpack_require__("./resources/sass/app/fontawesome.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/brands","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid"], function() { return __webpack_require__("./resources/sass/app/brands.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["static/css/style","static/css/brands","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid"], function() { return __webpack_require__("./resources/sass/app/solid.scss"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["static/css/style","static/css/brands","static/css/fontawesome","_admin/css/styles","_admin/css/admin-main","_admin/css/material-dashboard","static/css/solid"], function() { return __webpack_require__("./resources/sass/app/style.scss"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -10,18 +10,49 @@
   --color-text-secondary: #495057;
 }
 
-* {
+body, header * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-a {
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.index-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 300px;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header a {
   text-decoration: none;
 }
 
-li {
+header li {
   list-style: none;
 }
 
@@ -226,6 +257,10 @@ body {
   color: #fff;
 }
 
+.menu__link:visited .menu__list > li {
+  color: red;
+}
+
 /* second level */
 .sub-menu__list {
   display: none;
@@ -233,7 +268,7 @@ body {
   top: 40px;
   left: 0;
   min-width: 360px;
-  max-height: 240px;
+  max-height: 231px;
   overflow-y: scroll;
   padding-top: 5px;
 }
@@ -469,7 +504,6 @@ body.touch .sub-sub-menu__list.open {
 }
 /* Footer */
 .footer {
-  margin-top: 1000px;
   border-top: 5px solid var(--color-secondary);
   border-bottom: 5px solid var(--color-secondary);
   padding: 10px 0;
@@ -494,11 +528,11 @@ body.touch .sub-sub-menu__list.open {
 }
 
 /* Faculty & Department*/
-.faculty, .department {
+.faculty, .department, .rmv-news, .main-page {
   padding: 25px 10px;
 }
 
-.faculty__header, .department__header {
+.faculty__header, .department__header, .news__header, .main-page__header {
   text-align: center;
   font-family: "Merriweather", serif;
   margin-bottom: 30px;
@@ -511,14 +545,19 @@ body.touch .sub-sub-menu__list.open {
 }
 
 .header__title--main {
-  color: var(--color-primary-light);
+  color: var(--color-primary);
   font-size: 1.5rem;
 }
 
 /* Members */
 .member {
-  border-bottom: 1px solid var(--color-text-primary);
-  margin-bottom: 25px;
+  border-bottom: 3px solid var(--color-secondary);
+  padding-bottom: 20px;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
 }
 
 .member__info {
@@ -527,11 +566,12 @@ body.touch .sub-sub-menu__list.open {
 
 .member__position {
   font-size: 1rem;
-  margin-bottom: 8px;
+  margin: 0;
   font-style: italic;
 }
 
 .member__name {
+  margin-top: 0;
   font-family: "Merriweather", serif;
   font-size: 1.5rem;
   font-weight: bold;
@@ -541,7 +581,7 @@ body.touch .sub-sub-menu__list.open {
 
 .member__activity {
   font-size: 1.125rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .member__email {
@@ -550,83 +590,137 @@ body.touch .sub-sub-menu__list.open {
 }
 
 .member__phone {
-  margin-bottom: 5px;
+  margin: 0;
 }
 
 .member__img {
-  width: 237px;
-  height: 316px;
-  border-radius: 10px;
+  width: 200px;
+  height: 280px;
+  background-color: #546e8d;
 }
 
-/* Departments */
-/* SECTION 2 - LOGO AND SEARCH */
-/*
-.logo-search {
-   padding: 20px 20px;
+@media (max-width: 768px) {
+  .member {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+
+  .member__img {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .member__position, .member__name {
+    text-align: center;
+  }
+
+  .member__activity {
+    margin-bottom: 30px;
+  }
+}
+/* News */
+.news-item {
+  padding-bottom: 25px;
+  border-bottom: 3px solid var(--color-secondary);
 }
 
-.logo-search__content {
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   gap: 10%;
+.news-item__title {
+  color: var(--color-primary-light);
+  font-size: 1.25rem;
 }
 
-.logo__figure {
-   display: flex;
+.news-item__full {
+  text-decoration: none;
+  color: inherit;
 }
 
-.logo__img {
-   width: 100px;
-   height: 100px;
-   margin-right: 15px;
+.news-item__date {
+  margin-right: 15px;
+  color: var(--color-text-secondary);
 }
 
-.logo__main-header {
-   color: var(--color-primary);
-   font-size: 2rem;
+.fa-calendar-days {
+  color: var(--color-secondary);
+  margin-right: 5px;
 }
 
-.logo__university {
-   color: #666;
-   font-size: 1.25rem;
-   font-weight: normal;
+.news-item__author {
+  color: var(--color-text-secondary);
 }
 
-.search__form {
-   border: 1px solid rgba(102, 102, 102, 0.356);
-   border-radius: 25px;
-   display: flex;
-   justify-content: space-between;
-   flex: 0 1 50%;
+.fa-user-pen {
+  color: var(--color-secondary);
+  margin-right: 5px;
 }
 
-.search__input {
-   padding: 8px 15px;
-   border: none;
-   border-radius: inherit;
-   font-size: 16px;
-   font-style: italic;
+.news-item__short {
+  font-size: 1rem;
 }
 
-.search__input:focus-visible {
-   outline: none;
+.news-item__more {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  background-color: var(--color-primary-light);
+  border-radius: 7px;
 }
 
-.search__btn {
-   padding: 8px 35px;
-   border: none;
-   color: #fff;
-   background-color: var(--color-primary);
-   border-radius: inherit;
-   border-top-left-radius: 0;
-   border-bottom-left-radius: 0;
-   font-size: 18px;
-   transition: all 0.3s ease-in-out;
+/* Main Page */
+.info__title {
+  color: var(--color-primary-light);
+  font-size: 1.25rem;
 }
 
-.search__btn:hover {
-   color: var(--color-secondary);
+.info__text {
+  color: var(--color-text-primary);
+  font-size: 1rem;
 }
-*/
+
+.info__departments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.info__department {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--color-primary);
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.info__department:hover {
+  background-color: var(--color-secondary);
+}
+
+.rmv-photo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rmv-photo {
+  width: 80%;
+  height: 80%;
+  border-radius: 100px;
+}
+
+/* CKEDITOR wrapper */
+.ckeditor-wrapper h1, .ckeditor-wrapper h2, .ckeditor-wrapper h3, .ckeditor-wrapper h4, .ckeditor-wrapper h5, .ckeditor-wrapper h6 {
+  color: var(--color-primary-light);
+}
+.ckeditor-wrapper p {
+  color: var(--color-text-primary);
+}

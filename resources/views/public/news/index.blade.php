@@ -1,32 +1,30 @@
-<?php /** @var $news \App\Models\News\News[]|\Illuminate\Pagination\LengthAwarePaginator */ ?>
 @extends('public.layout.app')
 
 @section('content')
-    <div class="wrapper">
-        @includeIf('public.layout.includes.header')
-        <div class="content-wrapper">
-            <section class="news-page">
-                <div class="container">
-                    <h2 class="news-page__title" data-aos="clip-top">Новости</h2>
-                    <div class="news-page__wrap" data-news-pages-wrap>
-                        @foreach($news as $new)
-                            <div class="news-card" data-aos="clip-right" data-aos-delay="100"
-                                 data-modal-url="{{ route('news.show.modal', $new->getKey()) }}">
-                                @includeIf('public.news.partials.news-content')
-                            </div>
-                        @endforeach
+<div class="index-page">
+    @includeIf('public.layout.includes.header')
+    <main class="main">
+        <article class="rmv-news">
+            <div class="container">
+                <header class="news__header">
+                    <h2 class="header__title--main">
+                        Новини
+                    </h2>
+                    <h2 class="header__title--pre">Ради молодих вчених<br>Одеського національного
+                    університету імені І.І. Мечникова</h2>
+                </header>
+                <section class="news">
+                    <div class="news-item">
+                        <h3 class="news-item__title"><a href="" class="news-item__full">Зустріч представників РМВ з магістрами, аспірантами та молодими вченими факультетів університету!</a></h3>
+                        <span class="news-item__date"><i class="fa-solid fa-calendar-days"></i>04.12.2021 </span>
+                        <span class="news-item__author"><i class="fa-solid fa-user-pen"></i>writer</span>
+                        <p class="news-item__short">1, 2 та 3 грудня 2021 року відбулися зустрічі представників РМВ з магістрами, аспірантами та молодими вченими факультетів університету!  Метою зустрічей було ознайомлення молодих науковців з основними напрямками діяльності Ради, можливостями та перевагами для молоді в науковому осередку. РМВ розповіла...</p>
+                        <a class="news-item__more" href="">Читати далі</a>
                     </div>
-                    @if($news->hasMorePages())
-                        <a href="{{ $news->nextPageUrl() }}"
-                           data-load-news-url="{{ route('news.load-more') }}?page={{ $news->currentPage() + 1 }}"
-                           class="news__link button-type-one" data-aos="clip-top" data-aos-delay="100"
-                           id="news-page__button">Показать
-                            ещё
-                        </a>
-                    @endif
-                </div>
-            </section>
-        </div>
-        @includeIf('public.layout.includes.footer')
-    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+    @includeIf('public.layout.includes.footer')
+</div>
 @stop

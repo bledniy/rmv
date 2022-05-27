@@ -1,12 +1,13 @@
 {
-    "/_admin/static/js/app.js": "/_admin/static/js/app.js?id=b30fe22684ee2ac18c53ced49c132ae5",
+    "/_admin/static/js/app.js": "/_admin/static/js/app.js?id=2f5345bdec675f9fab2e89865d4b3496",
+    "/static/js/ckeditor.js": "/static/js/ckeditor.js?id=bc7a774711a09ba78bd8a8e877d2601f",
     "/static/js/app.js": "/static/js/app.js?id=3ba9e7aa200868ebb802f05204aee2a8",
-    "/static/css/style.css": "/static/css/style.css?id=bde10ea95933460c78c9f5a6db257d2f",
+    "/static/css/style.css": "/static/css/style.css?id=46ccf8bbdd7934411548a27bac50727b",
+    "/static/css/brands.css": "/static/css/brands.css?id=46f14208319eab0691117a53dfe2f60e",
     "/static/css/fontawesome.css": "/static/css/fontawesome.css?id=99f4c393950b38499fef0231282d9307",
     "/_admin/css/styles.css": "/_admin/css/styles.css?id=cccc7500b14abc3b5c7674bf1afe9167",
     "/_admin/css/admin-main.css": "/_admin/css/admin-main.css?id=eb7ce4ce83b84d86a6017e06525ea8ab",
     "/_admin/css/material-dashboard.css": "/_admin/css/material-dashboard.css?id=1b51764d7aaa58f0735c3afbef562996",
     "/static/css/solid.css": "/static/css/solid.css?id=70256f316e4d431986080bac73e14cf9",
-    "/static/css/brands.css": "/static/css/brands.css?id=46f14208319eab0691117a53dfe2f60e",
     "/_admin/js/libraries.js": "/_admin/js/libraries.js?id=b2f3c1bfcc98670506ac7cb99e67e588"
 }
