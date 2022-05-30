@@ -51,18 +51,17 @@ btnBurger.addEventListener('click', function() {
 
 // Current link 
 const activePage = window.location.href;
-console.log(activePage);
-
+const navbar = document.querySelector('.menu');
 
 const navLinks = document
   .querySelectorAll("a.menu__link, a.sub-menu__link")
   .forEach((link) => {
      if (activePage === link.href) {
-        link.parentElement.classList.add('current-li');
-        link.parentElement.parentElement.parentElement.classList.add('current-li');
+      link.parentElement.classList.add('current-li');
+      const mainMenuItem = link.parentElement.parentElement.parentElement;
+      if (mainMenuItem !== navbar) mainMenuItem.classList.add('current-li');
      }
   });
-
 
 
 

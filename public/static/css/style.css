@@ -171,14 +171,14 @@ body {
 }
 
 .logo__img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .logo__main-header {
   font-family: "Merriweather", serif;
   color: var(--color-primary);
-  font-size: 1.75rem;
+  font-size: 3rem;
 }
 
 .logo__university {
