@@ -257,8 +257,13 @@ body {
   color: #fff;
 }
 
-.menu__link:visited .menu__list > li {
-  color: red;
+.current-li {
+  background-color: var(--color-secondary) !important;
+}
+
+.menu__link--nonclickable {
+  pointer-events: none;
+  cursor: default;
 }
 
 /* second level */
@@ -351,7 +356,7 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
 }
 
 body.mouse .menu__list li:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary-light);
 }
 
 /* if touchscreen => display dropdown menu on arrow click event (toggle .open */

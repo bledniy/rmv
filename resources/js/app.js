@@ -8,7 +8,7 @@ let isMobile = {
 	Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
 	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
 };
-
+ 
 const body = document.querySelector('body');
 const arrow = document.querySelectorAll('.arrow'); // creates array(NodeList) with elements of all span.arrow
 
@@ -49,8 +49,19 @@ btnBurger.addEventListener('click', function() {
 })
 
 
+// Current link 
+const activePage = window.location.href;
+console.log(activePage);
 
 
+const navLinks = document
+  .querySelectorAll("a.menu__link, a.sub-menu__link")
+  .forEach((link) => {
+     if (activePage === link.href) {
+        link.parentElement.classList.add('current-li');
+        link.parentElement.parentElement.parentElement.classList.add('current-li');
+     }
+  });
 
 
 

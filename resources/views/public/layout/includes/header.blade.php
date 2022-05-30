@@ -51,7 +51,7 @@
                         <a href="{{route('home')}}" class="menu__link">Головна</a>
                     </li>
                     <li>
-                        <a href="" class="menu__link">Склад ради</a>
+                        <a href="/faculty" class="menu__link menu__link--nonclickable">Склад ради</a>
                         <i class="menu__arrow arrow fa-solid fa-angle-down"></i>
                         <ul class="sub-menu__list">
                             @foreach($faculties as $faculty)
@@ -63,7 +63,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="" class="menu__link">Відділи</a>
+                        <a href="/department" class="menu__link menu__link--nonclickable">Відділи</a>
                         <i class="menu__arrow arrow fa-solid fa-angle-down"></i>
                         <ul class="sub-menu__list">
                             @foreach($departments as $department)
