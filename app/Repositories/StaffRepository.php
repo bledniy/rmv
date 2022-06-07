@@ -8,6 +8,7 @@ use App\Models\Language;
 use App\Models\Model;
 use App\Models\ModelLang;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 
 /**
  * Class StaffRepository.
@@ -78,5 +79,10 @@ class StaffRepository extends AbstractRepository
 	{
 		return $this->with('lang')->findOrFail($id);
 	}
+
+    public function findAllByFaculty($facultyId): Collection
+    {
+        return $this->where('faculty_id', $facultyId)->get();
+    }
 
 }

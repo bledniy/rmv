@@ -44,6 +44,16 @@ class Staff extends Model implements HasLocalized, HasImagesContract
         return (string)$this->getAttribute('name');
     }
 
+    public function getEmail(): string
+    {
+        return (string)$this->getAttribute('email');
+    }
+
+    public function getPhone(): string
+    {
+        return (string)$this->getAttribute('phone');
+    }
+
     public function getIsActive(): bool
     {
         return (bool)$this->getAttribute('active');

@@ -4,17 +4,33 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Models\Faculty\Faculty;
+use App\Repositories\FacultyRepository;
+use App\Repositories\StaffRepository;
 use Illuminate\Http\Request;
 
 class FacultyController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @var FacultyRepository
      */
-    public function index()
+    private $facultyRepository;
+    /**
+     * @var StaffRepository
+     */
+    private $staffRepository;
+
+    public function __construct(FacultyRepository $facultyRepository, StaffRepository $staffRepository)
+   {
+       $this->facultyRepository = $facultyRepository;
+       $this->staffRepository = $staffRepository;
+   }
+
+    public function show($facultyId)
     {
-        return view('public.faculty.index');
+        $faculty = $this->facultyRepository->find($facultyId);
+        $staffs = $this->staffRepository->findAllByFaculty($facultyId);
+        $with = compact(array_keys(get_defined_vars()));
+
+        return view('public.faculty.index')->with($with);
     }
 }

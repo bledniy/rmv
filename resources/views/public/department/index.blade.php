@@ -1,3 +1,5 @@
+<?php /** @var $item \App\Models\Department\Department  */ ?>
+<?php /** @var $head \App\Models\Staff\Staff  */ ?>
 @extends('public.layout.app')
 
 @section('content')
@@ -15,15 +17,22 @@
                     </header>
                     <section class="department__members">
                         <div class="member">
-                            <img src=""
+                            <img src="{{getPathToImage(imgPathOriginal($head->image))}}"
                             alt="" class="member__img">
                             <div class="member__info">
-                                <p class="member__position">Голова відділу роботи з громадськістю</p>
-                                <p class="member__name">Святошнюк Арина Леонідівна</p>
-                                <p class="member__activity">Кандидат юридичних наук, доцент кафедри цивільно-правових
-                                    дисциплін</p>
-                                <p class="member__email">lorem@gmail.com</p>
-                                <p class="member__phone">+380 ** *** ** **</p>
+                                <p class="member__position">Голова відділу</p>
+                                @if(null !== $head->getName())
+                                <p class="member__name">{{$head->getName()}}</p>
+                                @endif
+                                @if(null !== $head->getDescription())
+                                    <p class="department__info ckeditor-wrapper">{!! $head->getDescription() !!}</p>
+                                @endif
+                                @if(null !== $head->getEmail())
+                                <p class="member__email">{{$head->getEmail()}}</p>
+                                @endif
+                                @if(null !== $head->getPhone())
+                                <p class="member__phone">{{$head->getPhone()}}</p>
+                                @endif
                             </div>
                         </div>
                     </section>
