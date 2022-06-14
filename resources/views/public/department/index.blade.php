@@ -13,22 +13,11 @@
                   {{$item->getTitle()}}
                </h2>
             </header>
-            <section class="department__members">
-               <div class="member">
-                  <img src="" alt="" class="member__img">
-                  <div class="member__info">
-                     <p class="member__position">Голова відділу роботи з громадськістю</p>
-                     <p class="member__name">Святошнюк Арина Леонідівна</p>
-                     <p class="member__activity">Кандидат юридичних наук, доцент кафедри цивільно-правових
-                        дисциплін</p>
-                     <p class="member__email">lorem@gmail.com</p>
-                     <p class="member__phone">+380 ** *** ** **</p>
-                  </div>
-               </div>
-            </section>
             <section class="department__info ckeditor-wrapper">
                {!! $item->description !!}
             </section>
+            
+
          </div>
       </article>
    </main>

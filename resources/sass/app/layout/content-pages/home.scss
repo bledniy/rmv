@@ -13,7 +13,7 @@
 }
 
 .info__title {
-   color: var(--color-primary--light);
+   color: var(--color-primary-light);
    font-size: 1.375rem;
    padding: 0px 8px;
    margin-bottom: 16px;
@@ -31,7 +31,7 @@
 .info__img {
    display: block;
    box-sizing: border-box;
-   border: 5px solid var(--color-primary--light);
+   border: 5px solid var(--color-primary-light);
    width: 75%;
    height: 75%;
    margin: 0 auto;
@@ -39,6 +39,11 @@
       width: 100%;
       height: 100%;
    }
+}
+
+.info__img--1 {
+   width: 90%;
+   height: 90%;
 }
 
 .info__text--bold {

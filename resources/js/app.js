@@ -10,7 +10,7 @@ let isMobile = {
 };
  
 const body = document.querySelector('body');
-const arrow = document.querySelectorAll('.arrow'); // creates array(NodeList) with elements of all span.arrow
+const arrow = document.querySelectorAll('.arrow'); 
 
 if (isMobile.any()) {
    body.classList.add('touch');
@@ -62,107 +62,5 @@ const navLinks = document
       if (mainMenuItem !== navbar) mainMenuItem.classList.add('current-li');
      }
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// if (isMobile.any()) {
-//    body.classList.add('touch');
-
-//    for (let i = 0; i < arrow.length; i++) {
-//       let thisLink = arrow[i].previousElementSibling;
-//       let subMenu = arrow[i].nextElementSibling;
-//       let thisArrow = arrow[i];
-
-//       thisLink.classList.add('parent');
-//       arrow[i].addEventListener('click', function() {
-//          subMenu.classList.toggle('open');
-//          thisArrow.classList.toggle('active')
-//       })
-//    }
-// } else {
-//    body.classList.add('mouse')
-
-//    for (let i = 0; i < arrow.length; i++) {
-//       let thisLink = arrow[i].previousElementSibling;
-//       let subMenu = arrow[i].nextElementSibling;
-//       let thisArrow = arrow[i];
-
-//       thisLink.classList.add('parent');
-//       arrow[i].addEventListener('click', function() {
-//          subMenu.classList.toggle('open');
-//          thisArrow.classList.toggle('active')
-//       })
-//    }
-// }
-
-
-
-
-
 
 

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer__content">
             <div class="footer__text">
-                Made with love by Bledniy228
+                Footer
             </div>
         </div>
     </div>
