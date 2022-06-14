@@ -6,7 +6,7 @@
     <main class="main">
         <article class="rmv-news">
             <div class="container">
-                <header class="news__header">
+                <header class="main__header">
                     <h2 class="header__title--main">
                         Новини
                     </h2>

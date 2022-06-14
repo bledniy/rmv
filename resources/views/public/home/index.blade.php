@@ -1,68 +1,51 @@
 @extends('public.layout.app')
 
 @section('content')
-    <div class="index-page">
-            @includeIf('public.layout.includes.header')
-            <main class="main">
-                <article class="main-page">
-                    <div class="container">
-                        <header class="main-page__header">
-                            <h2 class="header__title--main">
-                                Інформація про діяльність
-                            </h2>
-                            <h2 class="header__title--pre">Ради молодих вчених<br>Одеського національного університету імені І.І. Мечникова</h2>
-                        </header> 
-                        <section class="main-page__info">
-                            <p class="info__text">Рада молодих вчених (далі Рада) створена 31 травня 2021 року. Є колегіальним виборним дорадчим органом, який утворено для забезпечення захисту прав та інтересів молодих вчених та офіційним правонаступником Товариства молодих вчених.</p>
-                            <p class="info__text">До складу Ради входять 27 молодих вчених – представників одинадцяти факультетів та двох науково-навчальних центрів університету. Члени Ради визначалися шляхом проведення виборів на кожному з факультетів серед спільноти молодих науковців.</p>
-                            <h3 class="info__title">Президія Ради:</h3>
-                            <div class="member">
-                                <img src="http://rmv.onu.edu.ua/wp-content/uploads/2021/11/%D1%84%D0%BE%D1%82%D0%BE11-629x1024.jpg"
-                                alt="" class="member__img">
-                                <div class="member__info">
-                                    <p class="member__position">Голова Ради молодих вчених</p>
-                                    <p class="member__name">Маслій Наталя Дмитрівна</p>
-                                    <p class="member__activity">доктор економічних наук, професор кафедри фінансів, банківської справи та страхування</p>
-                                    <p class="member__email">n.maslii@onu.edu.ua</p>
-                                </div>
-                            </div>
-                            <div class="member">
-                                <img src="http://rmv.onu.edu.ua/wp-content/uploads/2021/11/%D1%84%D0%BE%D1%82%D0%BE21.jpg"
-                                alt="" class="member__img">
-                                <div class="member__info">
-                                    <p class="member__position">Заступник голови Ради молодих вчених</p>
-                                    <p class="member__name">Демченко Ольга Володимирівна</p>
-                                    <p class="member__activity">кандидат історичних наук, провідний фахівець, доцент кафедри археології та етнології України</p>
-                                    <p class="member__email">olyadem7@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="member">
-                                <img src="http://rmv.onu.edu.ua/wp-content/uploads/2021/11/%D1%84%D0%BE%D1%82%D0%BE12-1.jpg"
-                                alt="" class="member__img">
-                                <div class="member__info">
-                                    <p class="member__position">Секретар Ради молодих вчених</p>
-                                    <p class="member__name">Крістєва Елла Анатоліївна</p>
-                                    <p class="member__activity">здобувач вищої освіти третього (освітньо-наукового) рівня економіко-правового факультету</p>
-                                    <p class="member__email">ella.kristeva@gmail.com</p>
-                                </div>
-                            </div>
-                            <p class="info__text">У Раді функціонує чотири основних відділи за напрямами роботи: науковий, міжнародний, роботи з громадськістю та прес-центр.</p>
-                            <div class="info__departments">
-                                <a href="" class="info__department">Науковий</a>
-                                <a href="" class="info__department">Міжнародний</a>
-                                <a href="" class="info__department">Робота з громадськістю</a>
-                                <a href="" class="info__department">Прес-центр</a>
-                            </div>
-                            <div class="rmv-photo-container">
-                                <img src="http://rmv.onu.edu.ua/wp-content/uploads/2021/11/%D1%84%D0%BE%D1%82%D0%BE41-1024x705.jpg" alt="" class="rmv-photo">
-                            </div>
-                                <p class="info__text">РМВ ОНУ імені І.І. Мечникова бажає усім розвитку, науки без меж, інтеграції у світовий науковий простір, нових суттєвих цікавих проектів та успіху в своїх напрямках, до яких треба рухатись з ентузіазмом, креативністю та любов’ю до людей!</p>
-                            <h3 class="info__title">ОСНОВНІ ДОКУМЕНТИ:</h3>
-                            <a href="http://onu.edu.ua/pub/bank/userfiles/files/science/young_academ/PolojeniaRVM.pdf" class="rmv-documents">http://onu.edu.ua/pub/bank/userfiles/files/science/young_academ/PolojeniaRVM.pdf</a>
-                        </section>
-                    </div>
-                </article>
-            </main>
-            @includeIf('public.layout.includes.footer')
-        </div>
+<div class="index-page">
+   @includeIf('public.layout.includes.header')
+   <main class="main">
+      <article class="home">
+         <div class="container">
+            <header class="main__header">
+               <h2 class="header__title--main">
+                  Інформація про діяльність
+               </h2>
+               <h2 class="header__title--pre">Ради молодих вчених<br>Одеського національного університету імені І.І.
+                  Мечникова</h2>
+            </header>
+            <section class="home__info">
+               <p class="info__text">Рада молодих вчених (далі Рада) створена 31 травня 2021 року. Є колегіальним виборним дорадчим органом, який утворено для забезпечення захисту прав та інтересів молодих вчених та офіційним правонаступником Товариства молодих вчених.</p>
+               <p class="info__text">До складу Ради входять 26 молодих вчених – представників десяти факультетів та двох науково-навчальних центрів університету. Члени Ради визначалися шляхом проведення виборів на кожному з факультетів серед спільноти молодих науковців.</p>
+               <h3 class="info__title">Основні документи:</h3>
+               <a href="http://onu.edu.ua/pub/bank/userfiles/files/science/young_academ/PolojeniaRVM.pdf"
+                  class="rmv-document">«Положення РМВ ОНУ»</a>
+               <h3 class="info__title">Этапи створення ради:</h3>
+               <img class="info__img" src="{{asset('images/1.png')}}" alt="">
+               <h3 class="info__title">Структура ради:</h3>
+               <p class="info__text">До складу Ради входить: голова, заступник голови ради, секретар та члени Ради, які формуються з числа голів наукового товариства молодих вчених факультетів або інших підрозділів Університету та представників молодих вчених факультетів (підрозділів), як правило, не більше двох представників від факультету (підрозділи), і навіть можуть входити асоційовані члени. </p>
+               <p class="info__text">У Раді утворюються відділи, які формують пропозиції щодо основних напрямів діяльності Ради. Наразі функціонує чотири основних відділи за напрямами роботи: науковий, міжнародний, робота з громадськістю та прес-центр.</p>
+               <h3 class="info__title">Мета ради:</h3>
+               <p class="info__text">Метою діяльності Ради є сприяння реалізації прав молодих вчених щодо їх участі у формуванні та реалізації державної політики у сфері освіти та науки, забезпечення їх активної участі у проведенні наукових досліджень та захисту їх прав та інтересів.</p>
+               <p class="info__text info__text--bold">Основними завданнями ради є:</p>
+               <ul class="info__ul">
+                  <li class="info__li"><p class="info__text">сприяння взаємодії між адміністрацією Університету та молодими вченими</p></li>
+                  <li class="info__li"><p class="info__text">підготовка пропозицій щодо створення правових та соціально-економічних умов для залучення молодих учених до роботи в різних галузях науки, стимулювання професійної діяльності молодих учених, сприяння підвищенню їхнього професійного рівня та реалізації творчої та професійної активності;  </p></li>
+                  <li class="info__li"><p class="info__text">консультативна підтримка молодих вчених щодо здійснення наукової діяльності, співпраця з іноземними замовниками наукової продукції; </p></li>
+                  <li class="info__li"><p class="info__text">сприяння залученню молодих вчених до участі у конкурсах наукових праць, формуванню колективів молодих вчених для виконання перспективних наукових проектів;  </p></li>
+                  <li class="info__li"><p class="info__text">підтримка молодих вчених у проведенні ними науково-організаційних, наукових та освітніх заходів;</p></li>
+                  <li class="info__li"><p class="info__text">участь у міжнародних проектах, сприяння розвитку та вдосконаленню наукової сфери України, її інтеграції у світовий та Європейський дослідницький простір.</p></li>
+               </ul>
+               <h3 class="info__title">Функції ради:</h3>
+               <ul class="info__ul">
+                  <li class="info__li"><p class="info__text">представляє інтереси молодих вчених в Університеті, державних та громадських організаціях та сприяє наданню допомоги у вирішенні проблем молодих вчених;</p></li>
+                  <li class="info__li"><p class="info__text">бере участь у розробці проектів нормативно-правових актів з питань, що належать до її компетенції;</p></li>
+                  <li class="info__li"><p class="info__text">забезпечує інформаційний обмін між молодими вченими;</p></li>
+                  <li class="info__li"><p class="info__text">сприяє налагодженню професійних контактів між науковими установами, вищими навчальними закладами України та іноземними науковими установами та організаціями для поглиблення наукової співпраці та спільного проведення заходів щодо наукової, освітньої діяльності.</p></li>
+               </ul>
+            </section>
+         </div>
+      </article>
+   </main>
+   @includeIf('public.layout.includes.footer')
+</div>
 @stop

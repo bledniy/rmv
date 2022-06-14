@@ -1,0 +1,117 @@
+// main.scss is for content inside of <main> element
+@import 'content-pages/home';
+@import 'content-pages/news';
+@import 'content-pages/members';
+@import 'content-pages/ckeditor-wrapper';
+
+
+// headers
+.home,
+.faculty,
+.department,
+.rmv-news {
+   padding: 20px 10px;
+}
+
+.main__header {
+   font-family: 'Merriweather', serif;
+   text-align: center;
+   margin-bottom: 30px;
+
+   @media (max-width:550px) {
+      margin-bottom: 20px;
+   }
+
+   .header__title--main {
+      color: var(--color-primary);
+      margin: 0px 0px 5px 0px;
+      font-size: 1.75rem;
+
+      @media (max-width:768px) {
+         font-size: 1.5rem;
+      }
+   }
+
+   .header__title--pre {
+      color: var(--color-text-secondary);
+      margin: 0;
+      font-size: 1.25rem;
+      @media (max-width:768px) {
+         font-size: 1.125rem;
+      }
+   }
+}
+
+
+
+// member card
+.member {
+   border-bottom: 3px solid var(--color-secondary);
+   padding-bottom: 20px;
+   margin-bottom: 45px;
+   display: flex;
+   gap: 15px
+}
+
+.member__info {
+   color: var(--color-text-primary);
+}
+
+.member__position {
+   font-size: 1rem;
+   margin: 0;
+   font-style: italic;
+}
+
+.member__name {
+   margin-top: 0;
+   font-family: 'Merriweather', serif;
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: var(--color-primary);
+   margin-bottom: 5px;
+}
+
+.member__activity {
+   font-size: 1.125rem;
+   margin-bottom: 40px;
+}
+
+.member__email {
+   font-size: 1rem;
+   margin-bottom: 5px;
+}
+
+.member__phone {
+   margin: 0;
+}
+
+.member__img {
+   width: 200px;
+   height: 280px;
+   // border-radius: 10px;
+   background-color: #546e8d;
+}
+
+
+
+// adaptive member card
+@media (max-width:768px) {
+   .member {
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   .member__img {
+      align-self: center;
+   }
+
+   .member__position,
+   .member__name {
+      text-align: center;
+   }
+
+   .member__activity {
+      margin-bottom: 30px;
+   }
+}

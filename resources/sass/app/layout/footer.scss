@@ -1,0 +1,41 @@
+.footer {
+   border-top: 5px solid var(--color-secondary);
+   border-bottom: 5px solid var(--color-secondary);
+   padding: 10px 0;
+   background-color: var(--color-primary);
+}
+
+.footer__content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer__text {
+   color: #fff;
+   font-size: 1rem;
+}
+
+
+
+// sticky footer
+html {
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   min-height: 100%;
+   display: flex;
+}
+
+.index-page {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   min-width: 300px;
+}
+
+.main {
+   flex-grow: 1;
+}

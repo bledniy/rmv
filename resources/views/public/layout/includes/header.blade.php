@@ -30,7 +30,7 @@
     <section class="logo">
         <div class="container">
             <figure class="logo__figure">
-                <img src="{{asset('Logo.jpg')}}" alt="Рада молодих вченних" class="logo__img" />
+                <img src="{{asset('images/Logo.jpg')}}" alt="Рада молодих вченних" class="logo__img" />
                 <figcaption class="logo__figcaption">
                     <h1 class="logo__main-header">Рада молодих вчених</h1>
                     <h2 class="logo__university">Одеського Національного Університету імені&nbsp;І.І.&nbsp;Мечникова</h2>

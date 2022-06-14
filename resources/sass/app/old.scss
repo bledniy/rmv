@@ -2,8 +2,7 @@
 
 :root {
    --color-primary: #294a70;
-   /* --color-primary-light: #49688e; */
-   --color-primary-light: #3e5c7e;
+   --color-primary--light: #3e5c7e;
    --color-primary-lighter: #546e8d;
    --color-secondary: #ffab1f; 
    --color-secondary-light: #ffbc4c; 
@@ -11,55 +10,49 @@
    --color-text-secondary: #495057;
 } 
 
-
-
-body, header * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
+// body, header * {
+//    margin: 0;
+//    padding: 0;
+//    box-sizing: border-box;
+// }
 
 html {
    height: 100%;
 }
 
-body {
-   min-height: 100%;
-   display: flex;
-}
+// body {
+//    min-height: 100%;
+//    display: flex;
+// }
 
-.index-page {
-   display: flex;
-   flex-direction: column;
-   flex-grow: 1;
-   min-width: 300px;
-}
+// .index-page {
+//    display: flex;
+//    flex-direction: column;
+//    flex-grow: 1;
+//    min-width: 300px;
+// }
 
-.main {
-   flex-grow: 1;
-}
+// .main {
+//    flex-grow: 1;
+// }
 
-.footer {
-   
-}
+// header a {
+//    text-decoration: none;
+// }
 
-header a {
-   text-decoration: none;
-}
+// header li {
+//    list-style: none;
+// }
 
-header li {
-   list-style: none;
-}
+// body {
+//    font-family: 'Merriweather Sans', sans-serif; 
+//    font-size: 0.875rem;
+// }
 
-body {
-   font-family: 'Merriweather Sans', sans-serif; 
-   font-size: 0.875rem;
-}
-
-.container {
-   max-width: 1140px;
-   margin: 0 auto;
-}
+// .container {
+//    max-width: 1140px;
+//    margin: 0 auto;
+// }
 
 
 
@@ -483,199 +476,199 @@ body.touch .sub-sub-menu__list.open {
 
 /* Faculty & Department*/
 
-.faculty, .department, .rmv-news, .main-page {
-   padding: 25px 10px;
-}
+// .faculty, .department, .rmv-news, .main-page {
+//    padding: 25px 10px;
+// }
 
-.faculty__header, .department__header, .news__header, .main-page__header {
-   text-align: center;
-   font-family: 'Merriweather', serif;
-   margin-bottom: 30px;
-}
+// .faculty__header, .department__header, .news__header, .main-page__header {
+//    text-align: center;
+//    font-family: 'Merriweather', serif;
+//    margin-bottom: 30px;
+// }
 
-.header__title--pre {
-   color: var(--color-text-secondary);
-   font-size: 1.125rem;   
-   margin-bottom: 10px;
-}
+// .header__title--pre {
+//    color: var(--color-text-secondary);
+//    font-size: 1.125rem;   
+//    margin-bottom: 10px;
+// }
 
-.header__title--main {
-   color: var(--color-primary);
-   font-size: 1.50rem;
-}
+// .header__title--main {
+//    color: var(--color-primary);
+//    font-size: 1.50rem;
+// }
 
 /* Members */
 
 // .faculty__members, .department__members {}
 
 
-.member {
-   border-bottom: 3px solid var(--color-secondary);
-   padding-bottom: 20px;
-   margin-bottom: 45px;
-   display: flex;
-   gap: 15px
-}
+// .member {
+//    border-bottom: 3px solid var(--color-secondary);
+//    padding-bottom: 20px;
+//    margin-bottom: 45px;
+//    display: flex;
+//    gap: 15px
+// }
 
-.member__info {
-   color: var(--color-text-primary);
-}
+// .member__info {
+//    color: var(--color-text-primary);
+// }
 
-.member__position {
-   font-size: 1rem;
-   margin: 0;
-   font-style: italic;
-}
+// .member__position {
+//    font-size: 1rem;
+//    margin: 0;
+//    font-style: italic;
+// }
 
-.member__name {
-   margin-top: 0;
-   font-family: 'Merriweather', serif;
-   font-size: 1.5rem;
-   font-weight: bold;
-   color: var(--color-primary);
-   margin-bottom: 5px;
-}
+// .member__name {
+//    margin-top: 0;
+//    font-family: 'Merriweather', serif;
+//    font-size: 1.5rem;
+//    font-weight: bold;
+//    color: var(--color-primary);
+//    margin-bottom: 5px;
+// }
 
-.member__activity {
-   font-size: 1.125rem;
-   margin-bottom: 40px;
-}
+// .member__activity {
+//    font-size: 1.125rem;
+//    margin-bottom: 40px;
+// }
 
-.member__email {
-   font-size: 1rem;
-   margin-bottom: 5px;
-}
+// .member__email {
+//    font-size: 1rem;
+//    margin-bottom: 5px;
+// }
 
-.member__phone {
-   margin: 0;
-}
+// .member__phone {
+//    margin: 0;
+// }
 
-.member__img {
-   width: 200px;
-   height: 280px;
-   // border-radius: 10px;
-   background-color: #546e8d;
-}
+// .member__img {
+//    width: 200px;
+//    height: 280px;
+//    // border-radius: 10px;
+//    background-color: #546e8d;
+// }
 
-@media (max-width:768px) {
-   .member {
-      flex-direction: column;
-      gap: 10px;
-   }
-   .member__img {
-      align-self: center;
-   }
-   .member__position, .member__name {
-      text-align: center;
-   }
-   .member__activity {
-      margin-bottom: 30px;
-   }
-}
+// @media (max-width:768px) {
+//    .member {
+//       flex-direction: column;
+//       gap: 10px;
+//    }
+//    .member__img {
+//       align-self: center;
+//    }
+//    .member__position, .member__name {
+//       text-align: center;
+//    }
+//    .member__activity {
+//       margin-bottom: 30px;
+//    }
+// }
 
 
 
 /* News */
 
-.news {}
+// .news {}
 
-.news-item {
-   padding-bottom: 25px;
-   border-bottom: 3px solid var(--color-secondary);
-}
+// .news-item {
+//    padding-bottom: 25px;
+//    border-bottom: 3px solid var(--color-secondary);
+// }
 
-.news-item__title {
-   color: var(--color-primary-light);
-   font-size: 1.25rem;
-}
+// .news-item__title {
+//    color: var(--color-primary-light);
+//    font-size: 1.25rem;
+// }
 
-.news-item__full {
-   text-decoration: none;
-   color: inherit;
-}
+// .news-item__full {
+//    text-decoration: none;
+//    color: inherit;
+// }
 
-.news-item__date {
-   margin-right: 15px;
-   color: var(--color-text-secondary);
-}
+// .news-item__date {
+//    margin-right: 15px;
+//    color: var(--color-text-secondary);
+// }
 
-.fa-calendar-days {
-   color: var(--color-secondary);
-   margin-right: 5px;
-}
+// .fa-calendar-days {
+//    color: var(--color-secondary);
+//    margin-right: 5px;
+// }
 
-.news-item__author {
-   color: var(--color-text-secondary);
-}
+// .news-item__author {
+//    color: var(--color-text-secondary);
+// }
 
-.fa-user-pen {
-   color: var(--color-secondary);
-   margin-right: 5px;
-}
+// .fa-user-pen {
+//    color: var(--color-secondary);
+//    margin-right: 5px;
+// }
 
-.news-item__short {
-   font-size: 1rem;
-}
+// .news-item__short {
+//    font-size: 1rem;
+// }
 
-.news-item__more {
-   color: #fff;
-   text-decoration: none;
-   padding: 8px;
-   background-color: var(--color-primary-light);
-   border-radius: 7px;
-}
+// .news-item__more {
+//    color: #fff;
+//    text-decoration: none;
+//    padding: 8px;
+//    background-color: var(--color-primary-light);
+//    border-radius: 7px;
+// }
 
 
 
 /* Main Page */
 
-.main-page__info {}
+// .main-page__info {}
 
-.info__title {
-   color: var(--color-primary-light);
-   font-size: 1.25rem;
-}
+// .info__title {
+//    color: var(--color-primary-light);
+//    font-size: 1.25rem;
+// }
 
-.info__text {
-   color: var(--color-text-primary);
-   font-size: 1rem;
-}
+// .info__text {
+//    color: var(--color-text-primary);
+//    font-size: 1rem;
+// }
 
-.main-page .member__img {
+// .main-page .member__img {
 
-}
+// }
 
-.info__departments {
-   display: flex;
-   justify-content: center;
-   gap: 25px;
-   margin-bottom: 20px;
-}
+// .info__departments {
+//    display: flex;
+//    justify-content: center;
+//    gap: 25px;
+//    margin-bottom: 20px;
+// }
 
-.info__department {
-   text-decoration: none;
-   color: #fff;
-   background-color: var(--color-primary);
-   padding: 15px;
-   font-size: 1rem;
-}
+// .info__department {
+//    text-decoration: none;
+//    color: #fff;
+//    background-color: var(--color-primary);
+//    padding: 15px;
+//    font-size: 1rem;
+// }
 
-.info__department:hover {
-   background-color: var(--color-secondary);
-}
+// .info__department:hover {
+//    background-color: var(--color-secondary);
+// }
 
-.rmv-photo-container {
-   display: flex;
-   justify-content: center;
-}
+// .rmv-photo-container {
+//    display: flex;
+//    justify-content: center;
+// }
 
-.rmv-photo {
-   width: 80%;
-   height: 80%;
-   border-radius: 100px;
-}
+// .rmv-photo {
+//    width: 80%;
+//    height: 80%;
+//    border-radius: 100px;
+// }
 
-.rmv-documents {}
+// .rmv-documents {}
 
 
 
@@ -687,12 +680,12 @@ body.touch .sub-sub-menu__list.open {
 
 /* CKEDITOR wrapper */
 
-.ckeditor-wrapper {
-   h1, h2, h3, h4, h5, h6 {
-      color: var(--color-primary-light);
-   }
+// .ckeditor-wrapper {
+//    h1, h2, h3, h4, h5, h6 {
+//       color: var(--color-primary-light);
+//    }
 
-   p {
-      color: var(--color-text-primary);
-   }
-}
+//    p {
+//       color: var(--color-text-primary);
+//    }
+// }

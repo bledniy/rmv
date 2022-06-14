@@ -1,13 +1,11 @@
 {
-    "/_admin/static/js/app.js": "/_admin/static/js/app.js?id=2f5345bdec675f9fab2e89865d4b3496",
+    "/_admin/static/js/app.js": "/_admin/static/js/app.js?id=2974aca139b3a06027809db39d535135",
     "/static/js/ckeditor.js": "/static/js/ckeditor.js?id=8fe1e874274bd90fd9af9c74337e3a58",
     "/static/js/app.js": "/static/js/app.js?id=91a822169c5b0c79caf573d8f37c67ef",
-    "/static/css/style.css": "/static/css/style.css?id=6400c2e95b5525dbe01b535488fb9061",
-    "/static/css/brands.css": "/static/css/brands.css?id=46f14208319eab0691117a53dfe2f60e",
-    "/static/css/fontawesome.css": "/static/css/fontawesome.css?id=99f4c393950b38499fef0231282d9307",
+    "/static/css/styles.css": "/static/css/styles.css?id=f3f23e1d00b104dff9a5a155a9e5988b",
+    "/static/css/icons.css": "/static/css/icons.css?id=c2c246779112ea0e7b36f460316858c1",
     "/_admin/css/styles.css": "/_admin/css/styles.css?id=cccc7500b14abc3b5c7674bf1afe9167",
     "/_admin/css/admin-main.css": "/_admin/css/admin-main.css?id=eb7ce4ce83b84d86a6017e06525ea8ab",
     "/_admin/css/material-dashboard.css": "/_admin/css/material-dashboard.css?id=1b51764d7aaa58f0735c3afbef562996",
-    "/static/css/solid.css": "/static/css/solid.css?id=70256f316e4d431986080bac73e14cf9",
     "/_admin/js/libraries.js": "/_admin/js/libraries.js?id=b2f3c1bfcc98670506ac7cb99e67e588"
 }

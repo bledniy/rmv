@@ -1,0 +1,58 @@
+.home-ingo {
+
+}
+
+.info__text {
+   color: var(--color-text-primary);
+   font-size: 1rem;
+   padding: 0px 32px;
+
+   @media (max-width: 550px) {
+      padding: 0px 16px;
+   }
+}
+
+.info__title {
+   color: var(--color-primary--light);
+   font-size: 1.375rem;
+   padding: 0px 8px;
+   margin-bottom: 16px;
+}
+
+.rmv-document {
+   font-size: 1.125rem;
+   padding: 0px 16px;
+
+   // @media (max-width: 550px) {
+   //    padding: 0px 16px;
+   // }
+}
+
+.info__img {
+   display: block;
+   box-sizing: border-box;
+   border: 5px solid var(--color-primary--light);
+   width: 75%;
+   height: 75%;
+   margin: 0 auto;
+   @media (max-width:768px) {
+      width: 100%;
+      height: 100%;
+   }
+}
+
+.info__text--bold {
+   font-weight: bold;
+}
+
+.info__ul {
+   padding: 0px 32px;
+
+   @media (max-width: 550px) {
+      padding: 0px 16px;
+   }
+}
+
+.info__li > .info__text {
+   padding: 0px;
+}
