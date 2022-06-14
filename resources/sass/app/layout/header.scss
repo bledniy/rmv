@@ -119,28 +119,32 @@
    .logo__main-header {
       font-size: 2.5rem;
    }
+
    .logo__university {
       font-size: 1.125rem;
-   }  
+   }
 }
 
 @media (max-width: 550px) {
    .logo {
       padding: 5px 5px;
    }
+
    .logo__figure {
       flex-direction: column;
       align-items: center;
       gap: 5px;
    }
+
    .logo__main-header {
       font-size: 2.25rem;
       text-align: center;
    }
+
    .logo__university {
       font-size: 1rem;
       text-align: center;
-   }   
+   }
 }
 
 
@@ -266,7 +270,6 @@
 // mobile arrows styles
 .arrow.active {
    transform: rotate(-180deg);
-   color: var(--color-secondary);
 }
 
 .sub-menu__arrow.active {
@@ -340,93 +343,94 @@ body.touch .sub-sub-menu__list.open {
 
 @media (max-width:768px) {
    .navigation-menu {
-       background-color: var(--color-primary);
+      background-color: var(--color-primary);
    }
 
    .menu {
-       display: flex;
-       justify-content: center;
-       position: relative;
+      display: flex;
+      justify-content: center;
+      position: relative;
    }
 
    .menu-burger {
-       display: block;
+      display: block;
    }
 
    .menu__list {
-       display: none;
+      display: none;
    }
 
    .menu__list.menu-active {
-       display: block;
-       position: absolute;
-       top: 109%;
-       width: 75%;
+      display: block;
+      position: absolute;
+      top: 109%;
+      width: 75%;
    }
 
    .sub-menu__list {
-       max-height: 100%;
-       position: relative;
-       left: 0;
-       top: 0;
-       padding: 0;
-       background-color: var(--color-primary-light);
+      max-height: 100%;
+      min-width: 220px;
+      position: relative;
+      left: 0;
+      top: 0;
+      padding: 0;
+      background-color: var(--color-primary-light);
    }
 
    .sub-menu__arrow {
-       transform: rotate(90deg);
+      transform: rotate(90deg);
    }
 
    .sub-sub-menu__list {
-       position: relative;
-       left: 0;
-       top: 0;
-       background-color: var(--color-primary-lighter);
+      position: relative;
+      left: 0;
+      top: 0;
+      background-color: var(--color-primary-lighter);
    }
 
 
    .menu__list>li:first-child {
-       border-left: none;
+      border-left: none;
    }
 
    .menu__list>li {
-       border-right: none;
-       border-bottom: 1px solid #fff;
+      border-right: none;
+      border-bottom: 1px solid #fff;
    }
 
    .sub-menu__list>li {
-       background-color: var(--color-primary-light);
-       border: none;
-       border-bottom: 1px solid #fff;
+      background-color: var(--color-primary-light);
+      border: none;
+      border-bottom: 1px solid #fff;
    }
 
    .sub-menu__list>li:first-child {
-       border-top: 1px solid #fff;
+      border-top: 1px solid #fff;
    }
 
    .sub-menu__list>li:last-child {
-       border: none;
+      border: none;
    }
 
    .sub-sub-menu__list>li {
-       background-color: var(--color-primary-lighter);
-       border: none;
-       border-bottom: 1px solid #fff;
+      background-color: var(--color-primary-lighter);
+      border: none;
+      border-bottom: 1px solid #fff;
    }
 
    .sub-sub-menu__list>li:first-child {
-       border-top: 1px solid #fff;
+      border-top: 1px solid #fff;
    }
 
    .sub-sub-menu__list>li:last-child {
-       border: none;
+      border: none;
    }
 
    .sub-menu__link {
-       padding-left: 25px;
+      padding-left: 25px;
    }
 
    .sub-sub-menu__link {
-       padding-left: 35px;
+      padding-left: 35px;
    }
 }

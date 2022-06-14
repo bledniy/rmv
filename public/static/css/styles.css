@@ -281,7 +281,6 @@
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
-  color: var(--color-secondary);
 }
 
 .sub-menu__arrow.active {
@@ -383,6 +382,7 @@ body.touch .sub-sub-menu__list.open {
 
   .sub-menu__list {
     max-height: 100%;
+    min-width: 220px;
     position: relative;
     left: 0;
     top: 0;
@@ -479,6 +479,8 @@ body.touch .sub-sub-menu__list.open {
   width: 75%;
   height: 75%;
   margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 7px 0px var(--color-primary-light);
+          box-shadow: 0px 0px 7px 0px var(--color-primary-light);
 }
 @media (max-width: 768px) {
   .info__img {
@@ -565,9 +567,13 @@ body.touch .sub-sub-menu__list.open {
 }
 .ckeditor-wrapper h3 {
   font-size: 1.375rem;
+  margin-bottom: 8px;
 }
 .ckeditor-wrapper p {
   color: var(--color-text-primary);
+}
+.ckeditor-wrapper li {
+  margin-bottom: 7px;
 }
 .ckeditor-wrapper div {
   color: var(--color-text-primary);
@@ -580,12 +586,14 @@ body.touch .sub-sub-menu__list.open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
 .department-chief img {
-  width: 200px;
+  max-width: 200px;
   background-color: #546e8d;
-  border: 4px solid var(--color-primary-lighter);
+  border: 3px solid var(--color-primary-lighter);
+  -webkit-box-shadow: 0px 0px 7px 0px var(--color-primary-light);
+          box-shadow: 0px 0px 7px 0px var(--color-primary-light);
 }
 .department-chief .chief__info .chief__position {
   font-size: 1.125rem;
@@ -597,7 +605,6 @@ body.touch .sub-sub-menu__list.open {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--color-primary);
-  margin-bottom: 5px;
 }
 .department-chief .chief__info .chief__activity {
   font-size: 1.125rem;
@@ -607,7 +614,10 @@ body.touch .sub-sub-menu__list.open {
   font-size: 1rem;
   margin-bottom: 5px;
 }
-
+.department-chief .chief__info .chief__phone {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
 @media (max-width: 768px) {
   .department-chief {
     margin-top: 15px;
@@ -617,22 +627,32 @@ body.touch .sub-sub-menu__list.open {
             flex-direction: column;
     gap: 10px;
   }
-
-  img {
+  .department-chief img {
     -ms-flex-item-align: center;
         align-self: center;
+    margin-top: 10px;
   }
-
-  .chief__position, .chief__name {
+  .department-chief .chief__info .chief__position, .department-chief .chief__info .chief__name, .department-chief .chief__info .chief__email, .department-chief .chief__info .chief__phone {
     text-align: center;
   }
-
-  .chief__activity {
+  .department-chief .chief__info .chief__name {
+    font-size: 1.25rem;
+  }
+  .department-chief .chief__info .chief__activity {
+    text-align: center;
     margin-bottom: 10px;
   }
 }
+
 .member {
   margin-bottom: 15px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 7px;
+  border: 1px solid var(--color-primary-lighter);
+  -webkit-box-shadow: 0px 0px 5px 0px var(--color-primary-light);
+          box-shadow: 0px 0px 5px 0px var(--color-primary-light);
 }
 
 .member__name {
