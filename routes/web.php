@@ -16,7 +16,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     Route::get('/department/{id}', [DepartmentController::class, 'show'])->name('department.show');
 
     Route::get('/news', [NewsController::class, 'index'])->name('news.index');
-    Route::get('/news/load-more', [NewsController::class, 'loadMore'])->name('news.load-more');
-    Route::get('/news/{news}/modal', [NewsController::class, 'showModalRendered'])->name('news.show.modal');
+    Route::get('/news/{id}', [NewsController::class, 'show'])->name('news.show');
+//    Route::get('/news/{news}/modal', [NewsController::class, 'showModalRendered'])->name('news.show.modal');
 
 });

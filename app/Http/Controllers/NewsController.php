@@ -33,6 +33,13 @@ final class NewsController extends SiteController
         return view('public.news.index')->with(compact('news'));
     }
 
+    public function show(string $id)
+    {
+        $item = $this->newsRepository->find((int)$id);
+
+        return view('public.news.show')->with(compact('item'));
+    }
+
     public function showModalRendered(News $news): JsonResponse
     {
         return new JsonResponse(view('public.layout.includes.modals.news-modal-content')->with(compact('news'))->render());

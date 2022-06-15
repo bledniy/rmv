@@ -30,6 +30,6 @@ class DepartmentController extends Controller
         $head = $this->staffRepository->where('department_id', $departmentId)->where('type', 'head')->first();
         $with = compact(array_keys(get_defined_vars()));
 
-        return view('public.department.index')->with($with);
+        return view('public.department.show')->with($with);
     }
 }

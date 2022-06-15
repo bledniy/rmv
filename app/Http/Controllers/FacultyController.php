@@ -31,6 +31,6 @@ class FacultyController extends Controller
         $staffs = $this->staffRepository->findAllByFaculty($facultyId);
         $with = compact(array_keys(get_defined_vars()));
 
-        return view('public.faculty.index')->with($with);
+        return view('public.faculty.show')->with($with);
     }
 }

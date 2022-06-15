@@ -8,11 +8,11 @@
             <div class="container">
                 <section class="news">
                     <div class="news-item">
-                        <h3 class="news-item__title"><a href="" class="news-item__full">Зустріч представників РМВ з магістрами, аспірантами та молодими вченими факультетів університету!</a></h3>
-                        <span class="news-item__date"><i class="fa-solid fa-calendar-days"></i>04.12.2021 </span>
+                        <h3 class="news-item__title"><a href="" class="news-item__full">{{$item->getName()}}</a></h3>
+                        <span class="news-item__date"><i class="fa-solid fa-calendar-days"></i>{{$item->created_at}}</span>
                         <span class="news-item__author"><i class="fa-solid fa-user-pen"></i>writer</span>
                         <div class="ckeditor-wrapper">
-
+                                {{$item->description}}
                         </div>
                     </div>
                 </section>

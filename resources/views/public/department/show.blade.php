@@ -15,21 +15,23 @@
                     </header>
                     <section class="department__members">
                         <div class="member">
-                            <img src="{{getPathToImage(imgPathOriginal($head->image))}}"
-                            alt="" class="member__img">
+                            @if(!empty($head->image))
+                                <img src="{{getPathToImage(imgPathOriginal($head->image))}}"
+                                     alt="" class="member__img">
+                            @endif
                             <div class="member__info">
                                 <p class="member__position">Голова відділу</p>
-                                @if(null !== $head->getName())
-                                <p class="member__name">{{$head->getName()}}</p>
+                                @if(!empty($head->name))
+                                <p class="member__name">{{$head->name}}</p>
                                 @endif
-                                @if(null !== $head->getDescription())
-                                    <p class="department__info ckeditor-wrapper">{!! $head->getDescription() !!}</p>
+                                @if(!empty($head->description))
+                                    <p class="department__info ckeditor-wrapper">{!! $head->description !!}</p>
                                 @endif
-                                @if(null !== $head->getEmail())
-                                <p class="member__email">{{$head->getEmail()}}</p>
+                                @if(!empty($head->email))
+                                <p class="member__email">{{$head->email}}</p>
                                 @endif
-                                @if(null !== $head->getPhone())
-                                <p class="member__phone">{{$head->getPhone()}}</p>
+                                @if(!empty($head->phone))
+                                <p class="member__phone">{{$head->phone}}</p>
                                 @endif
                             </div>
                         </div>
