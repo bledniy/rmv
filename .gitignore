@@ -30,3 +30,4 @@ code-generator.json
 /laravel-echo-server.json
 /laravel-echo-server.lock
 .user.ini
+/.vscode

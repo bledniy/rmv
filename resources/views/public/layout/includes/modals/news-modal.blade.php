@@ -1,1 +1,0 @@
-<div class="modal_bg news-modal" id="news-modal"></div>

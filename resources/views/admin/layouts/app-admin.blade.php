@@ -22,7 +22,7 @@
         <x-admin.layout.sidebar-bg></x-admin.layout.sidebar-bg>
         <div class="logo text-center">
             <a href="{{ route('home')}}" class="simple-text logo-normal mx-3 px-2 bg-white">
-                <img src="{{ asset('assets/img/Logo.svg') }}" alt="" class="img-fluid" width="60">
+                <img src="{{ asset('Logo.jpg') }}" alt="" class="img-fluid" width="60">
             </a>
             <small class="badge badge-dark no-radius">{{ Auth::guard('admin')->user()->login }}</small>
         </div>

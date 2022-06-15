@@ -25,6 +25,9 @@ class StaffRequest extends AbstractRequest implements RequestParameterModelable
             'phone' => ['nullable', 'string'],
             'department_id' => ['nullable', 'exists:departments,id'],
             'faculty_id' => ['nullable', 'exists:faculties,id'],
+            'type' => ['nullable', 'string'],
+            'sort' => ['nullable'],
+            'image' => [$this->getImageRule()],
         ];
 
         return $rules;
