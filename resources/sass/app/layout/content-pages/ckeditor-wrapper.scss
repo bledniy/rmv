@@ -29,14 +29,15 @@
 // CKEditor - members (Chief of Department & Regular member)
 
 // Chief:
-.department-chief {
+.department-chief, .department-member {
    border-bottom: 3px solid var(--color-secondary);
    padding-bottom: 20px;
    margin-bottom: 45px;
    display: flex;
    gap: 25px;
 
-   img {
+   .chief__img, img {
+      display: block;
       max-width: 200px;
       // height: 280px;
       background-color: #546e8d;
@@ -44,27 +45,27 @@
       box-shadow: 0px 0px 7px 0px var(--color-primary-light);
    }
 
-   .chief__info {
-      .chief__position {
+   .chief__info, .member-detailed__info {
+      .chief__position, .member-detailed__position {
          font-size: 1.125rem;
          margin: 0;
       }
-      .chief__name {
+      .chief__name, .member-detailed__name {
          margin-top: 0;
          font-family: 'Merriweather', serif;
          font-size: 1.5rem;
          font-weight: bold;
          color: var(--color-primary);
       }
-      .chief__activity {
+      .chief__activity, .member-detailed__activity { 
          font-size: 1.125rem;
          margin-bottom: 40px;
       }
-      .chief__email {
+      .chief__email, .member-detailed__email {
          font-size: 1rem;
          margin-bottom: 5px;
       }
-      .chief__phone {
+      .chief__phone, .member-detailed__phone {
          font-size: 1rem;
          margin-bottom: 5px;
       }
@@ -75,7 +76,7 @@
       flex-direction: column;
       gap: 10px;
 
-      img {
+      .chief__img {
          align-self: center;
          margin-top: 10px;
       }
@@ -98,34 +99,49 @@
 
 // Member:
 .member {
-   margin-bottom: 15px;
-   max-width: fit-content;
-   padding: 7px;
    border: 1px solid var(--color-primary-lighter);
    box-shadow: 0px 0px 5px 0px var(--color-primary-light);
+   max-width: 60%;
+   margin: 0 auto;
+   margin-bottom: 15px;
+   @media (max-width:768px) {
+      max-width: 95%;
+   }
 }
+
+
 
 .member__name {
+   color: var(--color-primary-light);
    font-size: 1.125rem;
    font-weight: bold;
-}
-
-.member__phone {
-   font-size: 1rem;
-   font-weight: normal;
-}
-
-.member__email {
-   font-size: 1rem;
-   font-weight: normal;
-}
-
-.member__faculty {
-   font-size: 1rem;
-   font-weight: normal;
+   text-align: center;
+   margin: 8px;
 }
 
 .member__activity {
    font-size: 1rem;
    font-weight: normal;
+   text-align: center;
+   margin-bottom: 16px;
+   p {
+      margin: 0;
+   }
 }
+
+.member__contacts {
+   margin-bottom: 8px;
+   .member__phone {
+      font-size: 1rem;
+      font-weight: normal;
+      text-align: center;
+   }
+   
+   .member__email {
+      font-size: 1rem;
+      font-weight: normal;
+      text-align: center;
+   }
+}
+
+

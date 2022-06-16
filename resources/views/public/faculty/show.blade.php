@@ -9,7 +9,7 @@
 
             <article class="faculty">
                 <div class="container">
-                    <header class="faculty__header">
+                    <header class="main__header">
                         <h2 class="header__title--pre">Склад Ради молодих вчених<br>Одеського національного університету
                             імені І.І. Мечникова</h2>
                         <h2 class="header__title--main">{{$faculty->getTitle()}}</h2>
@@ -17,20 +17,20 @@
                     <section class="faculty__members">
                         @foreach($staffs as $staff)
                             <div class="member">
-                                <div class="member__info">
                                     @if(null !== $staff->getName())
-                                        <p class="member__name">{{$staff->getName()}}</p>
+                                        <div class="member__name">{{$staff->getName()}}</div>
                                     @endif
                                     @if(null !== $staff->getDescription())
-                                        <p class="department__info ckeditor-wrapper">{!! $staff->getDescription() !!}</p>
+                                        <div class="member__activity">{!! $staff->getDescription() !!}</div>
                                     @endif
-                                    @if(null !== $staff->getEmail())
-                                        <p class="member__email">{{$staff->getEmail()}}</p>
-                                    @endif
-                                    @if(null !== $staff->getPhone())
-                                        <p class="member__phone">{{$staff->getPhone()}}</p>
-                                    @endif
-                                </div>
+                                    <div class="member__contacts">
+                                        @if(null !== $staff->getEmail())
+                                            <div class="member__email">{{$staff->getEmail()}}</div>
+                                        @endif
+                                        @if(null !== $staff->getPhone())
+                                            <div class="member__phone">{{$staff->getPhone()}}</div>
+                                        @endif
+                                    </div>
                             </div>
                         @endforeach
                     </section>
