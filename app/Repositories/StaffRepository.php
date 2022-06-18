@@ -40,9 +40,9 @@ class StaffRepository extends AbstractRepository
 		return $entity;
 	}
 
-	private function fillForCreate(Staff $facultie, Language $language, array $attributes): void
+	private function fillForCreate(Staff $staff, Language $language, array $attributes): void
     {
-		$attributes[$facultie->getForeignKey()] = $facultie->getKey();
+		$attributes[$staff->getForeignKey()] = $staff->getKey();
 		$attributes[$language->getForeignKey()] = $language->getKey();
 		$entityLang = $this->makeModelLang();
 		$entityLang->fillExisting($attributes)->save();
@@ -57,7 +57,7 @@ class StaffRepository extends AbstractRepository
 		if (!$entityLang = $model->lang) {
 			$this->fillForCreate($model, $this->getCurrentLanguage(), $attributes);
 		} else {
-			$entityLang->fillExisting($attributes)->save();
+            $entityLang->fillExisting($attributes)->save();
 		}
 
 		return $model;
