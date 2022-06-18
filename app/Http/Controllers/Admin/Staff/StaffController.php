@@ -143,6 +143,12 @@ class StaffController extends AdminController
     {
         $input = $request->only($request->getFillableFields('image'));
         //
+        if (!$request->type){
+            $this->staffRepository->update(['type' => null], $staff);
+        }
+        if (!$request->sort){
+            $this->staffRepository->update(['sort' => null], $staff);
+        }
         $this->saveImage($request, $staff);
         if ($this->staffRepository->update($input, $staff)) {
             $this->setSuccessUpdate();

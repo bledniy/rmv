@@ -54,6 +54,13 @@ trait MigrationCreateFieldTypes
         return $this;
     }
 
+    public function createFile($field = 'file'): self
+    {
+        $this->createNullableString($field, 255);
+
+        return $this;
+    }
+
     public function nullableDateTime($field = 'date'): self
     {
         $this->table()->dateTime($field)->nullable();
