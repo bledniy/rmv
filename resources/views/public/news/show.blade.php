@@ -24,11 +24,3 @@
     @includeIf('public.layout.includes.footer')
 </div>
 @stop
-<!-- 
-<h3></h3>
-<p></p>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul> -->
