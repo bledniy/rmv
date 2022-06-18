@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\Content\BrandsController;
 use App\Http\Controllers\Admin\Content\VacancyController;
 use App\Http\Controllers\Admin\Department\DepartmentController;
+use App\Http\Controllers\Admin\Document\DocumentController;
 use App\Http\Controllers\Admin\Faculty\FacultyController;
 use App\Http\Controllers\Admin\Feedback\FeedbackController;
 use App\Http\Controllers\Admin\IndexController;
@@ -64,7 +65,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
                 'pages' => PageController::class,
             ], ['as' => 'admin', 'except' => ['show']]
             );
-            
+
+            Route::resource('documents', DocumentController::class, ['except' => ['show'], 'as' => 'admin']);
             Route::resource('departments', DepartmentController::class, ['except' => ['show'], 'as' => 'admin']);
             Route::resource('faculties', FacultyController::class, ['except' => ['show'], 'as' => 'admin']);
             Route::resource('staffs', StaffController::class, ['except' => ['show'], 'as' => 'admin']);

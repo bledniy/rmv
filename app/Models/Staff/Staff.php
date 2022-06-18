@@ -25,6 +25,8 @@ class Staff extends Model implements HasLocalized, HasImagesContract
 
     protected $casts = [
         'active' => 'bool',
+        'sort' => 'int',
+        'is_head' => 'bool',
     ];
 
     protected $guarded = ['id'];

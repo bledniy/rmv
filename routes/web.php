@@ -3,10 +3,8 @@
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\FacultyController;
-use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
-use App\Http\Controllers\VacancyController;
 
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localizationRedirect'],], static function () {
 
