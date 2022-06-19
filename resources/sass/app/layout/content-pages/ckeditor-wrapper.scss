@@ -52,6 +52,7 @@
       }
       .chief__name, .member-detailed__name {
          margin-top: 0;
+         margin-bottom: 20px;
          font-family: 'Merriweather', serif;
          font-size: 1.5rem;
          font-weight: bold;
@@ -76,18 +77,21 @@
       flex-direction: column;
       gap: 10px;
 
-      .chief__img {
+      .chief__img, img {
          align-self: center;
          margin-top: 10px;
       }
-      .chief__info {
+      .chief__info, .member-detailed__info {
          .chief__position, .chief__name, .chief__email, .chief__phone {
             text-align: center;
          }
-         .chief__name {
+         .member-detailed__position, .member-detailed__name, .member-detailed__email, .member-detailed__phone {
+            text-align: center;
+         }
+         .chief__name, .member-detailed__name {
             font-size: 1.25rem;
          }
-         .chief__activity {
+         .chief__activity, .member-detailed__activity {
             text-align: center;
             margin-bottom: 10px;
          } 

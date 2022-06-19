@@ -1,6 +1,7 @@
 // main.scss is for content inside of <main> element
 @import 'content-pages/home';
 @import 'content-pages/news';
+@import 'content-pages/documents';
 @import 'content-pages/ckeditor-wrapper';
 
 .main {
@@ -11,7 +12,8 @@
 .home,
 .faculty,
 .department,
-.rmv-news {
+.rmv-news,
+.rmv-documents {
    padding: 20px 10px;
 }
 

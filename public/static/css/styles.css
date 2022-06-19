@@ -527,6 +527,10 @@ body.touch .sub-sub-menu__list.open {
   text-decoration: none;
   color: var(--color-primary);
 }
+.news-item__full:hover {
+  color: var(--color-secondary-light);
+  text-decoration: underline;
+}
 
 .news-item__date {
   margin-right: 15px;
@@ -558,6 +562,11 @@ body.touch .sub-sub-menu__list.open {
   background-color: var(--color-primary-light);
   border-radius: 7px;
 }
+.news-item__more:hover {
+  background-color: var(--color-secondary-light);
+  -webkit-box-shadow: 0px 0px 10px 0px var(--color-secondary-light);
+          box-shadow: 0px 0px 10px 0px var(--color-secondary-light);
+}
 
 .news-item img {
   display: block;
@@ -575,6 +584,58 @@ iframe {
   border: 3px solid var(--color-primary-lighter);
   -webkit-box-shadow: 0px 0px 7px 0px var(--color-primary-light);
           box-shadow: 0px 0px 7px 0px var(--color-primary-light);
+}
+
+.document-item {
+  padding-bottom: 25px;
+  border-bottom: 3px solid var(--color-secondary);
+}
+
+.document-item__title {
+  color: var(--color-primary-light);
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.document-item__full {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+.document-item__full:hover {
+  color: var(--color-secondary-light);
+  text-decoration: underline;
+}
+
+.document-item__date {
+  margin-right: 15px;
+  color: var(--color-text-secondary);
+}
+
+.fa-calendar-days {
+  color: var(--color-secondary);
+  margin-right: 5px;
+}
+
+.document-item__author {
+  color: var(--color-text-secondary);
+}
+
+.fa-user-pen {
+  color: var(--color-secondary);
+  margin-right: 5px;
+}
+
+.document-item__more {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  background-color: var(--color-primary-light);
+  border-radius: 7px;
+}
+.document-item__more:hover {
+  background-color: var(--color-secondary-light);
+  -webkit-box-shadow: 0px 0px 10px 0px var(--color-secondary-light);
+          box-shadow: 0px 0px 10px 0px var(--color-secondary-light);
 }
 
 .ckeditor-wrapper h1,
@@ -622,6 +683,7 @@ iframe {
 }
 .department-chief .chief__info .chief__name, .department-chief .chief__info .member-detailed__name, .department-chief .member-detailed__info .chief__name, .department-chief .member-detailed__info .member-detailed__name, .department-member .chief__info .chief__name, .department-member .chief__info .member-detailed__name, .department-member .member-detailed__info .chief__name, .department-member .member-detailed__info .member-detailed__name {
   margin-top: 0;
+  margin-bottom: 20px;
   font-family: "Merriweather", serif;
   font-size: 1.5rem;
   font-weight: bold;
@@ -648,18 +710,21 @@ iframe {
             flex-direction: column;
     gap: 10px;
   }
-  .department-chief .chief__img, .department-member .chief__img {
+  .department-chief .chief__img, .department-chief img, .department-member .chief__img, .department-member img {
     -ms-flex-item-align: center;
         align-self: center;
     margin-top: 10px;
   }
-  .department-chief .chief__info .chief__position, .department-chief .chief__info .chief__name, .department-chief .chief__info .chief__email, .department-chief .chief__info .chief__phone, .department-member .chief__info .chief__position, .department-member .chief__info .chief__name, .department-member .chief__info .chief__email, .department-member .chief__info .chief__phone {
+  .department-chief .chief__info .chief__position, .department-chief .chief__info .chief__name, .department-chief .chief__info .chief__email, .department-chief .chief__info .chief__phone, .department-chief .member-detailed__info .chief__position, .department-chief .member-detailed__info .chief__name, .department-chief .member-detailed__info .chief__email, .department-chief .member-detailed__info .chief__phone, .department-member .chief__info .chief__position, .department-member .chief__info .chief__name, .department-member .chief__info .chief__email, .department-member .chief__info .chief__phone, .department-member .member-detailed__info .chief__position, .department-member .member-detailed__info .chief__name, .department-member .member-detailed__info .chief__email, .department-member .member-detailed__info .chief__phone {
     text-align: center;
   }
-  .department-chief .chief__info .chief__name, .department-member .chief__info .chief__name {
+  .department-chief .chief__info .member-detailed__position, .department-chief .chief__info .member-detailed__name, .department-chief .chief__info .member-detailed__email, .department-chief .chief__info .member-detailed__phone, .department-chief .member-detailed__info .member-detailed__position, .department-chief .member-detailed__info .member-detailed__name, .department-chief .member-detailed__info .member-detailed__email, .department-chief .member-detailed__info .member-detailed__phone, .department-member .chief__info .member-detailed__position, .department-member .chief__info .member-detailed__name, .department-member .chief__info .member-detailed__email, .department-member .chief__info .member-detailed__phone, .department-member .member-detailed__info .member-detailed__position, .department-member .member-detailed__info .member-detailed__name, .department-member .member-detailed__info .member-detailed__email, .department-member .member-detailed__info .member-detailed__phone {
+    text-align: center;
+  }
+  .department-chief .chief__info .chief__name, .department-chief .chief__info .member-detailed__name, .department-chief .member-detailed__info .chief__name, .department-chief .member-detailed__info .member-detailed__name, .department-member .chief__info .chief__name, .department-member .chief__info .member-detailed__name, .department-member .member-detailed__info .chief__name, .department-member .member-detailed__info .member-detailed__name {
     font-size: 1.25rem;
   }
-  .department-chief .chief__info .chief__activity, .department-member .chief__info .chief__activity {
+  .department-chief .chief__info .chief__activity, .department-chief .chief__info .member-detailed__activity, .department-chief .member-detailed__info .chief__activity, .department-chief .member-detailed__info .member-detailed__activity, .department-member .chief__info .chief__activity, .department-member .chief__info .member-detailed__activity, .department-member .member-detailed__info .chief__activity, .department-member .member-detailed__info .member-detailed__activity {
     text-align: center;
     margin-bottom: 10px;
   }
@@ -718,7 +783,8 @@ iframe {
 .home,
 .faculty,
 .department,
-.rmv-news {
+.rmv-news,
+.rmv-documents {
   padding: 20px 10px;
 }
 
