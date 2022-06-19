@@ -57,7 +57,7 @@ return [
     'file' => [
         'file' => 'Документ(Файл PDF)',
         'file-current' => 'Текущий файл',
-        'choose-image' => 'Выберите файл',
+        'choose-file' => 'Выберите файл',
         'no-file' => 'Файл не выбран',
     ],
     'select' => [

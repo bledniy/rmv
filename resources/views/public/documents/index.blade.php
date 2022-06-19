@@ -14,15 +14,15 @@
                             університету імені І.І. Мечникова</h2>
                     </header>
                     <section class="documents">
-                        @foreach($news as $new)
+                        @foreach($docs as $doc)
                             <div class="document-item">
-                                <h3 class="document-item__title"><a href="{{route('news.show', $new->id)}}"
-                                                                class="document-item__full">{{$new->getName()}}</a>
+                                <h3 class="document-item__title"><a href="{{'/storage/docs/' . $doc->file}}"
+                                                                class="document-item__full">{{$doc->getName()}}</a>
                                 </h3>
                                 <span class="document-item__date"><i
-                                            class="fa-solid fa-calendar-days"></i>{{$new->created_at}}</span>
+                                            class="fa-solid fa-calendar-days"></i>{{$doc->created_at}}</span>
                                 <span class="document-item__author"><i class="fa-solid fa-user-pen"></i>Admin</span>
-                                <a class="document-item__more" href="{{route('news.show', $new->id)}}">Читати документ</a>
+                                <a class="document-item__more" href="{{'/storage/docs/' . $doc->file}}">Читати документ</a>
                             </div>
                         @endforeach
                     </section>

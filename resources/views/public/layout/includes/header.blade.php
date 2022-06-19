@@ -75,7 +75,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="menu__link">Документи</a>
+                        <a href="{{route('documents.index')}}" class="menu__link">Документи</a>
                     </li>
                     <li>
                         <a href="{{route('news.index')}}" class="menu__link">Новини</a>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DataContainers\News;
+namespace App\DataContainers\Document;
 
 use Illuminate\Http\Request;
 

@@ -1,3 +1,6 @@
+<?php
+$types = \App\Enum\StaffTypesEnum::$enums;
+?>
 @include('admin.partials.crud.elements.name', ['title' => 'Имя'])
 
 
@@ -19,23 +22,9 @@
 @include('admin.partials.crud.elements.email')
 
 @include('admin.partials.crud.elements.phone')
+@include('admin.partials.crud.select.select-array', ['list' => $types ,'name' => 'type',  'title' => 'Должность в отделе', 'nullable' => true])
 
 @include('admin.partials.crud.select.select', ['list' => $departments,'name' => 'department_id', 'column' => 'name', 'title' => 'Отдел', 'nullable' => true])
-
-<div class="form-group">
-    <label for="type" class="control-label">Глава отдела</label>
-    <div class="col px-0">
-        <div class="check-styled {{ getCurrentLocaleCode() }}">
-            <input type="checkbox" value="head" id="type"
-                   autocomplete="off"
-                   name="type"
-                   @if (isset($edit)  && $edit->type === 'head') checked="checked" @endif
-                    {!! $props ?? '' !!}
-            />
-            <label for="type"></label>
-        </div>
-    </div>
-</div>
 
 @include('admin.partials.crud.select.select', ['list' => $faculties,'name' => 'faculty_id', 'column' => 'name', 'title' => 'Факультет', 'nullable' => true])
 

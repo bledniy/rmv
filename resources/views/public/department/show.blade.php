@@ -1,3 +1,7 @@
+<?php
+$head = $head ?? null;
+$secy = $secy ?? null;
+?>
 @extends('public.layout.app')
 
 @section('content')
@@ -8,61 +12,49 @@
                 <div class="container">
                     <header class="main__header">
                         <h2 class="header__title--pre">Відділи Ради молодих вчених<br>Одеського національного
-                        університету імені І.І. Мечникова</h2>
+                            університету імені І.І. Мечникова</h2>
                         <h2 class="header__title--main">
                             {{$item->getTitle()}}
                         </h2>
                     </header>
+                    @if(!empty($head))
                         <div class="department-chief">
-                            @if(!empty($head->image))
-                                <img src="{{getPathToImage(imgPathOriginal($head->image))}}"
-                                     alt="" class="chief__img">
-                            @endif
+                            <img src="{{getPathToImage(imgPathOriginal($head->image))}}"
+                                 alt="" class="chief__img">
                             <div class="chief__info">
                                 <p class="chief__position">Голова відділу</p>
-                                @if(!empty($head->name))
-                                <p class="chief__name">{{$head->name}}</p>
-                                @endif
-                                @if(!empty($head->description))
-                                <div class="chief__activity">{!! $head->description !!}</div>
-                                @endif
-                                @if(!empty($head->email))
-                                <p class="chief__email">{{$head->email}}</p>
-                                @endif
-                                @if(!empty($head->phone))
-                                <p class="chief__phone">{{$head->phone}}</p>
-                                @endif
+                                    <p class="chief__name">{{$head->name}}</p>
+
+                                    <div class="chief__activity">{!! $head->description !!}</div>
+
+                                    <p class="chief__email">{{$head->email}}</p>
+
+                                    <p class="chief__phone">{{$head->phone}}</p>
                             </div>
                         </div>
-                    <!-- <section class="department__members">
-                        <div class="member">
-                            @if(!empty($head->image))
-                                <img src="{{getPathToImage(imgPathOriginal($head->image))}}"
-                                     alt="" class="member__img">
-                            @endif
-                            <div class="member__info">
-                                <p class="member__position">Голова відділу</p>
-                                @if(!empty($head->name))
-                                <p class="member__name">{{$head->name}}</p>
-                                @endif
-                                @if(!empty($head->description))
-                                    <p class="department__info ckeditor-wrapper">{!! $head->description !!}</p>
-                                @endif
-                                @if(!empty($head->email))
-                                <p class="member__email">{{$head->email}}</p>
-                                @endif
-                                @if(!empty($head->phone))
-                                <p class="member__phone">{{$head->phone}}</p>
-                                @endif
+                    @endif
+                    @if(!empty($secy))
+                        <div class="department-chief">
+                            <img src="{{getPathToImage(imgPathOriginal($secy->image))}}"
+                                 alt="" class="chief__img">
+                            <div class="chief__info">
+                                <p class="chief__position">Секретар відділу</p>
+                                <p class="chief__name">{{$secy->name}}</p>
+
+                                <div class="chief__activity">{!! $secy->description !!}</div>
+
+                                <p class="chief__email">{{$secy->email}}</p>
+
+                                <p class="chief__phone">{{$secy->phone}}</p>
                             </div>
                         </div>
-                    </section> -->
+                    @endif
                     <section class="department__info ckeditor-wrapper">
                         {!! $item->description  !!}
                     </section>
                 </div>
             </article>
         </main>
-            @includeIf('public.layout.includes.footer')
+        @includeIf('public.layout.includes.footer')
     </div>
 @stop

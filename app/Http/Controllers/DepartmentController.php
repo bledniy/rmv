@@ -28,6 +28,8 @@ class DepartmentController extends Controller
     {
         $item = $this->departmentRepository->find($departmentId);
         $head = $this->staffRepository->where('department_id', $departmentId)->where('type', 'head')->first();
+        $secy = $this->staffRepository->where('department_id', $departmentId)->where('type', 'secy')->first();
+
         $with = compact(array_keys(get_defined_vars()));
 
         return view('public.department.show')->with($with);

@@ -9,7 +9,7 @@ use App\Enum\ContentTypeEnum;
 use App\Repositories\ContentRepository;
 use App\Traits\Authorizable;
 
-class BrandsController extends ContentController
+class CooperationController extends ContentController
 {
     use Authorizable;
 
@@ -17,7 +17,7 @@ class BrandsController extends ContentController
 
     protected $routeKey = 'admin.';
 
-    protected $name = 'Бренды';
+    protected $name = 'Співробітництво';
 
     public function __construct(ContentRepository $repository)
     {

@@ -72,8 +72,8 @@ class DocumentRepository extends AbstractRepository
 
 	public function addPublicCriteriaToQuery(): self
 	{
-		$this->pushCriteria($this->app->make(ActiveCriteria::class)->setTable('news'));
-		$this->pushCriteria($this->app->make(PublishedAtCriteria::class)->setTable('news'));
+		$this->pushCriteria($this->app->make(ActiveCriteria::class)->setTable('documents'));
+		$this->pushCriteria($this->app->make(PublishedAtCriteria::class)->setTable('documents'));
 		$this->applyCriteria()->resetCriteria();
 
 		return $this;
@@ -114,9 +114,6 @@ class DocumentRepository extends AbstractRepository
 				->orWhereLike('name', $search)
 				->orWhereLike('title', $search)
 			;
-		}
-		if ($dataContainer->getCategories()) {
-			$this->whereIn('news_category_id', $dataContainer->getCategories());
 		}
 		$this->whereNotNull('language_id')
 			->orderBy('published_at', 'desc')

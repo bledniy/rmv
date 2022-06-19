@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\DataContainers\Document\SearchDataContainer;
 use App\Models\Document\Document;
+use App\Repositories\DocumentRepository;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -10,13 +12,27 @@ use Illuminate\Http\Response;
 class DocumentController extends Controller
 {
     /**
+     * @var DocumentRepository
+     */
+    private $documentRepository;
+
+    public function __construct(DocumentRepository $documentRepository)
+    {
+        $this->documentRepository = $documentRepository;
+    }
+
+    /**
      * Display a listing of the resource.
      *
-     * @return Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|Response
      */
-    public function index()
+    public function index(SearchDataContainer $container)
     {
-        //
+        $docs = $this->documentRepository->getListPublic($container);
+
+        $with = compact(array_keys(get_defined_vars()));
+
+        return view('public.documents.index')->with($with);
     }
 
     /**
