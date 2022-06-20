@@ -4,10 +4,14 @@ namespace App\Models\Staff;
 
 use App\Contracts\HasImagesContract;
 use App\Contracts\HasLocalized;
+use App\Models\Department\Department;
+use App\Models\Faculty\Faculty;
 use App\Models\Model;
 use App\Traits\Models\HasImages;
 use App\Traits\Models\ImageAttributeTrait;
 use App\Traits\Models\Localization\RedirectLangColumn;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Staff extends Model implements HasLocalized, HasImagesContract
 {
@@ -34,6 +38,15 @@ class Staff extends Model implements HasLocalized, HasImagesContract
     public static function boot(): void
     {
         parent::boot();
+    }
+
+    public function faculty(): HasOne
+    {
+        return $this->hasOne(Faculty::class, 'id')->with('lang');
+    }
+    public function department(): HasMany
+    {
+        return $this->hasMany(Department::class, 'id', 'department_id')->with('lang');
     }
 
     public function getDescription(): string

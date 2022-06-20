@@ -68,6 +68,9 @@ $secy = $secy ?? null;
                                  alt="" class="chief__img">
                             <div class="chief__info">
                                 <p class="chief__position">Голова відділу</p>
+                                @if(!empty($head->department()->first()->name))
+                                    <p class="chief__position">{{$head->department()->first()->name}}</p>
+                                @endif
                                 <p class="chief__name">{{$head->name}}</p>
 
                                 <div class="chief__activity">{!! $head->description !!}</div>
