@@ -38,7 +38,7 @@
                 <button class="menu-burger">
                     <i class="menu-burger__icon fa-solid fa-bars fa-fw"></i>
                     <i class="menu-burger__icon fa-solid fa-xmark fa-fw"></i>
-                    <span class="menu-burger__text">Menu</span>
+                    <span class="menu-burger__text">Меню</span>
                 </button>
                 <ul class="menu__list">
                     <li>
@@ -48,6 +48,10 @@
                         <a href="/faculty" class="menu__link menu__link--nonclickable">Склад ради</a>
                         <i class="menu__arrow arrow fa-solid fa-angle-down"></i>
                         <ul class="sub-menu__list">
+                            <li>
+                                <a href="{{route('prezudia.show')}}"
+                                   class="sub-menu__link">Президія Ради</a>
+                            </li>
                             @foreach($faculties as $faculty)
                                 <li>
                                     <a href="{{route('faculty.show', $faculty->getKey())}}"
