@@ -69,7 +69,7 @@ $secy = $secy ?? null;
                             <div class="chief__info">
                                 <p class="chief__position">Голова відділу</p>
                                 @if(!empty($head->department()->first()->name))
-                                    <p class="chief__position">{{$head->department()->first()->name}}</p>
+                                    <p class="chief__qwe">({{$head->department()->first()->name}})</p>
                                 @endif
                                 <p class="chief__name">{{$head->name}}</p>
 

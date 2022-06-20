@@ -46,9 +46,16 @@
    }
 
    .chief__info, .member-detailed__info {
-      .chief__position, .member-detailed__position {
+      .chief__position, .member-detailed__position, .chief__qwe {
          font-size: 1.125rem;
          margin: 0;
+      }
+      .chief__qwe {
+         color: var(--color-primary-light);
+         display: inline-block;
+      }
+      .chief__position {
+         display: inline-block;
       }
       .chief__name, .member-detailed__name {
          margin-top: 0;
@@ -82,7 +89,7 @@
          margin-top: 10px;
       }
       .chief__info, .member-detailed__info {
-         .chief__position, .chief__name, .chief__email, .chief__phone {
+         .chief__position, .chief__name, .chief__email, .chief__phone, .chief__qwe {
             text-align: center;
          }
          .member-detailed__position, .member-detailed__name, .member-detailed__email, .member-detailed__phone {
@@ -99,7 +106,11 @@
    }
 }
 
-
+@media (max-width:768px) {
+   .chief__position, .chief__qwe {
+      display: block !important;
+   }
+}
 
 // Member:
 .member {

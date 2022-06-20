@@ -674,9 +674,16 @@ iframe {
   -webkit-box-shadow: 0px 0px 7px 0px var(--color-primary-light);
           box-shadow: 0px 0px 7px 0px var(--color-primary-light);
 }
-.department-chief .chief__info .chief__position, .department-chief .chief__info .member-detailed__position, .department-chief .member-detailed__info .chief__position, .department-chief .member-detailed__info .member-detailed__position, .department-member .chief__info .chief__position, .department-member .chief__info .member-detailed__position, .department-member .member-detailed__info .chief__position, .department-member .member-detailed__info .member-detailed__position {
+.department-chief .chief__info .chief__position, .department-chief .chief__info .member-detailed__position, .department-chief .chief__info .chief__qwe, .department-chief .member-detailed__info .chief__position, .department-chief .member-detailed__info .member-detailed__position, .department-chief .member-detailed__info .chief__qwe, .department-member .chief__info .chief__position, .department-member .chief__info .member-detailed__position, .department-member .chief__info .chief__qwe, .department-member .member-detailed__info .chief__position, .department-member .member-detailed__info .member-detailed__position, .department-member .member-detailed__info .chief__qwe {
   font-size: 1.125rem;
   margin: 0;
+}
+.department-chief .chief__info .chief__qwe, .department-chief .member-detailed__info .chief__qwe, .department-member .chief__info .chief__qwe, .department-member .member-detailed__info .chief__qwe {
+  color: var(--color-primary-light);
+  display: inline-block;
+}
+.department-chief .chief__info .chief__position, .department-chief .member-detailed__info .chief__position, .department-member .chief__info .chief__position, .department-member .member-detailed__info .chief__position {
+  display: inline-block;
 }
 .department-chief .chief__info .chief__name, .department-chief .chief__info .member-detailed__name, .department-chief .member-detailed__info .chief__name, .department-chief .member-detailed__info .member-detailed__name, .department-member .chief__info .chief__name, .department-member .chief__info .member-detailed__name, .department-member .member-detailed__info .chief__name, .department-member .member-detailed__info .member-detailed__name {
   margin-top: 0;
@@ -712,7 +719,7 @@ iframe {
         align-self: center;
     margin-top: 10px;
   }
-  .department-chief .chief__info .chief__position, .department-chief .chief__info .chief__name, .department-chief .chief__info .chief__email, .department-chief .chief__info .chief__phone, .department-chief .member-detailed__info .chief__position, .department-chief .member-detailed__info .chief__name, .department-chief .member-detailed__info .chief__email, .department-chief .member-detailed__info .chief__phone, .department-member .chief__info .chief__position, .department-member .chief__info .chief__name, .department-member .chief__info .chief__email, .department-member .chief__info .chief__phone, .department-member .member-detailed__info .chief__position, .department-member .member-detailed__info .chief__name, .department-member .member-detailed__info .chief__email, .department-member .member-detailed__info .chief__phone {
+  .department-chief .chief__info .chief__position, .department-chief .chief__info .chief__name, .department-chief .chief__info .chief__email, .department-chief .chief__info .chief__phone, .department-chief .chief__info .chief__qwe, .department-chief .member-detailed__info .chief__position, .department-chief .member-detailed__info .chief__name, .department-chief .member-detailed__info .chief__email, .department-chief .member-detailed__info .chief__phone, .department-chief .member-detailed__info .chief__qwe, .department-member .chief__info .chief__position, .department-member .chief__info .chief__name, .department-member .chief__info .chief__email, .department-member .chief__info .chief__phone, .department-member .chief__info .chief__qwe, .department-member .member-detailed__info .chief__position, .department-member .member-detailed__info .chief__name, .department-member .member-detailed__info .chief__email, .department-member .member-detailed__info .chief__phone, .department-member .member-detailed__info .chief__qwe {
     text-align: center;
   }
   .department-chief .chief__info .member-detailed__position, .department-chief .chief__info .member-detailed__name, .department-chief .chief__info .member-detailed__email, .department-chief .chief__info .member-detailed__phone, .department-chief .member-detailed__info .member-detailed__position, .department-chief .member-detailed__info .member-detailed__name, .department-chief .member-detailed__info .member-detailed__email, .department-chief .member-detailed__info .member-detailed__phone, .department-member .chief__info .member-detailed__position, .department-member .chief__info .member-detailed__name, .department-member .chief__info .member-detailed__email, .department-member .chief__info .member-detailed__phone, .department-member .member-detailed__info .member-detailed__position, .department-member .member-detailed__info .member-detailed__name, .department-member .member-detailed__info .member-detailed__email, .department-member .member-detailed__info .member-detailed__phone {
@@ -727,6 +734,11 @@ iframe {
   }
 }
 
+@media (max-width: 768px) {
+  .chief__position, .chief__qwe {
+    display: block !important;
+  }
+}
 .member {
   border: 1px solid var(--color-primary-lighter);
   -webkit-box-shadow: 0px 0px 5px 0px var(--color-primary-light);
