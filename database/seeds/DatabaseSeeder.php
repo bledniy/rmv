@@ -14,8 +14,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AdminMenuSeeder::class);
         $this->call(SettingsTableSeeder::class);
         $this->call(TranslateTableSeeder::class);
-        $this->call(MenuTableSeeder::class);
-        $this->call(MetaTableSeeder::class);
         $this->call(RedirectsTableSeeder::class);
         $this->call(PageSeeder::class);
         $this->call(NewsTableSeeder::class);
