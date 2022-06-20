@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         Carbon::setLocale(config('app.locale'));
-        Schema::defaultStringLength(191);
+        Schema::defaultStringLength(250);
         $this->registerDev();
         $this->registerBind();
     }
