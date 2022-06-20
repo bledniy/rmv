@@ -6,5 +6,5 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="{{ asset('static/css/icons.css') }}" rel="stylesheet">
     <link href="{{ asset('static/css/styles.css') }}" rel="stylesheet">
-    <link rel="icon" href="{{ asset('Logo.jpg') }}" type="image/x-icon" /> 
+    <link rel="icon" href="{{ asset('images/Logo.png') }}" type="image/x-icon" />
 </head>

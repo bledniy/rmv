@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ mix('_admin/css/material-dashboard.css') }}"/>
     <link rel="stylesheet" href="{{ mix('_admin/css/styles.css') }}"/>
     <script type="text/javascript" src="{{ asset('js/core/jquery.min.js') }}"></script>
-    <link rel="icon" href="{{ asset('assets/img/Logo.jpg') }}" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="{{ asset('images/Logo.png') }}" sizes="any" type="image/svg+xml">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
         <x-admin.layout.sidebar-bg></x-admin.layout.sidebar-bg>
         <div class="logo text-center">
             <a href="{{ route('home')}}" class="simple-text logo-normal mx-3 px-2 bg-white">
-                <img src="{{ asset('Logo.jpg') }}" alt="" class="img-fluid" width="60">
+                <img src="{{ asset('images/Logo.png') }}" alt="" class="img-fluid" width="60">
             </a>
             <small class="badge badge-dark no-radius">{{ Auth::guard('admin')->user()->login }}</small>
         </div>
