@@ -85,6 +85,7 @@ class RolesAndPermissionsSeeder extends Seeder
             'faculties',
             'departments',
             'staffs',
+            'documents',
             'coops',
 		];
 
