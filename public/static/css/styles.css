@@ -797,8 +797,9 @@ iframe {
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+  margin-bottom: 30px;
 }
 .coop-image img {
   border: 1px solid var(--color-primary-light);
@@ -826,7 +827,6 @@ iframe {
   .coop-image {
     -ms-flex-item-align: center;
         align-self: center;
-    margin-bottom: 30px;
   }
 
   .image-title {
