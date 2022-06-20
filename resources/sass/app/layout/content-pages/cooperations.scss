@@ -1,0 +1,40 @@
+.coop-images {
+   display: flex;
+   justify-content: space-around;
+}
+
+.coop-image {
+   display: flex;
+   flex-direction: column;
+   flex: 0 1 auto;
+
+   img {
+      border: 1px solid var(--color-primary-light);
+      box-shadow: 0px 0px 7px 0px var(--color-primary-light);   
+      padding: 3px;
+      max-width: 200px;
+   }
+
+   .image-title {
+      max-width: 200px;
+      text-align: center;
+      margin-bottom: 5px;
+      color: var(--color-primary);
+      margin-bottom: 10px;
+   }
+}
+
+@media (max-width:768px) {
+   .coop-images {
+      flex-direction: column;
+   }
+
+   .coop-image {
+      align-self: center;
+      margin-bottom: 30px;
+   }
+
+   .image-title {
+      align-self: center;
+   }
+}

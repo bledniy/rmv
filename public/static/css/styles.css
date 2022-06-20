@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap);
 .header * {
   margin: 0;
@@ -51,6 +51,7 @@
 }
 
 .contacts__ul i {
+  font-size: 1.375rem;
   width: 32px;
   height: 32px;
   padding: 7px;
@@ -222,7 +223,7 @@
 .sub-menu__list {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 39px;
   left: 0;
   min-width: 360px;
   max-height: 231px;
@@ -467,18 +468,13 @@ body.touch .sub-sub-menu__list.open {
   margin-bottom: 16px;
 }
 
-.rmv-document {
-  font-size: 1.125rem;
-  padding: 0px 16px;
-}
-
 .info__img {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 5px solid var(--color-primary-light);
-  width: 75%;
-  height: 75%;
+  width: 85%;
+  height: 85%;
   margin: 0 auto;
   -webkit-box-shadow: 0px 0px 7px 0px var(--color-primary-light);
           box-shadow: 0px 0px 7px 0px var(--color-primary-light);
@@ -488,11 +484,6 @@ body.touch .sub-sub-menu__list.open {
     width: 100%;
     height: 100%;
   }
-}
-
-.info__img--1 {
-  width: 90%;
-  height: 90%;
 }
 
 .info__text--bold {
@@ -515,6 +506,10 @@ body.touch .sub-sub-menu__list.open {
 .news-item {
   padding-bottom: 25px;
   border-bottom: 3px solid var(--color-secondary);
+}
+
+.news-item:only-child {
+  border-bottom: none;
 }
 
 .news-item__title {
@@ -629,6 +624,7 @@ iframe {
   color: #fff;
   text-decoration: none;
   padding: 8px;
+  margin-top: 15px;
   background-color: var(--color-primary-light);
   border-radius: 7px;
 }
@@ -756,6 +752,7 @@ iframe {
   font-size: 1rem;
   font-weight: normal;
   text-align: center;
+  padding: 0px 12px;
   margin-bottom: 16px;
 }
 .member__activity p {
@@ -776,8 +773,62 @@ iframe {
   text-align: center;
 }
 
+.coop-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.coop-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+.coop-image img {
+  border: 1px solid var(--color-primary-light);
+  -webkit-box-shadow: 0px 0px 7px 0px var(--color-primary-light);
+          box-shadow: 0px 0px 7px 0px var(--color-primary-light);
+  padding: 3px;
+  max-width: 200px;
+}
+.coop-image .image-title {
+  max-width: 200px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .coop-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .coop-image {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 30px;
+  }
+
+  .image-title {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
 .main {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Roboto", sans-serif;
 }
 
 .home,
@@ -822,25 +873,23 @@ iframe {
 .footer {
   border-top: 5px solid var(--color-secondary);
   border-bottom: 5px solid var(--color-secondary);
-  padding: 10px 0;
   background-color: var(--color-primary);
 }
 
 .footer__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer__text {
+  text-align: center;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  padding: 10px 10px;
+}
+.footer__content p {
+  margin: 0px 0px 8px 0px;
+}
+.footer__content a {
+  color: inherit;
+}
+.footer__content a:hover {
+  color: var(--color-secondary);
 }
 
 html {
@@ -887,7 +936,7 @@ body {
 
 body {
   margin: 0;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {

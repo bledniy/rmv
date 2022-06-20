@@ -21,7 +21,7 @@
                                 </h3>
                                 <span class="document-item__date"><i
                                             class="fa-solid fa-calendar-days"></i>{{$doc->created_at}}</span>
-                                <span class="document-item__author"><i class="fa-solid fa-user-pen"></i>Admin</span>
+                                <span class="document-item__author"><i class="fa-solid fa-user-pen"></i>Admin</span><br>
                                 <a class="document-item__more" href="{{'/storage/docs/' . $doc->file}}">Читати документ</a>
                             </div>
                         @endforeach

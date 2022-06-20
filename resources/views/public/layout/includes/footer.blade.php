@@ -1,11 +1,9 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__content">
-            <div class="footer__text">
-                {{getSetting('footer.text')}} <br>
+                <p>{{getSetting('footer.text')}}</p>
                 <p>{{getSetting('footer.secure_text')}}</p>
-            </div>
+                <a href="{{getSetting('footer.main_site')}}">Наша сторінка на головному сайті ОНУ</a>
         </div>
-        <a href="{{getSetting('footer.main_site')}}">Наша сторінка на головному сайті ОНУ</a>
     </div>
 </footer>

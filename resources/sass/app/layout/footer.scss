@@ -1,19 +1,25 @@
 .footer {
    border-top: 5px solid var(--color-secondary);
    border-bottom: 5px solid var(--color-secondary);
-   padding: 10px 0;
    background-color: var(--color-primary);
 }
 
 .footer__content {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.footer__text {
+   text-align: center;
    color: #fff;
-   font-size: 1rem;
+   font-size: 0.875rem;
+   padding: 10px 10px;
+
+   p {
+      margin: 0px 0px 8px 0px;
+   }
+
+   a {
+      color: inherit;
+      &:hover {
+         color: var(--color-secondary);
+      }
+   }
 }
 
 

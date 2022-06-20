@@ -12,10 +12,10 @@
                         <a href="{{getSetting('social.facebook')}}"><i class="fa-brands fa-facebook-f"></i></a>
                     </li>
                     <li>
-                        <a href="{{getSetting('social.instagram')}}"><i class="fas fa-link"></i></a>
+                        <a href="{{getSetting('social.instagram')}}"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="{{getSetting('social.telegram')}}"><i class="fas fa-link"></i></a>
+                        <a href="{{getSetting('social.telegram')}}"><i class="fa-brands fa-telegram"></i></a>
                     </li>
                 </ul>
             </div>
