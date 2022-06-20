@@ -1,0 +1,29 @@
+@import 'layout/header', 'layout/main', 'layout/footer';
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+   --color-primary: #294a70;
+   --color-primary-light: #3e5c7e;
+   --color-primary-lighter: #546e8d;
+   --color-secondary: #ffab1f;
+   --color-secondary-light: #ffbc4c;
+   --color-text-primary: #212529;
+   --color-text-secondary: #495057;
+}
+
+// Global styles
+
+body {
+   margin: 0;
+   font-family: 'Merriweather Sans', sans-serif; 
+}
+
+// every content section wrapped in div.container
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+}

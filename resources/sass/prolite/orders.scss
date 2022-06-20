@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.customer-avatar{
+    border-radius: 50%;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+.table-order-details tbody tr td {
+    padding: 4px 4px 4px 15px;
+}
+
+.table-order-details tr:not(:first-of-type) {
+    border-top: 1px solid gray;
+}

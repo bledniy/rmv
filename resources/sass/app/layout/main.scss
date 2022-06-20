@@ -1,0 +1,48 @@
+// main.scss is for content inside of <main> element
+@import 'content-pages/home';
+@import 'content-pages/news';
+@import 'content-pages/documents';
+@import 'content-pages/ckeditor-wrapper';
+
+.main {
+   font-family: 'Roboto', sans-serif !important;
+}
+
+// headers
+.home,
+.faculty,
+.department,
+.rmv-news,
+.rmv-documents {
+   padding: 20px 10px;
+}
+
+.main__header {
+   font-family: 'Merriweather', serif;
+   text-align: center;
+   margin-bottom: 30px;
+
+   @media (max-width:550px) {
+      margin-bottom: 20px;
+   }
+
+   .header__title--main {
+      color: var(--color-primary);
+      margin: 0px 0px 5px 0px;
+      font-size: 1.75rem;
+
+      @media (max-width:768px) {
+         font-size: 1.5rem;
+      }
+   }
+
+   .header__title--pre {
+      color: var(--color-text-secondary);
+      margin: 0;
+      font-size: 1.25rem;
+      @media (max-width:768px) {
+         font-size: 1.125rem;
+      }
+   }
+}
+

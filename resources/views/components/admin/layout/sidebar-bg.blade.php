@@ -1,0 +1,1 @@
+<div class="sidebar-background" style="background-image: url({{ asset($path) }});"></div>
