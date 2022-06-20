@@ -19,7 +19,7 @@ $secy = $secy ?? null;
                             <img src="{{getPathToImage(imgPathOriginal($head->image))}}"
                                  alt="" class="chief__img">
                             <div class="chief__info">
-                                <p class="chief__position">Голова відділу</p>
+                                <p class="chief__position">Голова Ради</p>
                                 <p class="chief__name">{{$head->name}}</p>
 
                                 <div class="chief__activity">{!! $head->description !!}</div>
@@ -30,12 +30,28 @@ $secy = $secy ?? null;
                             </div>
                         </div>
                     @endif
+                    @if(!empty($deputyHead))
+                        <div class="department-chief">
+                            <img src="{{getPathToImage(imgPathOriginal($deputyHead->image))}}"
+                                 alt="" class="chief__img">
+                            <div class="chief__info">
+                                <p class="chief__position">Заступник Голови Ради</p>
+                                <p class="chief__name">{{$deputyHead->name}}</p>
+
+                                <div class="chief__activity">{!! $deputyHead->description !!}</div>
+
+                                <p class="chief__email">{{$deputyHead->email}}</p>
+
+                                <p class="chief__phone">{{$deputyHead->phone}}</p>
+                            </div>
+                        </div>
+                    @endif
                     @if(!empty($secy))
                         <div class="department-chief">
                             <img src="{{getPathToImage(imgPathOriginal($secy->image))}}"
                                  alt="" class="chief__img">
                             <div class="chief__info">
-                                <p class="chief__position">Секретар відділу</p>
+                                <p class="chief__position">Секретар Ради</p>
                                 <p class="chief__name">{{$secy->name}}</p>
 
                                 <div class="chief__activity">{!! $secy->description !!}</div>
