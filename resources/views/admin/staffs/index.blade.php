@@ -6,7 +6,7 @@
 	<table class="table table-shopping">
 		<thead>
 		<tr>
-{{--			<th class="">@lang('form.image.image')</th>--}}
+			<th class="">@lang('form.image.image')</th>
 			<th class="th-description">@lang('form.title')</th>
 			<th class="text-right">
 				<a href="{{ route( $routeKey . '.create') }}" class="btn btn-primary">@lang('form.create')</a>
@@ -17,13 +17,13 @@
 		@foreach($list as $item)
             <?php /** @var $item \App\Models\Staff\Staff */ ?>
 			<tr>
-{{--				<td>--}}
-{{--					<div class="img-container">--}}
-{{--						<a href="{{ imgPathOriginal(getPathToImage($item->image)) }}" class="fancy" data-fancybox="pages-image">--}}
-{{--							<img src="{{ getPathToImage($item->image) }}" alt=""/>--}}
-{{--						</a>--}}
-{{--					</div>--}}
-{{--				</td>--}}
+				<td>
+					<div class="img-container">
+						<a href="{{ imgPathOriginal(getPathToImage($item->image)) }}" class="fancy" data-fancybox="pages-image">
+							<img src="{{ getPathToImage($item->image) }}" alt=""/>
+						</a>
+					</div>
+				</td>
 				<td>
 					<a href="{{ route($routeKey .'.edit', $item->getKey())  }}">{{ $item->getName() }}</a>
 				</td>

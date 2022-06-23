@@ -66,7 +66,7 @@ class FacultyRepository extends AbstractRepository
 	public function getListForAdmin(): LengthAwarePaginator
 	{
 		/** @var  $list */
-		$list = Faculty::with('lang')->paginate();
+		$list = Faculty::with('lang')->orderBy('sort')->paginate();
 
 		return $list;
 	}

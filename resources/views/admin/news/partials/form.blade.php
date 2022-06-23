@@ -15,6 +15,8 @@
 
 <div class="w-75">@include('admin.partials.crud.elements.image-upload-group')</div>
 
+@include('admin.partials.crud.textarea.excerpt', ['title' => 'Краткое описание (в списке новостей)'])
+
 @include('admin.partials.crud.textarea.description')
 
-@include('admin.partials.crud.textarea.excerpt', ['title' => 'Краткое описание (в списке новостей)'])
+@include('admin.partials.crud.js.init-description')

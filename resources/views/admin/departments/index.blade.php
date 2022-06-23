@@ -6,17 +6,22 @@
 	<table class="table table-shopping">
 		<thead>
 		<tr>
-{{--			<th class="">@lang('form.image.image')</th>--}}
+			<th class="">Сортировка</th>
+
+			{{--			<th class="">@lang('form.image.image')</th>--}}
 			<th class="th-description">@lang('form.title')</th>
 			<th class="text-right">
 				<a href="{{ route( $routeKey . '.create') }}" class="btn btn-primary">@lang('form.create')</a>
 			</th>
 		</tr>
 		</thead>
-		<tbody>
+		<tbody data-sortable-container="true" data-table="{{ $list->first()->getTable() }}">
 		@foreach($list as $item)
-            <?php /** @var $item \App\Models\Faculty\Faculty */ ?>
-			<tr>
+            <?php /** @var $item \App\Models\Department\Department */ ?>
+			<tr class="draggable" data-sort="" data-id="{{ $item->getKey() }}">
+				<td>
+					@include('admin.partials.sort_handle')
+				</td>
 {{--				<td>--}}
 {{--					<div class="img-container">--}}
 {{--						<a href="{{ imgPathOriginal(getPathToImage($item->image)) }}" class="fancy" data-fancybox="pages-image">--}}

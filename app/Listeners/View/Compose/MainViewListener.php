@@ -2,6 +2,8 @@
 
 namespace App\Listeners\View\Compose;
 
+use App\Models\Department\Department;
+use App\Models\Faculty\Faculty;
 use App\Repositories\DepartmentRepository;
 use App\Repositories\FacultyRepository;
 
@@ -31,8 +33,8 @@ class MainViewListener
         }
         self::$isLoaded = true;
 
-        $faculties = $this->facultyRepository->all();
-        $departments = $this->departmentRepository->all();
+        $faculties = Faculty::with('lang')->orderBy('sort')->get();
+        $departments = Department::with('lang')->orderBy('sort')->get();
 
 		$with = compact(array_keys(get_defined_vars()));
 		\view()->share($with);

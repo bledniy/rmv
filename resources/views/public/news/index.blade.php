@@ -26,6 +26,7 @@
                                 <a class="news-item__more" href="{{route('news.show', $new->id)}}">Читати далі</a>
                             </div>
                         @endforeach
+                            {!! $news->render() !!}
                     </section>
                 </div>
             </article>

@@ -16,7 +16,7 @@
         <tbody data-sortable-container="true" data-table="{{ $list->first()->getTable() }}">
         @foreach($list as $item)
             <?php /** @var $item \App\Models\Faculty\Faculty */ ?>
-            <tr>
+            <tr class="draggable" data-sort="" data-id="{{ $item->getKey() }}">
                 <td>
                     @include('admin.partials.sort_handle')
                 </td>
