@@ -19,6 +19,9 @@ class CooperationController extends ContentController
 
     protected $name = 'Співробітництво';
 
+    protected $permissionKey = 'coops';
+
+
     public function __construct(ContentRepository $repository)
     {
         $this->routeKey .= $this->permissionKey = $this->contentType = ContentTypeEnum::COOPERATION;

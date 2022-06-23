@@ -30,7 +30,6 @@ class AdminMenuSeeder extends AbstractSeeder
 	public function run()
 	{
 		$menus = [
-//            $this->getBuilder()->setName('Слайдер')->setUrl('/sliders')->setGateRule('view_sliders')->build(),
             $this->getBuilder()->setName(__('modules.settings.title'))->setIconFont('<i class="material-icons">settings</i>')->setUrl('/settings')->setGateRule('view_settings')->build(),
             $this->getBuilder()->setName('Локализация')->setIconFont('<i class="fa fa-language" aria-hidden="true"></i>')->setUrl('/translate')->setGateRule('view_translate')->build(),
 //            $this->getBuilder()->setName('SEO')->setIconFont('<i class="fa fa-google-plus" aria-hidden="true"></i>')->setUrl('/meta')->setGateRule('view_meta')->setChildrens([
@@ -50,12 +49,7 @@ class AdminMenuSeeder extends AbstractSeeder
             $this->getBuilder()->setName('Факультеты')->setUrl('/faculties')->setGateRule('view_faculties')->build(),
             $this->getBuilder()->setName('Отделы')->setUrl('/departments')->setGateRule('view_departments')->build(),
             $this->getBuilder()->setName('Состав совета')->setUrl('/staffs')->setGateRule('view_staffs')->build(),
-            $this->getBuilder()->setName('Сотрудничество')->setUrl('/cooperation')->setGateRule('view_coops')->build(),
-
-
-
-//            $this->getBuilder()->setName('Бренды')->setUrl('/' . ContentTypeEnum::BRAND)->setGateRule('view_' . ContentTypeEnum::BRAND)->build(),
-//            $this->getBuilder()->setName('Вакансии')->setUrl('/' . ContentTypeEnum::VACANCY)->setGateRule('view_' . ContentTypeEnum::VACANCY)->build(),
+            $this->getBuilder()->setName('Сотрудничество')->setUrl('/' . ContentTypeEnum::COOPERATION)->setGateRule('view_' . ContentTypeEnum::COOPERATION)->build(),
 		];
 		$this->loop($menus);
 

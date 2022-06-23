@@ -53,13 +53,13 @@ class RolesAndPermissionsSeeder extends Seeder
     {
 		$permissions = [];
 		$permissions = array_merge($permissions, $this->_getPermissionModify('settings'));
-		$permissions = array_merge($permissions, $this->_getPermissionCrud('translate'));
+//		$permissions = array_merge($permissions, $this->_getPermissionCrud('translate'));
 		$permissions = array_merge($permissions, $this->_getPermissionCrud('staffs'));
 		$permissions = array_merge($permissions, $this->_getPermissionCrud('news'));
         $permissions = array_merge($permissions, $this->_getPermissionCrud('departments'));
         $permissions = array_merge($permissions, $this->_getPermissionCrud('faculties'));
         $permissions = array_merge($permissions, $this->_getPermissionCrud('documents'));
-        $permissions = array_merge($permissions, $this->_getPermissionCrud('coops'));
+        $permissions = array_merge($permissions, $this->_getPermissionCrud(ContentTypeEnum::COOPERATION));
 
 
         return $permissions;
@@ -86,7 +86,7 @@ class RolesAndPermissionsSeeder extends Seeder
             'departments',
             'staffs',
             'documents',
-            'coops',
+            ContentTypeEnum::COOPERATION,
 		];
 
 		foreach ($create as $entity) {

@@ -30,7 +30,7 @@ class DepartmentController extends AdminController
 
     protected $routeKey = 'admin.departments';
 
-    protected $permissionKey = 'department';
+    protected $permissionKey = 'departments';
     /**
      * @var DepartmentRepository
      */
