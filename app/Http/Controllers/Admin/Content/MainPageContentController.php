@@ -26,7 +26,7 @@ class MainPageContentController extends ContentController
     {
         $this->routeKey .= $this->permissionKey = $this->contentType = ContentTypeEnum::MAIN;
         $contentFieldsList = (new ContentFieldsList($this->fields))->setContentTypeEnum(ContentTypeEnum::create($this->contentType));
-        $contentFieldsList->addTitle(ContentFieldsTypeInterface::NAME, 'Название (для описания фото)');
+        $contentFieldsList->addTitle(ContentFieldsTypeInterface::NAME, 'Название');
         app()->bind(AbstractContentFieldsList::class, function () use ($contentFieldsList) {
             return $contentFieldsList;
         });
