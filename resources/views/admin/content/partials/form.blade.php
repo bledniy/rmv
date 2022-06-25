@@ -49,4 +49,6 @@
         @endif
     </div>
 </div>
+@include('admin.partials.crud.js.init-description')
+
 

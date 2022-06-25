@@ -9,19 +9,17 @@ use App\Repositories\NewsRepository;
 
 class HomeController extends SiteController
 {
-    private $newsRepository;
+    private $contentRepository;
 
-    public function __construct(NewsRepository $newsRepository)
+    public function __construct(ContentRepository $contentRepository)
     {
         parent::__construct();
-        $this->newsRepository = $newsRepository;
+        $this->contentRepository = $contentRepository;
     }
 
-    public function home(
-        SearchDataContainer $newsData
-    )
+    public function home()
     {
-        $news = $this->newsRepository->getListPublic($newsData);
+        $blocks = $this->contentRepository->getListPublicByType('main');
         $with = compact(array_keys(get_defined_vars()));
 
         return view('public.home.index')->with($with);

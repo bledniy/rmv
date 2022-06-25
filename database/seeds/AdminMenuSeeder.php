@@ -41,9 +41,7 @@ class AdminMenuSeeder extends AbstractSeeder
             $this->getBuilder('/users')->setName('Пользователи')->setIconFont('<i class="fa fa-user" aria-hidden="true"></i>')->setGateRule('view_users')->build(),
             $this->getBuilder('roles')->setName('Роли')->setIconFont('<i class="fa fa-users" aria-hidden="true"></i>')->setGateRule('view_roles')->build(),
             $this->getBuilder('/admin-menus')->setName('Админ меню')->setIconFont('<i class="fa fa-bars" aria-hidden="true"></i>')->setGateRule('view_admin-menus')->build(),
-//            $this->getBuilder('/menu')->setName('Меню')->setIconFont('<i class="fa fa-bars" aria-hidden="true"></i>')->setGateRule('view_menu')->build(),
             $this->getBuilder('/logs')->setName('Logs')->setIconFont('<i class="fa fa-history" aria-hidden="true"></i>')->setGateRule('view_logs')->setSort(20)->build(),
-//            $this->getBuilder()->setName(__('modules.feedback.title_plural'))->setIconFont('<i class="fa fa-commenting" aria-hidden="true"></i>')->setUrl('/feedback')->setGateRule('view_feedback')->build(),
             $this->getBuilder()->setName('Страницы')->setUrl('/pages')->setGateRule('view_pages')->setIconFont('<i class="fa fa-columns" aria-hidden="true"></i>')->build(),
             $this->getBuilder()->setName('Документы')->setUrl('/documents')->setGateRule('view_documents')->build(),
             $this->getBuilder()->setName(__('modules.news.title_plural'))->setUrl('/news')->setGateRule('view_news')->build(),
@@ -51,6 +49,8 @@ class AdminMenuSeeder extends AbstractSeeder
             $this->getBuilder()->setName('Отделы')->setUrl('/departments')->setGateRule('view_departments')->build(),
             $this->getBuilder()->setName('Состав совета')->setUrl('/staffs')->setGateRule('view_staffs')->build(),
             $this->getBuilder()->setName('Сотрудничество')->setUrl('/cooperation')->setGateRule('view_coops')->build(),
+            $this->getBuilder()->setName('Блоки Главной')->setUrl('/main')->setGateRule('view_main')->build(),
+
 
 
 

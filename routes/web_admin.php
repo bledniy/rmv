@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AdminMenuController;
 use App\Http\Controllers\Admin\AjaxController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\Content\CooperationController;
+use App\Http\Controllers\Admin\Content\MainPageContentController;
 use App\Http\Controllers\Admin\Content\VacancyController;
 use App\Http\Controllers\Admin\Department\DepartmentController;
 use App\Http\Controllers\Admin\Document\DocumentController;
@@ -61,8 +62,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
                 'pages' => PageController::class,
             ], ['as' => 'admin', 'except' => ['show']]
             );
-
-            Route::resource('cooperation', CooperationController::class, ['except' => ['show'], 'as' => 'admin']);
+            Route::resource(ContentTypeEnum::MAIN, MainPageContentController::class, ['except' => ['show'], 'as' => 'admin']);
+            Route::resource(ContentTypeEnum::COOPERATION, CooperationController::class, ['except' => ['show'], 'as' => 'admin']);
             Route::resource('documents', DocumentController::class, ['except' => ['show'], 'as' => 'admin']);
             Route::resource('departments', DepartmentController::class, ['except' => ['show'], 'as' => 'admin']);
             Route::resource('faculties', FacultyController::class, ['except' => ['show'], 'as' => 'admin']);
