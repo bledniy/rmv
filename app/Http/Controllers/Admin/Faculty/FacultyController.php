@@ -30,7 +30,7 @@ class FacultyController extends AdminController
 
     protected $routeKey = 'admin.faculties';
 
-    protected $permissionKey = 'faculty';
+    protected $permissionKey = 'faculties';
     /**
      * @var FacultyRepository
      */

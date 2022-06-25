@@ -30,7 +30,7 @@ class DocumentController extends AdminController
 
     protected $routeKey = 'admin.documents';
 
-    protected $permissionKey = 'document';
+    protected $permissionKey = 'documents';
     /**
      * @var DocumentRepository
      */
