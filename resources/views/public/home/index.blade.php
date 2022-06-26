@@ -15,6 +15,7 @@
                             Мечникова</h2>
                     </header>
                     @foreach($blocks as $block)
+                    <div class="ckeditor-wrapper">
                         <section class="home__info">
                             @if(isset($block->name))
                                 <h3 class="info__title">{{$block->name}}</h3>
@@ -27,6 +28,7 @@
                                      src="{{getPathToImage(imgPathOriginal($block->image))}}" alt="">
                             @endif
                         </section>
+                    </div>
                     @endforeach
                 </div>
             </article>

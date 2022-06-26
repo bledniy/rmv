@@ -1,5 +1,7 @@
 'use strict';
 
+////////// Navbar //////////
+
 let isMobile = {
 	Android: function() {return navigator.userAgent.match(/Android/i);},
 	BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
@@ -34,20 +36,15 @@ if (isMobile.any()) {
       let thisLink = arrowElement.previousElementSibling;
       thisLink.classList.add('parent'); // add rigth margin 
    });
-
 }
 
-
-
 // Burger Menu
-
 let btnBurger = document.querySelector('.menu-burger');
 let menu = btnBurger.nextElementSibling;
 btnBurger.addEventListener('click', function() {
    btnBurger.classList.toggle('burger-active')
    menu.classList.toggle('menu-active')
 })
-
 
 // Current link 
 const activePage = window.location.href;
@@ -63,4 +60,12 @@ const navLinks = document
      }
   });
 
+//////////////////////////////
 
+
+
+////////// Scroll up button //////////
+
+const sectionMain = document.querySelector('.main');
+const btnScrollup = document.createElement('button');
+console.log(btnScrollup);

@@ -87,3 +87,4 @@ $secy = $secy ?? null;
         @includeIf('public.layout.includes.footer')
     </div>
 @stop
+
