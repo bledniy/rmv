@@ -66,6 +66,13 @@ const navLinks = document
 
 ////////// Scroll up button //////////
 
-const sectionMain = document.querySelector('.main');
-const btnScrollup = document.createElement('button');
-console.log(btnScrollup);
+// const sectionMain = document.querySelector('.main');
+// const btnScrollup = document.createElement('button');
+// console.log(btnScrollup);
+
+
+
+////////// Pagination //////////
+
+// const paginationItems = document.getElementsByClassName('page-item');
+// console.log(paginationItems);

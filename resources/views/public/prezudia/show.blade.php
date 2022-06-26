@@ -11,8 +11,12 @@ $secy = $secy ?? null;
             <article class="department">
                 <div class="container">
                     <header class="main__header">
-                        <h2 class="header__title--pre">Президія Ради Ради молодих вчених<br>Одеського національного
-                            університету імені І.І. Мечникова</h2>
+                    <h2 class="header__title--main">
+                        Президія
+                    </h2>
+                    <h2 class="header__title--pre">Ради молодих вчених<br>Одеського національного університету імені
+                        І.І.
+                        Мечникова</h2>
                     </header>
                     @if(!empty($head))
                         <div class="department-chief">
