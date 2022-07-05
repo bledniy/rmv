@@ -17,14 +17,16 @@
                         @foreach($docs as $doc)
                             <div class="document-item">
                                 <h3 class="document-item__title"><a href="{{'/storage/docs/' . $doc->file}}"
-                                                                class="document-item__full">{{$doc->getName()}}</a>
+                                                                    class="document-item__full">{{$doc->getName()}}</a>
                                 </h3>
                                 <span class="document-item__date"><i
                                             class="fa-solid fa-calendar-days"></i>{{$doc->created_at}}</span>
                                 <span class="document-item__author"><i class="fa-solid fa-user-pen"></i>Admin</span><br>
-                                <a class="document-item__more" href="{{'/storage/docs/' . $doc->file}}">Читати документ</a>
+                                <a class="document-item__more" href="{{'/storage/docs/' . $doc->file}}">Читати
+                                    документ</a>
                             </div>
                         @endforeach
+                        {!! $docs->render() !!}
                     </section>
                 </div>
             </article>

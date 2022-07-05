@@ -83,9 +83,11 @@ class DocumentController extends AdminController
         $input = $request->only($request->getFillableFields('file'));
         if ($document = $this->repository->create($input)) {
             $this->setSuccessStore();
-            $fileName = time().'.'.$request->file->extension();
-            $request->file->move(public_path('storage/docs'), $fileName);
-            $document->file = $fileName;
+            if (!empty($request->file)){
+                $fileName = time().'.'.$request->file->extension();
+                $request->file->move(public_path('storage/docs'), $fileName);
+                $document->file = $fileName;
+            }
             $this->fireEvents();
         }
         if ($request->has('createOpen')) {

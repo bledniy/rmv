@@ -15,10 +15,15 @@ class DocumentController extends Controller
      * @var DocumentRepository
      */
     private $documentRepository;
+    /**
+     * @var SearchDataContainer
+     */
+    private $container;
 
-    public function __construct(DocumentRepository $documentRepository)
+    public function __construct(DocumentRepository $documentRepository, SearchDataContainer $container)
     {
         $this->documentRepository = $documentRepository;
+        $this->container = $container->setOnPage(10);
     }
 
     /**
@@ -26,9 +31,9 @@ class DocumentController extends Controller
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|Response
      */
-    public function index(SearchDataContainer $container)
+    public function index()
     {
-        $docs = $this->documentRepository->getListPublic($container);
+        $docs = $this->documentRepository->getListPublic($this->container);
 
         $with = compact(array_keys(get_defined_vars()));
 
