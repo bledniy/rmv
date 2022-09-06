@@ -11,9 +11,9 @@
                             <h3 class="news-item__title"><a href="" class="news-item__full">{{$item->getName()}}</a>
                             </h3>
                             <span class="news-item__date"><i class="fa-solid fa-calendar-days"></i>{{$item->created_at}}</span>
-                            <img src="{{getPathToImage(imgPathOriginal($item->image))}}"
-                                 alt="" class="chief__img"
-                            width="200" height="200">
+{{--                            <img src="{{getPathToImage(imgPathOriginal($item->image))}}"--}}
+{{--                                 alt="" class="chief__img"--}}
+{{--                            width="200" height="200">--}}
                             <span class="news-item__author"><i class="fa-solid fa-user-pen"></i>writer</span>
                             <div class="ckeditor-wrapper">
                                 {!! $item->description !!}
